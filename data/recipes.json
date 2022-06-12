@@ -1,0 +1,17 @@
+[
+	{
+		"name": "A Pretty Shoe",
+		"description" : "I wonder who would like this",
+		"requirements": [
+			{
+				"item": "rose",
+				"count": 2
+			},
+			{
+				"item": "shoes",
+				"count": 2
+			}
+		],
+		"item": "a pretty shoe"
+	}
+]

@@ -1,0 +1,14 @@
+{
+	"erret":{
+		"name":"Erret",
+		"description": "Their name is Ferret without the F. Because they're a ferret.",
+		"id":"erret",
+		"schedule": {
+			"0800":"bar",
+			"1215":"some_other_place",
+			"1230":"bar",
+			"1600":null,
+			"1700":"bar"
+		}
+	}
+}

@@ -1,0 +1,39 @@
+{
+	"test": {
+		"id": "test",
+		"name": "This is a test quest",
+		"description": "I describe this quest. This is a test quest. Please don't expect anything of this. Please.",
+		"first_stage": 0,
+		"final_stage": [3, 7],
+		"time_sensitive": false,
+		"stages": [
+			{
+				"id":0,
+				"name":"This is the first task. Maybe try... idk, completing it?",
+				"description":"",
+				"next_stage": {
+					"conditions": [
+						{
+							"type":"affinity",
+							"person":"snek",
+							"minimum": null,
+							"maximum": 3
+						},
+						{
+							"type":"item",
+							"item_id":"shoes",
+							"minimum":1
+						}
+					]
+				},
+				"parent_quest_id": "test"
+			},
+			{
+				"id":10,
+				"name":"2nd Stage",
+				"next_stage": 20,
+				"parent_quest_id": "test"
+			}
+		]
+	}
+}
