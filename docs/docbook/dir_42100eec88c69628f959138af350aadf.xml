@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_42100eec88c69628f959138af350aadf" xml:lang="en-US">
+<title>systems Directory Reference</title>
+<indexterm><primary>systems Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_____init_____8py">__init__.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_database_8py">database.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_game_8py">game.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_gameobject_8py">gameobject.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_inventory_8py">inventory.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_item_8py">item.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_person_8py">person.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_player_8py">player.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_quests_8py">quests.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_recipe_8py">recipe.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

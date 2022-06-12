@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classsystems_1_1recipe_1_1_recipe" xml:lang="en-US">
+<title>systems.recipe.Recipe Class Reference</title>
+<indexterm><primary>systems.recipe.Recipe</primary></indexterm>
+Inheritance diagram for systems.recipe.Recipe:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1recipe_1_1_recipe__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for systems.recipe.Recipe:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1recipe_1_1_recipe__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classsystems_1_1recipe_1_1_recipe_1a541ecdc8223971de7dbf802f86eae4f5">__init__</link> (self, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1a2a7d149c3e1a21ce18e83bf54db345b4">name</link>, <link linkend="_classsystems_1_1recipe_1_1_recipe_1a6b2d849221fb9cfb822a6cc0f5039b30">requirements</link>, <link linkend="_classsystems_1_1recipe_1_1_recipe_1acf9ca4a77d896269e0e310c09886183d">item</link>, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1acedafdd78e44e6e95d155caf0a4b8cdd">description</link>=&apos;&apos;)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1recipe_1_1_recipe_1a0551534f48e6e31296ba24b2faf448ab">is_craftable</link> (self, item_list)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1recipe_1_1_recipe_1a0d842c66e7765ba0f35f3bc26b13d697">__hash__</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1recipe_1_1_recipe_1a9d45031829568da1ada8b395f1e834c3">__eq__</link> (self, other)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classsystems_1_1recipe_1_1_recipe_1acf5a86250ee666c0b4dd1cd7610a3cb4">from_dict</link> (d)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classsystems_1_1recipe_1_1_recipe_1a6b2d849221fb9cfb822a6cc0f5039b30">requirements</link></para>
+</listitem>
+            <listitem><para><link linkend="_classsystems_1_1recipe_1_1_recipe_1acf9ca4a77d896269e0e310c09886183d">item</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_recipe_8py_source_1l00003">3</link> of file <link linkend="_recipe_8py_source">recipe.py</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_1a541ecdc8223971de7dbf802f86eae4f5"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>systems.recipe.Recipe</secondary></indexterm>
+<indexterm><primary>systems.recipe.Recipe</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def systems.recipe.Recipe.__init__ ( self,  name,  requirements,  item,  description = <computeroutput>&apos;&apos;</computeroutput>
+)</computeroutput></para><para>
+Reimplemented from <link linkend="_classsystems_1_1gameobject_1_1_game_object_1ae183a723dc362cdfbb392c062b64ebe0">systems.gameobject.GameObject</link>.</para>
+<para>
+Definition at line <link linkend="_recipe_8py_source_1l00004">4</link> of file <link linkend="_recipe_8py_source">recipe.py</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1recipe_1_1_recipe_a541ecdc8223971de7dbf802f86eae4f5_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1recipe_1_1_recipe_a541ecdc8223971de7dbf802f86eae4f5_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_1a9d45031829568da1ada8b395f1e834c3"/><section>
+    <title>__eq__()</title>
+<indexterm><primary>__eq__</primary><secondary>systems.recipe.Recipe</secondary></indexterm>
+<indexterm><primary>systems.recipe.Recipe</primary><secondary>__eq__</secondary></indexterm>
+<para><computeroutput>def systems.recipe.Recipe.__eq__ ( self,  other)</computeroutput></para><para>
+Reimplemented from <link linkend="_classsystems_1_1gameobject_1_1_game_object_1ad116b38b06f8117777a9499ad50b384f">systems.gameobject.GameObject</link>.</para>
+<para>
+Definition at line <link linkend="_recipe_8py_source_1l00025">25</link> of file <link linkend="_recipe_8py_source">recipe.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_1a0d842c66e7765ba0f35f3bc26b13d697"/><section>
+    <title>__hash__()</title>
+<indexterm><primary>__hash__</primary><secondary>systems.recipe.Recipe</secondary></indexterm>
+<indexterm><primary>systems.recipe.Recipe</primary><secondary>__hash__</secondary></indexterm>
+<para><computeroutput>def systems.recipe.Recipe.__hash__ ( self)</computeroutput></para><para>
+Reimplemented from <link linkend="_classsystems_1_1gameobject_1_1_game_object_1a697bcc6324888923c8813d080df6b2c4">systems.gameobject.GameObject</link>.</para>
+<para>
+Definition at line <link linkend="_recipe_8py_source_1l00022">22</link> of file <link linkend="_recipe_8py_source">recipe.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_1acf5a86250ee666c0b4dd1cd7610a3cb4"/><section>
+    <title>from_dict()</title>
+<indexterm><primary>from_dict</primary><secondary>systems.recipe.Recipe</secondary></indexterm>
+<indexterm><primary>systems.recipe.Recipe</primary><secondary>from_dict</secondary></indexterm>
+<para><computeroutput>def systems.recipe.Recipe.from_dict ( d)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_recipe_8py_source_1l00014">14</link> of file <link linkend="_recipe_8py_source">recipe.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_1a0551534f48e6e31296ba24b2faf448ab"/><section>
+    <title>is_craftable()</title>
+<indexterm><primary>is_craftable</primary><secondary>systems.recipe.Recipe</secondary></indexterm>
+<indexterm><primary>systems.recipe.Recipe</primary><secondary>is_craftable</secondary></indexterm>
+<para><computeroutput>def systems.recipe.Recipe.is_craftable ( self,  item_list)</computeroutput></para><para>
+Definition at line <link linkend="_recipe_8py_source_1l00008">8</link> of file <link linkend="_recipe_8py_source">recipe.py</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_1acf9ca4a77d896269e0e310c09886183d"/><section>
+    <title>item</title>
+<indexterm><primary>item</primary><secondary>systems.recipe.Recipe</secondary></indexterm>
+<indexterm><primary>systems.recipe.Recipe</primary><secondary>item</secondary></indexterm>
+<para><computeroutput>systems.recipe.Recipe.item</computeroutput></para><para>
+Definition at line <link linkend="_recipe_8py_source_1l00007">7</link> of file <link linkend="_recipe_8py_source">recipe.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_1a6b2d849221fb9cfb822a6cc0f5039b30"/><section>
+    <title>requirements</title>
+<indexterm><primary>requirements</primary><secondary>systems.recipe.Recipe</secondary></indexterm>
+<indexterm><primary>systems.recipe.Recipe</primary><secondary>requirements</secondary></indexterm>
+<para><computeroutput>systems.recipe.Recipe.requirements</computeroutput></para><para>
+Definition at line <link linkend="_recipe_8py_source_1l00006">6</link> of file <link linkend="_recipe_8py_source">recipe.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+systems/<link linkend="_recipe_8py">recipe.py</link></section>
+</section>

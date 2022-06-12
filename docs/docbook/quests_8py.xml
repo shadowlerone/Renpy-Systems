@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_quests_8py" xml:lang="en-US">
+<title>systems/quests.py File Reference</title>
+<indexterm><primary>systems/quests.py</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classsystems_1_1quests_1_1_quest">systems.quests.Quest</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classsystems_1_1quests_1_1_quest_stage">systems.quests.QuestStage</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classsystems_1_1quests_1_1_quest_log">systems.quests.QuestLog</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacesystems">systems</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacesystems_1_1quests">systems.quests</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

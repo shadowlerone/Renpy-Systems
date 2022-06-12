@@ -1,0 +1,28 @@
+\hypertarget{gameobject_8py_source}{}\doxysection{gameobject.\+py}
+\label{gameobject_8py_source}\index{systems/gameobject.py@{systems/gameobject.py}}
+\mbox{\hyperlink{gameobject_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00001}\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object}{00001}} \textcolor{keyword}{class }\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object}{GameObject}}(object):}
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00002}\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_ae183a723dc362cdfbb392c062b64ebe0}{00002}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_ae183a723dc362cdfbb392c062b64ebe0}{\_\_init\_\_}}(self, id, name='', description=''):}
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00003}\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_aba5d7f2977d90fb287e79b092febe3cb}{00003}}         self.\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_aba5d7f2977d90fb287e79b092febe3cb}{id}} = id}
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00004}\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_a2a7d149c3e1a21ce18e83bf54db345b4}{00004}}         self.\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_a2a7d149c3e1a21ce18e83bf54db345b4}{name}} = name}
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00005}\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_acedafdd78e44e6e95d155caf0a4b8cdd}{00005}}         self.\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_acedafdd78e44e6e95d155caf0a4b8cdd}{description}} = description}
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00006}\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_a3afc6cf328d72af4198e604f0cd8fdca}{00006}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_a3afc6cf328d72af4198e604f0cd8fdca}{\_\_repr\_\_}}(self):}
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00007}00007         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}<\{\} id='\{\}' name='\{\}' desc='\{\}'>"{}}.format(}
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00008}00008             self.\_\_class\_\_.\_\_name\_\_,}
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00009}00009             self.\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_aba5d7f2977d90fb287e79b092febe3cb}{id}},}
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00010}00010             self.\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_a2a7d149c3e1a21ce18e83bf54db345b4}{name}}, }
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00011}00011             self.\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_acedafdd78e44e6e95d155caf0a4b8cdd}{description}}}
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00012}00012             )}
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00014}\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_a697bcc6324888923c8813d080df6b2c4}{00014}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_a697bcc6324888923c8813d080df6b2c4}{\_\_hash\_\_}}(self):}
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00015}00015         \textcolor{keywordflow}{return} hash((self.\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_a2a7d149c3e1a21ce18e83bf54db345b4}{name}}, self.\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_acedafdd78e44e6e95d155caf0a4b8cdd}{description}}))}
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00016}00016     }
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00017}\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_ad116b38b06f8117777a9499ad50b384f}{00017}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_ad116b38b06f8117777a9499ad50b384f}{\_\_eq\_\_}}(self, other):}
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00018}00018         \textcolor{keywordflow}{return} (self.\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_aba5d7f2977d90fb287e79b092febe3cb}{id}},self.\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_a2a7d149c3e1a21ce18e83bf54db345b4}{name}}, self.\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_acedafdd78e44e6e95d155caf0a4b8cdd}{description}}, self.\_\_class\_\_.\_\_name\_\_) == (other.id,other.name, other.description, other.\_\_class\_\_.\_\_name\_\_)}
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00019}00019     }
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00020}\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_adbe7816fecea988d00ae58dc390bf20b}{00020}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_adbe7816fecea988d00ae58dc390bf20b}{\_\_ne\_\_}}(self, other):}
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00021}00021         \textcolor{keywordflow}{return} not(self == other)}
+\DoxyCodeLine{\Hypertarget{gameobject_8py_source_l00022}00022 }
+
+\end{DoxyCode}

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_player_8py_source" xml:lang="en-US">
+<title>player.py</title>
+<indexterm><primary>systems/player.py</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_player_8py_source_1l00001"/><link linkend="_namespacesystems_1_1player">00001</link> <emphasis role="keyword">from</emphasis>&#32;.gameobject&#32;<emphasis role="keyword">import</emphasis>&#32;GameObject
+<anchor xml:id="_player_8py_source_1l00002"/>00002 <emphasis role="keyword">from</emphasis>&#32;.item&#32;<emphasis role="keyword">import</emphasis>&#32;Item,&#32;InventoryItem
+<anchor xml:id="_player_8py_source_1l00003"/>00003 <emphasis role="keyword">from</emphasis>&#32;.inventory&#32;<emphasis role="keyword">import</emphasis>&#32;Inventory
+<anchor xml:id="_player_8py_source_1l00004"/>00004 <emphasis role="keyword">from</emphasis>&#32;.quests&#32;<emphasis role="keyword">import</emphasis>&#32;QuestLog
+<anchor xml:id="_player_8py_source_1l00005"/>00005 <emphasis role="keyword">from</emphasis>&#32;.recipe&#32;<emphasis role="keyword">import</emphasis>&#32;RecipeBook
+<anchor xml:id="_player_8py_source_1l00006"/>00006 
+<anchor xml:id="_player_8py_source_1l00007"/><link linkend="_classsystems_1_1player_1_1_player">00007</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classsystems_1_1player_1_1_player">Player</link>(object):
+<anchor xml:id="_player_8py_source_1l00008"/><link linkend="_classsystems_1_1player_1_1_player_1acdc939d1de0da12351d9edbeec9ab996">00008</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1player_1_1_player_1acdc939d1de0da12351d9edbeec9ab996">__init__</link>(self):
+<anchor xml:id="_player_8py_source_1l00009"/><link linkend="_classsystems_1_1player_1_1_player_1acaadd80428c39bce9786898191b5e310">00009</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.<link linkend="_classsystems_1_1player_1_1_player_1acaadd80428c39bce9786898191b5e310">inventory</link>&#32;=&#32;<link linkend="_classsystems_1_1inventory_1_1_inventory">Inventory</link>()
+<anchor xml:id="_player_8py_source_1l00010"/><link linkend="_classsystems_1_1player_1_1_player_1aeed14f46f6db7508c01ef10fc71d979f">00010</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.<link linkend="_classsystems_1_1player_1_1_player_1aeed14f46f6db7508c01ef10fc71d979f">questlog</link>&#32;=&#32;<link linkend="_classsystems_1_1quests_1_1_quest_log">QuestLog</link>()
+<anchor xml:id="_player_8py_source_1l00011"/><link linkend="_classsystems_1_1player_1_1_player_1a0c101e78795a2089c8be6aad21fcf13f">00011</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.<link linkend="_classsystems_1_1player_1_1_player_1a0c101e78795a2089c8be6aad21fcf13f">recipebook</link>&#32;=&#32;<link linkend="_classsystems_1_1recipe_1_1_recipe_book">RecipeBook</link>()
+<anchor xml:id="_player_8py_source_1l00012"/>00012 
+<anchor xml:id="_player_8py_source_1l00013"/><link linkend="_classsystems_1_1player_1_1_player_1abde6a9dfa5d5349c8e34e635c245d510">00013</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1player_1_1_player_1abde6a9dfa5d5349c8e34e635c245d510">get_craftable</link>(self):
+<anchor xml:id="_player_8py_source_1l00014"/>00014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">pass</emphasis>
+<anchor xml:id="_player_8py_source_1l00015"/>00015 
+<anchor xml:id="_player_8py_source_1l00016"/><link linkend="_classsystems_1_1player_1_1_player_1a91e675776ff9c491d5d5ef1cd9fb081d">00016</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1player_1_1_player_1a91e675776ff9c491d5d5ef1cd9fb081d">get_uncraftable</link>(self):
+<anchor xml:id="_player_8py_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">pass</emphasis>
+<anchor xml:id="_player_8py_source_1l00018"/>00018 
+<anchor xml:id="_player_8py_source_1l00019"/><link linkend="_classsystems_1_1player_1_1_player_1ae1a17a36e040ee120ac7221a3fc4e6cf">00019</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1player_1_1_player_1ae1a17a36e040ee120ac7221a3fc4e6cf">craft</link>(self,&#32;recipe):
+<anchor xml:id="_player_8py_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">pass</emphasis>
+</programlisting></section>

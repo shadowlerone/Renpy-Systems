@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>Detritus 2 - Systems</title>
+    </info>
+<chapter>
+    <title>Namespace Documentation</title>
+<xi:include href="namespacesystems.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacesystems_1_1database.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacesystems_1_1game.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacesystems_1_1gameobject.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacesystems_1_1inventory.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacesystems_1_1item.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacesystems_1_1person.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacesystems_1_1player.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacesystems_1_1quests.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacesystems_1_1recipe.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="classsystems_1_1database_1_1_database.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classsystems_1_1game_1_1_game.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classsystems_1_1gameobject_1_1_game_object.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classsystems_1_1inventory_1_1_inventory.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classsystems_1_1item_1_1_inventory_item.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classsystems_1_1item_1_1_item.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classsystems_1_1person_1_1_person.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classsystems_1_1item_1_1_placeholder_inventory_item.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classsystems_1_1player_1_1_player.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classsystems_1_1quests_1_1_quest.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classsystems_1_1quests_1_1_quest_log.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classsystems_1_1quests_1_1_quest_stage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classsystems_1_1recipe_1_1_recipe.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classsystems_1_1recipe_1_1_recipe_book.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="____init_____8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="database_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="database_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="game_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="game_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gameobject_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gameobject_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="inventory_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="inventory_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="item_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="item_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="person_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="person_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="player_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="player_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="quests_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="quests_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="recipe_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="recipe_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

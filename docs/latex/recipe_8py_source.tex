@@ -1,0 +1,59 @@
+\hypertarget{recipe_8py_source}{}\doxysection{recipe.\+py}
+\label{recipe_8py_source}\index{systems/recipe.py@{systems/recipe.py}}
+\mbox{\hyperlink{recipe_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00001}\mbox{\hyperlink{namespacesystems_1_1recipe}{00001}} \textcolor{keyword}{from} .gameobject \textcolor{keyword}{import} GameObject}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00003}\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe}{00003}} \textcolor{keyword}{class }\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe}{Recipe}}(\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object}{GameObject}}):}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00004}\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_a541ecdc8223971de7dbf802f86eae4f5}{00004}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_a541ecdc8223971de7dbf802f86eae4f5}{\_\_init\_\_}}(self, name, requirements, item, description=''):}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00005}00005         super(Recipe, self).\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_a541ecdc8223971de7dbf802f86eae4f5}{\_\_init\_\_}}(name, description)}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00006}\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_a6b2d849221fb9cfb822a6cc0f5039b30}{00006}}         self.\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_a6b2d849221fb9cfb822a6cc0f5039b30}{requirements}} = requirements}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00007}\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_acf9ca4a77d896269e0e310c09886183d}{00007}}         self.\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_acf9ca4a77d896269e0e310c09886183d}{item}} = item}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00008}\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_a0551534f48e6e31296ba24b2faf448ab}{00008}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_a0551534f48e6e31296ba24b2faf448ab}{is\_craftable}}(self, item\_list):}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00010}00010         \textcolor{keywordflow}{pass}}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00011}00011         \textcolor{comment}{\# return all([item\_list[i] >= c for i, c in self.requirements.items()])}}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00013}00013     \textcolor{preprocessor}{@staticmethod}}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00014}\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_acf5a86250ee666c0b4dd1cd7610a3cb4}{00014}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_acf5a86250ee666c0b4dd1cd7610a3cb4}{from\_dict}}(d):}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00015}00015         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe}{Recipe}}(}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00016}00016             d[\textcolor{stringliteral}{'name'}], }
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00017}00017             item=d[\textcolor{stringliteral}{'item'}],}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00018}00018             requirements=d[\textcolor{stringliteral}{'requirements'}], }
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00019}00019             description=d[\textcolor{stringliteral}{'description'}],}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00020}00020         )}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00022}\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_a0d842c66e7765ba0f35f3bc26b13d697}{00022}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_a0d842c66e7765ba0f35f3bc26b13d697}{\_\_hash\_\_}}(self):}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00023}00023         \textcolor{keywordflow}{return} hash((self.\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_a2a7d149c3e1a21ce18e83bf54db345b4}{name}}, self.\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_acf9ca4a77d896269e0e310c09886183d}{item}}))}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00025}\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_a9d45031829568da1ada8b395f1e834c3}{00025}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_a9d45031829568da1ada8b395f1e834c3}{\_\_eq\_\_}}(self, other):}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00026}00026         \textcolor{keywordflow}{return} (self.\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_a2a7d149c3e1a21ce18e83bf54db345b4}{name}}, self.\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_a6b2d849221fb9cfb822a6cc0f5039b30}{requirements}}, self.\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_acf9ca4a77d896269e0e310c09886183d}{item}}) == (other.name, other.requirements, other.item)}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00028}\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book}{00028}} \textcolor{keyword}{class }\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book}{RecipeBook}}(object):}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00029}\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_a119f0a29a2ff33b259f2c4b31381408c}{00029}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_a119f0a29a2ff33b259f2c4b31381408c}{\_\_init\_\_}}(self):}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00030}\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_a872f6bd1a730fd504265ccc7dd0c81f6}{00030}}         self.\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_a872f6bd1a730fd504265ccc7dd0c81f6}{recipes}} = \{\}}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00031}\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_aa21d5b46ed313fdefe4916558bc8ffff}{00031}}         self.\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_aa21d5b46ed313fdefe4916558bc8ffff}{current\_recipe}} = \mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe}{Recipe}}(\textcolor{stringliteral}{"{}Nothing here"{}}, \{\textcolor{stringliteral}{"{}not sure"{}}: 0\}, \textcolor{keywordtype}{None})}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00032}\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_a859eb8513695693680ec18a8729d2101}{00032}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_a859eb8513695693680ec18a8729d2101}{add\_recipe}}(self, recipe\_id):}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00033}00033         \textcolor{keywordflow}{pass}}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00035}\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_a564ed4e2a7eb0a739da2480c364449a2}{00035}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_a859eb8513695693680ec18a8729d2101}{add\_recipe}}(self, recipe):}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00036}00036         self.recipes.add(recipe)}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00037}00037         \textcolor{keywordflow}{for} r \textcolor{keywordflow}{in} recipe.requirements.keys():}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00038}00038             self.add\_item(r, 0)}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00039}\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_a69ab76d573cb6416283c7b8e69106781}{00039}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_a69ab76d573cb6416283c7b8e69106781}{remove\_recipe}}(self, recipe):}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00040}00040         self.\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_a872f6bd1a730fd504265ccc7dd0c81f6}{recipes}}.remove(recipe)}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00042}\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_abd1d502cce2cc5002992c4b51d9f2157}{00042}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_abd1d502cce2cc5002992c4b51d9f2157}{get\_craftable}}(self):}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00043}00043         \textcolor{keywordflow}{return} [i \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_a872f6bd1a730fd504265ccc7dd0c81f6}{recipes}} \textcolor{keywordflow}{if} i.is\_craftable(self.items)]}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00045}\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_a4aa09513d047286d6ae5727a83e56a29}{00045}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_a4aa09513d047286d6ae5727a83e56a29}{get\_uncraftable}}(self):}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00046}00046         \textcolor{keywordflow}{return} [i \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_a872f6bd1a730fd504265ccc7dd0c81f6}{recipes}} \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} i.is\_craftable(self.items)]}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00048}\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_ad4ef877080872c1f5d388ea11db3cd6b}{00048}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_ad4ef877080872c1f5d388ea11db3cd6b}{craft}}(self, recipe):}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00049}00049         \textcolor{keywordflow}{if} recipe \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classsystems_1_1recipe_1_1_recipe_book_a872f6bd1a730fd504265ccc7dd0c81f6}{recipes}}:}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00050}00050             \textcolor{keywordflow}{if} recipe.is\_craftable(self.items):}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00051}00051                 self.add\_item(recipe.item)}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00052}00052                 \textcolor{keywordflow}{for} i, c \textcolor{keywordflow}{in} recipe.requirements.items():}
+\DoxyCodeLine{\Hypertarget{recipe_8py_source_l00053}00053                     self.remove\_item(i, c)}
+
+\end{DoxyCode}

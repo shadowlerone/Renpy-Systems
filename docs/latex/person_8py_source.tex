@@ -1,0 +1,25 @@
+\hypertarget{person_8py_source}{}\doxysection{person.\+py}
+\label{person_8py_source}\index{systems/person.py@{systems/person.py}}
+\mbox{\hyperlink{person_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{person_8py_source_l00001}\mbox{\hyperlink{namespacesystems_1_1person}{00001}} \textcolor{keyword}{from} .gameobject \textcolor{keyword}{import} GameObject}
+\DoxyCodeLine{\Hypertarget{person_8py_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{person_8py_source_l00003}\mbox{\hyperlink{classsystems_1_1person_1_1_person}{00003}} \textcolor{keyword}{class }\mbox{\hyperlink{classsystems_1_1person_1_1_person}{Person}}(\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object}{GameObject}}):}
+\DoxyCodeLine{\Hypertarget{person_8py_source_l00004}\mbox{\hyperlink{classsystems_1_1person_1_1_person_af26495ef72cea6fd98630417a36fac91}{00004}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1person_1_1_person_af26495ef72cea6fd98630417a36fac91}{\_\_init\_\_}}(self, id, name, description, base\_affinity):}
+\DoxyCodeLine{\Hypertarget{person_8py_source_l00005}00005         super(Person, self).\mbox{\hyperlink{classsystems_1_1person_1_1_person_af26495ef72cea6fd98630417a36fac91}{\_\_init\_\_}}(id, name, description)}
+\DoxyCodeLine{\Hypertarget{person_8py_source_l00006}\mbox{\hyperlink{classsystems_1_1person_1_1_person_aed6f48efebaaf010a9ea9a390ffa1c67}{00006}}         self.\mbox{\hyperlink{classsystems_1_1person_1_1_person_aed6f48efebaaf010a9ea9a390ffa1c67}{base\_affinity}} = base\_affinity}
+\DoxyCodeLine{\Hypertarget{person_8py_source_l00007}\mbox{\hyperlink{classsystems_1_1person_1_1_person_ae3b19740e43c97263c39bf43e2db3ebf}{00007}}         self.\mbox{\hyperlink{classsystems_1_1person_1_1_person_ae3b19740e43c97263c39bf43e2db3ebf}{affinity}} = base\_affinity}
+\DoxyCodeLine{\Hypertarget{person_8py_source_l00008}\mbox{\hyperlink{classsystems_1_1person_1_1_person_a9a0ab961253270bdb9454b58f77b8625}{00008}}         self.\mbox{\hyperlink{classsystems_1_1person_1_1_person_a9a0ab961253270bdb9454b58f77b8625}{location}} = \textcolor{stringliteral}{"{}"{}}}
+\DoxyCodeLine{\Hypertarget{person_8py_source_l00009}\mbox{\hyperlink{classsystems_1_1person_1_1_person_af9649f8bae3d8399c40a48cf7eacca04}{00009}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1person_1_1_person_af9649f8bae3d8399c40a48cf7eacca04}{set\_affinity}}(self, value):}
+\DoxyCodeLine{\Hypertarget{person_8py_source_l00010}00010         self.\mbox{\hyperlink{classsystems_1_1person_1_1_person_ae3b19740e43c97263c39bf43e2db3ebf}{affinity}} = value}
+\DoxyCodeLine{\Hypertarget{person_8py_source_l00011}\mbox{\hyperlink{classsystems_1_1person_1_1_person_ae2e7c4457ac43a2fa921302715c3603b}{00011}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1person_1_1_person_ae2e7c4457ac43a2fa921302715c3603b}{increase\_affinity}}(self, value=1):}
+\DoxyCodeLine{\Hypertarget{person_8py_source_l00012}00012         self.\mbox{\hyperlink{classsystems_1_1person_1_1_person_ae3b19740e43c97263c39bf43e2db3ebf}{affinity}} += value}
+\DoxyCodeLine{\Hypertarget{person_8py_source_l00013}\mbox{\hyperlink{classsystems_1_1person_1_1_person_acc8bcfd906b8422b09c828150bc387df}{00013}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1person_1_1_person_acc8bcfd906b8422b09c828150bc387df}{decrease\_affinity}}(self, value=1):}
+\DoxyCodeLine{\Hypertarget{person_8py_source_l00014}00014         self.\mbox{\hyperlink{classsystems_1_1person_1_1_person_ae3b19740e43c97263c39bf43e2db3ebf}{affinity}} -\/= value}
+\DoxyCodeLine{\Hypertarget{person_8py_source_l00015}\mbox{\hyperlink{classsystems_1_1person_1_1_person_a9bab22d1043a18d3ee91bda8995e44ed}{00015}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1person_1_1_person_a9bab22d1043a18d3ee91bda8995e44ed}{get\_affinity}}(self):}
+\DoxyCodeLine{\Hypertarget{person_8py_source_l00016}00016         \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1person_1_1_person_ae3b19740e43c97263c39bf43e2db3ebf}{affinity}}}
+\DoxyCodeLine{\Hypertarget{person_8py_source_l00017}\mbox{\hyperlink{classsystems_1_1person_1_1_person_aacef9d9c7dd02c58af9a383ebd4243bc}{00017}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1person_1_1_person_aacef9d9c7dd02c58af9a383ebd4243bc}{\_\_str\_\_}}(self):}
+\DoxyCodeLine{\Hypertarget{person_8py_source_l00018}00018         \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_a2a7d149c3e1a21ce18e83bf54db345b4}{name}}}
+\DoxyCodeLine{\Hypertarget{person_8py_source_l00019}00019 }
+
+\end{DoxyCode}

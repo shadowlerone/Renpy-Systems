@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classsystems_1_1recipe_1_1_recipe_book" xml:lang="en-US">
+<title>systems.recipe.RecipeBook Class Reference</title>
+<indexterm><primary>systems.recipe.RecipeBook</primary></indexterm>
+Inheritance diagram for systems.recipe.RecipeBook:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1recipe_1_1_recipe_book__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for systems.recipe.RecipeBook:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1recipe_1_1_recipe_book__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classsystems_1_1recipe_1_1_recipe_book_1a119f0a29a2ff33b259f2c4b31381408c">__init__</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1recipe_1_1_recipe_book_1a859eb8513695693680ec18a8729d2101">add_recipe</link> (self, recipe_id)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1recipe_1_1_recipe_book_1a564ed4e2a7eb0a739da2480c364449a2">add_recipe</link> (self, recipe)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1recipe_1_1_recipe_book_1a69ab76d573cb6416283c7b8e69106781">remove_recipe</link> (self, recipe)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1recipe_1_1_recipe_book_1abd1d502cce2cc5002992c4b51d9f2157">get_craftable</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1recipe_1_1_recipe_book_1a4aa09513d047286d6ae5727a83e56a29">get_uncraftable</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1recipe_1_1_recipe_book_1ad4ef877080872c1f5d388ea11db3cd6b">craft</link> (self, recipe)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classsystems_1_1recipe_1_1_recipe_book_1a872f6bd1a730fd504265ccc7dd0c81f6">recipes</link></para>
+</listitem>
+            <listitem><para><link linkend="_classsystems_1_1recipe_1_1_recipe_book_1aa21d5b46ed313fdefe4916558bc8ffff">current_recipe</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_recipe_8py_source_1l00028">28</link> of file <link linkend="_recipe_8py_source">recipe.py</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_book_1a119f0a29a2ff33b259f2c4b31381408c"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>systems.recipe.RecipeBook</secondary></indexterm>
+<indexterm><primary>systems.recipe.RecipeBook</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def systems.recipe.RecipeBook.__init__ ( self)</computeroutput></para><para>
+Definition at line <link linkend="_recipe_8py_source_1l00029">29</link> of file <link linkend="_recipe_8py_source">recipe.py</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_book_1a564ed4e2a7eb0a739da2480c364449a2"/><section>
+    <title>add_recipe()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>add_recipe</primary><secondary>systems.recipe.RecipeBook</secondary></indexterm>
+<indexterm><primary>systems.recipe.RecipeBook</primary><secondary>add_recipe</secondary></indexterm>
+<para><computeroutput>def systems.recipe.RecipeBook.add_recipe ( self,  recipe)</computeroutput></para><para>
+Definition at line <link linkend="_recipe_8py_source_1l00035">35</link> of file <link linkend="_recipe_8py_source">recipe.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_book_1a859eb8513695693680ec18a8729d2101"/><section>
+    <title>add_recipe()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>add_recipe</primary><secondary>systems.recipe.RecipeBook</secondary></indexterm>
+<indexterm><primary>systems.recipe.RecipeBook</primary><secondary>add_recipe</secondary></indexterm>
+<para><computeroutput>def systems.recipe.RecipeBook.add_recipe ( self,  recipe_id)</computeroutput></para><para>
+Definition at line <link linkend="_recipe_8py_source_1l00032">32</link> of file <link linkend="_recipe_8py_source">recipe.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_book_1ad4ef877080872c1f5d388ea11db3cd6b"/><section>
+    <title>craft()</title>
+<indexterm><primary>craft</primary><secondary>systems.recipe.RecipeBook</secondary></indexterm>
+<indexterm><primary>systems.recipe.RecipeBook</primary><secondary>craft</secondary></indexterm>
+<para><computeroutput>def systems.recipe.RecipeBook.craft ( self,  recipe)</computeroutput></para><para>
+Definition at line <link linkend="_recipe_8py_source_1l00048">48</link> of file <link linkend="_recipe_8py_source">recipe.py</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1recipe_1_1_recipe_book_ad4ef877080872c1f5d388ea11db3cd6b_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_book_1abd1d502cce2cc5002992c4b51d9f2157"/><section>
+    <title>get_craftable()</title>
+<indexterm><primary>get_craftable</primary><secondary>systems.recipe.RecipeBook</secondary></indexterm>
+<indexterm><primary>systems.recipe.RecipeBook</primary><secondary>get_craftable</secondary></indexterm>
+<para><computeroutput>def systems.recipe.RecipeBook.get_craftable ( self)</computeroutput></para><para>
+Definition at line <link linkend="_recipe_8py_source_1l00042">42</link> of file <link linkend="_recipe_8py_source">recipe.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_book_1a4aa09513d047286d6ae5727a83e56a29"/><section>
+    <title>get_uncraftable()</title>
+<indexterm><primary>get_uncraftable</primary><secondary>systems.recipe.RecipeBook</secondary></indexterm>
+<indexterm><primary>systems.recipe.RecipeBook</primary><secondary>get_uncraftable</secondary></indexterm>
+<para><computeroutput>def systems.recipe.RecipeBook.get_uncraftable ( self)</computeroutput></para><para>
+Definition at line <link linkend="_recipe_8py_source_1l00045">45</link> of file <link linkend="_recipe_8py_source">recipe.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_book_1a69ab76d573cb6416283c7b8e69106781"/><section>
+    <title>remove_recipe()</title>
+<indexterm><primary>remove_recipe</primary><secondary>systems.recipe.RecipeBook</secondary></indexterm>
+<indexterm><primary>systems.recipe.RecipeBook</primary><secondary>remove_recipe</secondary></indexterm>
+<para><computeroutput>def systems.recipe.RecipeBook.remove_recipe ( self,  recipe)</computeroutput></para><para>
+Definition at line <link linkend="_recipe_8py_source_1l00039">39</link> of file <link linkend="_recipe_8py_source">recipe.py</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_book_1aa21d5b46ed313fdefe4916558bc8ffff"/><section>
+    <title>current_recipe</title>
+<indexterm><primary>current_recipe</primary><secondary>systems.recipe.RecipeBook</secondary></indexterm>
+<indexterm><primary>systems.recipe.RecipeBook</primary><secondary>current_recipe</secondary></indexterm>
+<para><computeroutput>systems.recipe.RecipeBook.current_recipe</computeroutput></para><para>
+Definition at line <link linkend="_recipe_8py_source_1l00031">31</link> of file <link linkend="_recipe_8py_source">recipe.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_book_1a872f6bd1a730fd504265ccc7dd0c81f6"/><section>
+    <title>recipes</title>
+<indexterm><primary>recipes</primary><secondary>systems.recipe.RecipeBook</secondary></indexterm>
+<indexterm><primary>systems.recipe.RecipeBook</primary><secondary>recipes</secondary></indexterm>
+<para><computeroutput>systems.recipe.RecipeBook.recipes</computeroutput></para><para>
+Definition at line <link linkend="_recipe_8py_source_1l00030">30</link> of file <link linkend="_recipe_8py_source">recipe.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+systems/<link linkend="_recipe_8py">recipe.py</link></section>
+</section>

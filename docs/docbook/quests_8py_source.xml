@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_quests_8py_source" xml:lang="en-US">
+<title>quests.py</title>
+<indexterm><primary>systems/quests.py</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_quests_8py_source_1l00001"/><link linkend="_namespacesystems_1_1quests">00001</link> <emphasis role="keyword">from</emphasis>&#32;.gameobject&#32;<emphasis role="keyword">import</emphasis>&#32;GameObject
+<anchor xml:id="_quests_8py_source_1l00002"/>00002 
+<anchor xml:id="_quests_8py_source_1l00003"/><link linkend="_classsystems_1_1quests_1_1_quest">00003</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classsystems_1_1quests_1_1_quest">Quest</link>(<link linkend="_classsystems_1_1gameobject_1_1_game_object">GameObject</link>):
+<anchor xml:id="_quests_8py_source_1l00004"/><link linkend="_classsystems_1_1quests_1_1_quest_1a506e5d43ac95a74350033065673d1696">00004</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1quests_1_1_quest_1a506e5d43ac95a74350033065673d1696">__init__</link>(
+<anchor xml:id="_quests_8py_source_1l00005"/>00005 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self,
+<anchor xml:id="_quests_8py_source_1l00006"/>00006 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;id,&#32;
+<anchor xml:id="_quests_8py_source_1l00007"/>00007 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name,&#32;
+<anchor xml:id="_quests_8py_source_1l00008"/>00008 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;description,&#32;
+<anchor xml:id="_quests_8py_source_1l00009"/>00009 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;stages=[],
+<anchor xml:id="_quests_8py_source_1l00010"/>00010 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;first_stage=None,
+<anchor xml:id="_quests_8py_source_1l00011"/>00011 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;final_stage=None,
+<anchor xml:id="_quests_8py_source_1l00012"/>00012 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;):
+<anchor xml:id="_quests_8py_source_1l00013"/>00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;super(Quest,&#32;self).<link linkend="_classsystems_1_1quests_1_1_quest_1a506e5d43ac95a74350033065673d1696">__init__</link>(id,&#32;name,&#32;description)
+<anchor xml:id="_quests_8py_source_1l00014"/><link linkend="_classsystems_1_1quests_1_1_quest_1a6e2986196ce9266dae943f11b0b39906">00014</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.<link linkend="_classsystems_1_1quests_1_1_quest_1a6e2986196ce9266dae943f11b0b39906">stages</link>&#32;=&#32;{}
+<anchor xml:id="_quests_8py_source_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;qs&#32;<emphasis role="keywordflow">in</emphasis>&#32;stages:
+<anchor xml:id="_quests_8py_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.<link linkend="_classsystems_1_1quests_1_1_quest_1a6e2986196ce9266dae943f11b0b39906">stages</link>[qs.id]&#32;=&#32;qs
+<anchor xml:id="_quests_8py_source_1l00017"/><link linkend="_classsystems_1_1quests_1_1_quest_1a40f43eda1962e845ce4804ba8e60e5a9">00017</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.<link linkend="_classsystems_1_1quests_1_1_quest_1a40f43eda1962e845ce4804ba8e60e5a9">current_stage</link>&#32;=&#32;0
+<anchor xml:id="_quests_8py_source_1l00018"/><link linkend="_classsystems_1_1quests_1_1_quest_1a1ac33fb9661f0739369631cbae7e1637">00018</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.<link linkend="_classsystems_1_1quests_1_1_quest_1a1ac33fb9661f0739369631cbae7e1637">started</link>&#32;=&#32;<emphasis role="keyword">False</emphasis>
+<anchor xml:id="_quests_8py_source_1l00019"/><link linkend="_classsystems_1_1quests_1_1_quest_1a8f8536572daabd7a42e718edf846ced0">00019</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.<link linkend="_classsystems_1_1quests_1_1_quest_1a8f8536572daabd7a42e718edf846ced0">finished</link>&#32;=&#32;<emphasis role="keyword">False</emphasis>
+<anchor xml:id="_quests_8py_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;if&#32;final_stage&#32;==&#32;None:</emphasis>
+<anchor xml:id="_quests_8py_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;&#32;&#32;self.final_stage&#32;=&#32;len(stages)</emphasis>
+<anchor xml:id="_quests_8py_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;else:</emphasis>
+<anchor xml:id="_quests_8py_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;&#32;&#32;self.final_stage&#32;=&#32;final_stage</emphasis>
+<anchor xml:id="_quests_8py_source_1l00024"/>00024 
+<anchor xml:id="_quests_8py_source_1l00025"/><link linkend="_classsystems_1_1quests_1_1_quest_1a4a873682397bdbc0ed5d75c962efc23e">00025</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1quests_1_1_quest_1a4a873682397bdbc0ed5d75c962efc23e">start</link>(self,&#32;stage=None):
+<anchor xml:id="_quests_8py_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.<link linkend="_classsystems_1_1quests_1_1_quest_1a1ac33fb9661f0739369631cbae7e1637">started</link>&#32;=&#32;<emphasis role="keyword">True</emphasis>
+<anchor xml:id="_quests_8py_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;stage&#32;==&#32;<emphasis role="keywordtype">None</emphasis>:
+<anchor xml:id="_quests_8py_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.<link linkend="_classsystems_1_1quests_1_1_quest_1a40f43eda1962e845ce4804ba8e60e5a9">current_stage</link>&#32;=&#32;self.start_stage
+<anchor xml:id="_quests_8py_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>:
+<anchor xml:id="_quests_8py_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.<link linkend="_classsystems_1_1quests_1_1_quest_1a40f43eda1962e845ce4804ba8e60e5a9">current_stage</link>&#32;=&#32;stage
+<anchor xml:id="_quests_8py_source_1l00031"/>00031 
+<anchor xml:id="_quests_8py_source_1l00032"/><link linkend="_classsystems_1_1quests_1_1_quest_1a33bac13151a4840b1e8fcc76f8c516d2">00032</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1quests_1_1_quest_1a33bac13151a4840b1e8fcc76f8c516d2">get_stage</link>(self,&#32;stage=&#32;None):
+<anchor xml:id="_quests_8py_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;stage&#32;==&#32;<emphasis role="keywordtype">None</emphasis>:
+<anchor xml:id="_quests_8py_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;self.<link linkend="_classsystems_1_1quests_1_1_quest_1a6e2986196ce9266dae943f11b0b39906">stages</link>[self.<link linkend="_classsystems_1_1quests_1_1_quest_1a40f43eda1962e845ce4804ba8e60e5a9">current_stage</link>]
+<anchor xml:id="_quests_8py_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>:
+<anchor xml:id="_quests_8py_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;self.<link linkend="_classsystems_1_1quests_1_1_quest_1a6e2986196ce9266dae943f11b0b39906">stages</link>[stage]
+<anchor xml:id="_quests_8py_source_1l00037"/>00037 
+<anchor xml:id="_quests_8py_source_1l00038"/><link linkend="_classsystems_1_1quests_1_1_quest_1a2945b7f8020eb70ddacfbd77b49577e2">00038</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1quests_1_1_quest_1a2945b7f8020eb70ddacfbd77b49577e2">next_stage</link>(self):
+<anchor xml:id="_quests_8py_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.stage&#32;+=&#32;1
+<anchor xml:id="_quests_8py_source_1l00040"/>00040 
+<anchor xml:id="_quests_8py_source_1l00041"/>00041 &#32;&#32;&#32;&#32;<emphasis role="preprocessor">@staticmethod</emphasis>
+<anchor xml:id="_quests_8py_source_1l00042"/><link linkend="_classsystems_1_1quests_1_1_quest_1aa97e41d9a177bda9054a2e7a14bc8cb7">00042</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1quests_1_1_quest_1aa97e41d9a177bda9054a2e7a14bc8cb7">from_dict</link>(d):
+<anchor xml:id="_quests_8py_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_classsystems_1_1quests_1_1_quest">Quest</link>(
+<anchor xml:id="_quests_8py_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;d[<emphasis role="stringliteral">&apos;id&apos;</emphasis>],
+<anchor xml:id="_quests_8py_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;d[<emphasis role="stringliteral">&apos;name&apos;</emphasis>],&#32;
+<anchor xml:id="_quests_8py_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;d[<emphasis role="stringliteral">&apos;description&apos;</emphasis>],&#32;
+<anchor xml:id="_quests_8py_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;stages=[QuestStage.from_dict(s)&#32;<emphasis role="keywordflow">for</emphasis>&#32;s&#32;<emphasis role="keywordflow">in</emphasis>&#32;d[<emphasis role="stringliteral">&apos;stages&apos;</emphasis>]],
+<anchor xml:id="_quests_8py_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;first_stage=d[<emphasis role="stringliteral">&apos;first_stage&apos;</emphasis>],
+<anchor xml:id="_quests_8py_source_1l00049"/>00049 
+<anchor xml:id="_quests_8py_source_1l00050"/>00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;)
+<anchor xml:id="_quests_8py_source_1l00051"/>00051 
+<anchor xml:id="_quests_8py_source_1l00052"/><link linkend="_classsystems_1_1quests_1_1_quest_stage">00052</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classsystems_1_1quests_1_1_quest_stage">QuestStage</link>(<link linkend="_classsystems_1_1gameobject_1_1_game_object">GameObject</link>):
+<anchor xml:id="_quests_8py_source_1l00053"/><link linkend="_classsystems_1_1quests_1_1_quest_stage_1a82815376d97067d4dc3dcc02fef446f2">00053</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1quests_1_1_quest_stage_1a82815376d97067d4dc3dcc02fef446f2">__init__</link>(self,&#32;id,&#32;parent_quest_id,&#32;name=&apos;&apos;,&#32;description=&apos;&apos;,&#32;next_stage=0,&#32;substages&#32;=&#32;[]):
+<anchor xml:id="_quests_8py_source_1l00054"/>00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;super(QuestStage,&#32;self).<link linkend="_classsystems_1_1quests_1_1_quest_stage_1a82815376d97067d4dc3dcc02fef446f2">__init__</link>(<emphasis role="stringliteral">&quot;.&quot;</emphasis>.join(parent_quest_id,&#32;id),name,&#32;description)
+<anchor xml:id="_quests_8py_source_1l00055"/>00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;completed&#32;=&#32;<emphasis role="keyword">False</emphasis>
+<anchor xml:id="_quests_8py_source_1l00056"/><link linkend="_classsystems_1_1quests_1_1_quest_stage_1a37f60c2ab9dee0457916e20acb20adde">00056</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.<link linkend="_classsystems_1_1quests_1_1_quest_stage_1a37f60c2ab9dee0457916e20acb20adde">substages</link>&#32;=&#32;substages
+<anchor xml:id="_quests_8py_source_1l00057"/>00057 
+<anchor xml:id="_quests_8py_source_1l00058"/><link linkend="_classsystems_1_1quests_1_1_quest_stage_1af69eb4aece6270693fe65dc02d2c21d4">00058</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1quests_1_1_quest_stage_1af69eb4aece6270693fe65dc02d2c21d4">__str__</link>(self):
+<anchor xml:id="_quests_8py_source_1l00059"/>00059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;self.<link linkend="_classsystems_1_1gameobject_1_1_game_object_1a2a7d149c3e1a21ce18e83bf54db345b4">name</link>
+<anchor xml:id="_quests_8py_source_1l00060"/>00060 &#32;&#32;&#32;&#32;
+<anchor xml:id="_quests_8py_source_1l00061"/>00061 &#32;&#32;&#32;&#32;<emphasis role="preprocessor">@staticmethod</emphasis>
+<anchor xml:id="_quests_8py_source_1l00062"/><link linkend="_classsystems_1_1quests_1_1_quest_stage_1a959ece306a4e5ce9abc180021594a0f0">00062</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1quests_1_1_quest_stage_1a959ece306a4e5ce9abc180021594a0f0">from_dict</link>(d):
+<anchor xml:id="_quests_8py_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_classsystems_1_1quests_1_1_quest_stage">QuestStage</link>(name=d[<emphasis role="stringliteral">&apos;name&apos;</emphasis>],&#32;description=d[<emphasis role="stringliteral">&apos;description&apos;</emphasis>])
+<anchor xml:id="_quests_8py_source_1l00064"/>00064 
+<anchor xml:id="_quests_8py_source_1l00065"/><link linkend="_classsystems_1_1quests_1_1_quest_log">00065</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classsystems_1_1quests_1_1_quest_log">QuestLog</link>(object):
+<anchor xml:id="_quests_8py_source_1l00066"/><link linkend="_classsystems_1_1quests_1_1_quest_log_1a4c93b5ac927e2fb7a6f107d65dab768f">00066</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1quests_1_1_quest_log_1a4c93b5ac927e2fb7a6f107d65dab768f">__init__</link>(self):
+<anchor xml:id="_quests_8py_source_1l00067"/><link linkend="_classsystems_1_1quests_1_1_quest_log_1adef94754405eaa2f2a6d927d87c1b7d1">00067</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.<link linkend="_classsystems_1_1quests_1_1_quest_log_1adef94754405eaa2f2a6d927d87c1b7d1">quests</link>&#32;=&#32;{}
+<anchor xml:id="_quests_8py_source_1l00068"/>00068 &#32;&#32;&#32;&#32;
+<anchor xml:id="_quests_8py_source_1l00069"/><link linkend="_classsystems_1_1quests_1_1_quest_log_1aeefec1f7d521214a229a28ceb480819f">00069</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1quests_1_1_quest_log_1aeefec1f7d521214a229a28ceb480819f">get_quest</link>(self,&#32;id):
+<anchor xml:id="_quests_8py_source_1l00070"/>00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;self.<link linkend="_classsystems_1_1quests_1_1_quest_log_1adef94754405eaa2f2a6d927d87c1b7d1">quests</link>[id]
+</programlisting></section>

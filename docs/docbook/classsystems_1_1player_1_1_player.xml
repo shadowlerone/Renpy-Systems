@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classsystems_1_1player_1_1_player" xml:lang="en-US">
+<title>systems.player.Player Class Reference</title>
+<indexterm><primary>systems.player.Player</primary></indexterm>
+Inheritance diagram for systems.player.Player:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1player_1_1_player__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for systems.player.Player:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1player_1_1_player__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classsystems_1_1player_1_1_player_1acdc939d1de0da12351d9edbeec9ab996">__init__</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1player_1_1_player_1abde6a9dfa5d5349c8e34e635c245d510">get_craftable</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1player_1_1_player_1a91e675776ff9c491d5d5ef1cd9fb081d">get_uncraftable</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1player_1_1_player_1ae1a17a36e040ee120ac7221a3fc4e6cf">craft</link> (self, recipe)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classsystems_1_1player_1_1_player_1acaadd80428c39bce9786898191b5e310">inventory</link></para>
+</listitem>
+            <listitem><para><link linkend="_classsystems_1_1player_1_1_player_1aeed14f46f6db7508c01ef10fc71d979f">questlog</link></para>
+</listitem>
+            <listitem><para><link linkend="_classsystems_1_1player_1_1_player_1a0c101e78795a2089c8be6aad21fcf13f">recipebook</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_player_8py_source_1l00007">7</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classsystems_1_1player_1_1_player_1acdc939d1de0da12351d9edbeec9ab996"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>systems.player.Player</secondary></indexterm>
+<indexterm><primary>systems.player.Player</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def systems.player.Player.__init__ ( self)</computeroutput></para><para>
+Definition at line <link linkend="_player_8py_source_1l00008">8</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classsystems_1_1player_1_1_player_1ae1a17a36e040ee120ac7221a3fc4e6cf"/><section>
+    <title>craft()</title>
+<indexterm><primary>craft</primary><secondary>systems.player.Player</secondary></indexterm>
+<indexterm><primary>systems.player.Player</primary><secondary>craft</secondary></indexterm>
+<para><computeroutput>def systems.player.Player.craft ( self,  recipe)</computeroutput></para><para>
+Definition at line <link linkend="_player_8py_source_1l00019">19</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1player_1_1_player_1abde6a9dfa5d5349c8e34e635c245d510"/><section>
+    <title>get_craftable()</title>
+<indexterm><primary>get_craftable</primary><secondary>systems.player.Player</secondary></indexterm>
+<indexterm><primary>systems.player.Player</primary><secondary>get_craftable</secondary></indexterm>
+<para><computeroutput>def systems.player.Player.get_craftable ( self)</computeroutput></para><para>
+Definition at line <link linkend="_player_8py_source_1l00013">13</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1player_1_1_player_1a91e675776ff9c491d5d5ef1cd9fb081d"/><section>
+    <title>get_uncraftable()</title>
+<indexterm><primary>get_uncraftable</primary><secondary>systems.player.Player</secondary></indexterm>
+<indexterm><primary>systems.player.Player</primary><secondary>get_uncraftable</secondary></indexterm>
+<para><computeroutput>def systems.player.Player.get_uncraftable ( self)</computeroutput></para><para>
+Definition at line <link linkend="_player_8py_source_1l00016">16</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classsystems_1_1player_1_1_player_1acaadd80428c39bce9786898191b5e310"/><section>
+    <title>inventory</title>
+<indexterm><primary>inventory</primary><secondary>systems.player.Player</secondary></indexterm>
+<indexterm><primary>systems.player.Player</primary><secondary>inventory</secondary></indexterm>
+<para><computeroutput>systems.player.Player.inventory</computeroutput></para><para>
+Definition at line <link linkend="_player_8py_source_1l00009">9</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1player_1_1_player_1aeed14f46f6db7508c01ef10fc71d979f"/><section>
+    <title>questlog</title>
+<indexterm><primary>questlog</primary><secondary>systems.player.Player</secondary></indexterm>
+<indexterm><primary>systems.player.Player</primary><secondary>questlog</secondary></indexterm>
+<para><computeroutput>systems.player.Player.questlog</computeroutput></para><para>
+Definition at line <link linkend="_player_8py_source_1l00010">10</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1player_1_1_player_1a0c101e78795a2089c8be6aad21fcf13f"/><section>
+    <title>recipebook</title>
+<indexterm><primary>recipebook</primary><secondary>systems.player.Player</secondary></indexterm>
+<indexterm><primary>systems.player.Player</primary><secondary>recipebook</secondary></indexterm>
+<para><computeroutput>systems.player.Player.recipebook</computeroutput></para><para>
+Definition at line <link linkend="_player_8py_source_1l00011">11</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+systems/<link linkend="_player_8py">player.py</link></section>
+</section>

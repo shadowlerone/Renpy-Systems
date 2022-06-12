@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classsystems_1_1item_1_1_placeholder_inventory_item" xml:lang="en-US">
+<title>systems.item.PlaceholderInventoryItem Class Reference</title>
+<indexterm><primary>systems.item.PlaceholderInventoryItem</primary></indexterm>
+Inheritance diagram for systems.item.PlaceholderInventoryItem:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1item_1_1_placeholder_inventory_item__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for systems.item.PlaceholderInventoryItem:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1item_1_1_placeholder_inventory_item__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classsystems_1_1item_1_1_placeholder_inventory_item_1a4a7fa46251a0da36222919d0268f1df5">__init__</link> (self, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1aba5d7f2977d90fb287e79b092febe3cb">id</link>, <link linkend="_classsystems_1_1item_1_1_inventory_item_1ae89fa58519dad2484a7fddcfdc321a9e">count</link>=0)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_item_8py_source_1l00071">71</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classsystems_1_1item_1_1_placeholder_inventory_item_1a4a7fa46251a0da36222919d0268f1df5"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>systems.item.PlaceholderInventoryItem</secondary></indexterm>
+<indexterm><primary>systems.item.PlaceholderInventoryItem</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def systems.item.PlaceholderInventoryItem.__init__ ( self,  id,  count = <computeroutput>0</computeroutput>
+)</computeroutput></para><para>
+Reimplemented from <link linkend="_classsystems_1_1item_1_1_inventory_item_1af4a4aa34dc034729346ce72e2d173cb6">systems.item.InventoryItem</link>.</para>
+<para>
+Definition at line <link linkend="_item_8py_source_1l00072">72</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1item_1_1_placeholder_inventory_item_a4a7fa46251a0da36222919d0268f1df5_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1item_1_1_placeholder_inventory_item_a4a7fa46251a0da36222919d0268f1df5_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+systems/<link linkend="_item_8py">item.py</link></section>
+</section>

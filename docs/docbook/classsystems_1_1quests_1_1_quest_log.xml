@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classsystems_1_1quests_1_1_quest_log" xml:lang="en-US">
+<title>systems.quests.QuestLog Class Reference</title>
+<indexterm><primary>systems.quests.QuestLog</primary></indexterm>
+Inheritance diagram for systems.quests.QuestLog:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1quests_1_1_quest_log__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for systems.quests.QuestLog:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1quests_1_1_quest_log__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classsystems_1_1quests_1_1_quest_log_1a4c93b5ac927e2fb7a6f107d65dab768f">__init__</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1quests_1_1_quest_log_1aeefec1f7d521214a229a28ceb480819f">get_quest</link> (self, id)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classsystems_1_1quests_1_1_quest_log_1adef94754405eaa2f2a6d927d87c1b7d1">quests</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_quests_8py_source_1l00065">65</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classsystems_1_1quests_1_1_quest_log_1a4c93b5ac927e2fb7a6f107d65dab768f"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>systems.quests.QuestLog</secondary></indexterm>
+<indexterm><primary>systems.quests.QuestLog</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def systems.quests.QuestLog.__init__ ( self)</computeroutput></para><para>
+Definition at line <link linkend="_quests_8py_source_1l00066">66</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classsystems_1_1quests_1_1_quest_log_1aeefec1f7d521214a229a28ceb480819f"/><section>
+    <title>get_quest()</title>
+<indexterm><primary>get_quest</primary><secondary>systems.quests.QuestLog</secondary></indexterm>
+<indexterm><primary>systems.quests.QuestLog</primary><secondary>get_quest</secondary></indexterm>
+<para><computeroutput>def systems.quests.QuestLog.get_quest ( self,  id)</computeroutput></para><para>
+Definition at line <link linkend="_quests_8py_source_1l00069">69</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classsystems_1_1quests_1_1_quest_log_1adef94754405eaa2f2a6d927d87c1b7d1"/><section>
+    <title>quests</title>
+<indexterm><primary>quests</primary><secondary>systems.quests.QuestLog</secondary></indexterm>
+<indexterm><primary>systems.quests.QuestLog</primary><secondary>quests</secondary></indexterm>
+<para><computeroutput>systems.quests.QuestLog.quests</computeroutput></para><para>
+Definition at line <link linkend="_quests_8py_source_1l00067">67</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+systems/<link linkend="_quests_8py">quests.py</link></section>
+</section>

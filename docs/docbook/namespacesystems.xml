@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacesystems" xml:lang="en-US">
+<title>systems Namespace Reference</title>
+<indexterm><primary>systems</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacesystems_1_1database">database</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacesystems_1_1game">game</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacesystems_1_1gameobject">gameobject</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacesystems_1_1inventory">inventory</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacesystems_1_1item">item</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacesystems_1_1person">person</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacesystems_1_1player">player</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacesystems_1_1quests">quests</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacesystems_1_1recipe">recipe</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

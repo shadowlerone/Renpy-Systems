@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classsystems_1_1quests_1_1_quest" xml:lang="en-US">
+<title>systems.quests.Quest Class Reference</title>
+<indexterm><primary>systems.quests.Quest</primary></indexterm>
+Inheritance diagram for systems.quests.Quest:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1quests_1_1_quest__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for systems.quests.Quest:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1quests_1_1_quest__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classsystems_1_1quests_1_1_quest_1a506e5d43ac95a74350033065673d1696">__init__</link> (self, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1aba5d7f2977d90fb287e79b092febe3cb">id</link>, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1a2a7d149c3e1a21ce18e83bf54db345b4">name</link>, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1acedafdd78e44e6e95d155caf0a4b8cdd">description</link>, <link linkend="_classsystems_1_1quests_1_1_quest_1a6e2986196ce9266dae943f11b0b39906">stages</link>=[], first_stage=None, final_stage=None)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1quests_1_1_quest_1a4a873682397bdbc0ed5d75c962efc23e">start</link> (self, stage=None)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1quests_1_1_quest_1a33bac13151a4840b1e8fcc76f8c516d2">get_stage</link> (self, stage=None)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1quests_1_1_quest_1a2945b7f8020eb70ddacfbd77b49577e2">next_stage</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classsystems_1_1quests_1_1_quest_1aa97e41d9a177bda9054a2e7a14bc8cb7">from_dict</link> (d)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classsystems_1_1quests_1_1_quest_1a6e2986196ce9266dae943f11b0b39906">stages</link></para>
+</listitem>
+            <listitem><para><link linkend="_classsystems_1_1quests_1_1_quest_1a40f43eda1962e845ce4804ba8e60e5a9">current_stage</link></para>
+</listitem>
+            <listitem><para><link linkend="_classsystems_1_1quests_1_1_quest_1a1ac33fb9661f0739369631cbae7e1637">started</link></para>
+</listitem>
+            <listitem><para><link linkend="_classsystems_1_1quests_1_1_quest_1a8f8536572daabd7a42e718edf846ced0">finished</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_quests_8py_source_1l00003">3</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classsystems_1_1quests_1_1_quest_1a506e5d43ac95a74350033065673d1696"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>systems.quests.Quest</secondary></indexterm>
+<indexterm><primary>systems.quests.Quest</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def systems.quests.Quest.__init__ ( self,  id,  name,  description,  stages = <computeroutput>[]</computeroutput>
+,  first_stage = <computeroutput>None</computeroutput>
+,  final_stage = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+Reimplemented from <link linkend="_classsystems_1_1gameobject_1_1_game_object_1ae183a723dc362cdfbb392c062b64ebe0">systems.gameobject.GameObject</link>.</para>
+<para>
+Definition at line <link linkend="_quests_8py_source_1l00004">4</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1quests_1_1_quest_a506e5d43ac95a74350033065673d1696_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1quests_1_1_quest_a506e5d43ac95a74350033065673d1696_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classsystems_1_1quests_1_1_quest_1aa97e41d9a177bda9054a2e7a14bc8cb7"/><section>
+    <title>from_dict()</title>
+<indexterm><primary>from_dict</primary><secondary>systems.quests.Quest</secondary></indexterm>
+<indexterm><primary>systems.quests.Quest</primary><secondary>from_dict</secondary></indexterm>
+<para><computeroutput>def systems.quests.Quest.from_dict ( d)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_quests_8py_source_1l00042">42</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1quests_1_1_quest_1a33bac13151a4840b1e8fcc76f8c516d2"/><section>
+    <title>get_stage()</title>
+<indexterm><primary>get_stage</primary><secondary>systems.quests.Quest</secondary></indexterm>
+<indexterm><primary>systems.quests.Quest</primary><secondary>get_stage</secondary></indexterm>
+<para><computeroutput>def systems.quests.Quest.get_stage ( self,  stage = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+Definition at line <link linkend="_quests_8py_source_1l00032">32</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1quests_1_1_quest_1a2945b7f8020eb70ddacfbd77b49577e2"/><section>
+    <title>next_stage()</title>
+<indexterm><primary>next_stage</primary><secondary>systems.quests.Quest</secondary></indexterm>
+<indexterm><primary>systems.quests.Quest</primary><secondary>next_stage</secondary></indexterm>
+<para><computeroutput>def systems.quests.Quest.next_stage ( self)</computeroutput></para><para>
+Definition at line <link linkend="_quests_8py_source_1l00038">38</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1quests_1_1_quest_1a4a873682397bdbc0ed5d75c962efc23e"/><section>
+    <title>start()</title>
+<indexterm><primary>start</primary><secondary>systems.quests.Quest</secondary></indexterm>
+<indexterm><primary>systems.quests.Quest</primary><secondary>start</secondary></indexterm>
+<para><computeroutput>def systems.quests.Quest.start ( self,  stage = <computeroutput>None</computeroutput>
+)</computeroutput></para><para>
+Definition at line <link linkend="_quests_8py_source_1l00025">25</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classsystems_1_1quests_1_1_quest_1a40f43eda1962e845ce4804ba8e60e5a9"/><section>
+    <title>current_stage</title>
+<indexterm><primary>current_stage</primary><secondary>systems.quests.Quest</secondary></indexterm>
+<indexterm><primary>systems.quests.Quest</primary><secondary>current_stage</secondary></indexterm>
+<para><computeroutput>systems.quests.Quest.current_stage</computeroutput></para><para>
+Definition at line <link linkend="_quests_8py_source_1l00017">17</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1quests_1_1_quest_1a8f8536572daabd7a42e718edf846ced0"/><section>
+    <title>finished</title>
+<indexterm><primary>finished</primary><secondary>systems.quests.Quest</secondary></indexterm>
+<indexterm><primary>systems.quests.Quest</primary><secondary>finished</secondary></indexterm>
+<para><computeroutput>systems.quests.Quest.finished</computeroutput></para><para>
+Definition at line <link linkend="_quests_8py_source_1l00019">19</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1quests_1_1_quest_1a6e2986196ce9266dae943f11b0b39906"/><section>
+    <title>stages</title>
+<indexterm><primary>stages</primary><secondary>systems.quests.Quest</secondary></indexterm>
+<indexterm><primary>systems.quests.Quest</primary><secondary>stages</secondary></indexterm>
+<para><computeroutput>systems.quests.Quest.stages</computeroutput></para><para>
+Definition at line <link linkend="_quests_8py_source_1l00014">14</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1quests_1_1_quest_1a1ac33fb9661f0739369631cbae7e1637"/><section>
+    <title>started</title>
+<indexterm><primary>started</primary><secondary>systems.quests.Quest</secondary></indexterm>
+<indexterm><primary>systems.quests.Quest</primary><secondary>started</secondary></indexterm>
+<para><computeroutput>systems.quests.Quest.started</computeroutput></para><para>
+Definition at line <link linkend="_quests_8py_source_1l00018">18</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+systems/<link linkend="_quests_8py">quests.py</link></section>
+</section>

@@ -1,0 +1,79 @@
+\hypertarget{item_8py_source}{}\doxysection{item.\+py}
+\label{item_8py_source}\index{systems/item.py@{systems/item.py}}
+\mbox{\hyperlink{item_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00001}\mbox{\hyperlink{namespacesystems_1_1item}{00001}} \textcolor{keyword}{from} .gameobject \textcolor{keyword}{import} GameObject}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00003}\mbox{\hyperlink{classsystems_1_1item_1_1_item}{00003}} \textcolor{keyword}{class }\mbox{\hyperlink{classsystems_1_1item_1_1_item}{Item}}(\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object}{GameObject}}):}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00004}\mbox{\hyperlink{classsystems_1_1item_1_1_item_a1bcb05d8e59d5d9c739cded13c3efbb3}{00004}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1item_1_1_item_a1bcb05d8e59d5d9c739cded13c3efbb3}{\_\_init\_\_}}(self, id, name, description= '', image\_path=''):}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00005}00005         super(Item, self).\mbox{\hyperlink{classsystems_1_1item_1_1_item_a1bcb05d8e59d5d9c739cded13c3efbb3}{\_\_init\_\_}}(id, name, description)}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00006}\mbox{\hyperlink{classsystems_1_1item_1_1_item_ab5e4a58b0326404787d6f79e37ec0f0f}{00006}}         self.\mbox{\hyperlink{classsystems_1_1item_1_1_item_ab5e4a58b0326404787d6f79e37ec0f0f}{image\_path}} = image\_path}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00007}\mbox{\hyperlink{classsystems_1_1item_1_1_item_ad1a0f13cc4cc184ac870f9d721c60977}{00007}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1item_1_1_item_ad1a0f13cc4cc184ac870f9d721c60977}{\_\_str\_\_}}(self):}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00008}00008         \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_a2a7d149c3e1a21ce18e83bf54db345b4}{name}}}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00009}00009     \textcolor{preprocessor}{@staticmethod}}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00010}\mbox{\hyperlink{classsystems_1_1item_1_1_item_a4144aa239cf0dd626351d680d2189d43}{00010}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1item_1_1_item_a4144aa239cf0dd626351d680d2189d43}{from\_dict}}(d):}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00011}00011         \textcolor{keywordflow}{if} \textcolor{stringliteral}{'id'} \textcolor{keywordflow}{in} d:}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00012}00012             id = d[\textcolor{stringliteral}{'id'}]}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00013}00013         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00014}00014             id = d[\textcolor{stringliteral}{'name'}]}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00015}00015         }
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00016}00016         \textcolor{keywordflow}{if} \textcolor{stringliteral}{'image\_path'} \textcolor{keywordflow}{in} d:}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00017}00017             ip = d[\textcolor{stringliteral}{'image\_path'}]}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00018}00018         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00019}00019             ip = \textcolor{stringliteral}{"{}items/\{\}"{}}.format(id)}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00020}00020         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsystems_1_1item_1_1_item}{Item}}(id, d[\textcolor{stringliteral}{'name'}], d[\textcolor{stringliteral}{'description'}], image\_path=ip)}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00022}\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item}{00022}} \textcolor{keyword}{class }\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item}{InventoryItem}}(\mbox{\hyperlink{classsystems_1_1item_1_1_item}{Item}}):}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00023}\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_af4a4aa34dc034729346ce72e2d173cb6}{00023}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_af4a4aa34dc034729346ce72e2d173cb6}{\_\_init\_\_}}(self,id,  name, description='', image\_path='', count = 0):}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00024}00024         super(InventoryItem, self).\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_af4a4aa34dc034729346ce72e2d173cb6}{\_\_init\_\_}}(id, name, description, image\_path)}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00025}00025         \textcolor{keywordflow}{if} count < 0:}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00026}00026             \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"{}Count cannot be less than 0"{}})}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00027}\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_ae89fa58519dad2484a7fddcfdc321a9e}{00027}}         self.\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_ae89fa58519dad2484a7fddcfdc321a9e}{count}} = count}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00028}00028     }
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00029}\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_aa6e8f55565dcb952c9046b4aa196f236}{00029}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_aa6e8f55565dcb952c9046b4aa196f236}{set\_count}}(self, count):}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00030}00030         \textcolor{keywordflow}{if} type(count) != int:}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00031}00031             \textcolor{keywordflow}{raise} TypeError(\textcolor{stringliteral}{"{}\{\} is of type \{\}, not \{\}"{}}.format(count, type(count), int))}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00032}00032         \textcolor{keywordflow}{if} count < 0:}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00033}00033             \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"{}Count cannot be less than 0"{}})}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00034}00034         }
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00035}00035         self.\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_ae89fa58519dad2484a7fddcfdc321a9e}{count}} = count}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00036}\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_a68402517c1ab32ab1d1c95d10630f267}{00036}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_a68402517c1ab32ab1d1c95d10630f267}{\_\_iadd\_\_}}(self, other):}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00037}00037         \textcolor{keywordflow}{if} type(other) != int:}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00038}00038             \textcolor{keywordflow}{raise} TypeError(\textcolor{stringliteral}{"{}\{\} is of type \{\}, not \{\}"{}}.format(other, type(other), int))}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00040}00040         \textcolor{keywordflow}{if} other < 0:}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00041}00041             \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"{}Can't add negative number of items"{}}.format(other, self.\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_ae89fa58519dad2484a7fddcfdc321a9e}{count}}))}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00043}00043         self.\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_ae89fa58519dad2484a7fddcfdc321a9e}{count}} += other}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00044}00044         \textcolor{keywordflow}{return} self}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00045}00045     }
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00046}\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_ab3880e1b0fbb8a4fe38e2f65d942803b}{00046}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_ab3880e1b0fbb8a4fe38e2f65d942803b}{\_\_isub\_\_}}(self, other):}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00047}00047         \textcolor{keywordflow}{if} type(other) != int:}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00048}00048             \textcolor{keywordflow}{raise} TypeError(\textcolor{stringliteral}{"{}\{\} is of type \{\}, not \{\}"{}}.format(other, type(other), int))}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00050}00050         \textcolor{keywordflow}{if} other < 0:}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00051}00051             \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"{}Can't remove a negative number of items"{}}.format(other, self.\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_ae89fa58519dad2484a7fddcfdc321a9e}{count}}))}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00052}00052         \textcolor{keywordflow}{if} self.\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_ae89fa58519dad2484a7fddcfdc321a9e}{count}} -\/ other < 0:}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00053}00053             \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"{}Removing \{\} to current count (\{\}) will result in a count less than 0"{}}.format(other, self.\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_ae89fa58519dad2484a7fddcfdc321a9e}{count}}))}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00054}00054         }
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00055}00055         self.\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_ae89fa58519dad2484a7fddcfdc321a9e}{count}} -\/= other}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00056}00056         \textcolor{keywordflow}{return} self}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00058}00058     \textcolor{preprocessor}{@staticmethod}}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00059}\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_a1cc91593c2c82b4a77285220c6e8de96}{00059}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_a1cc91593c2c82b4a77285220c6e8de96}{from\_item}}(item, count = 0):}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00060}00060         \textcolor{keywordflow}{if} type(item) != Item:}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00061}00061             \textcolor{keywordflow}{raise} TypeError(\textcolor{stringliteral}{"{}\{\} is of type \{\}, not \{\}"{}}.format(item, type(item), Item))}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00062}00062         }
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00063}00063         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item}{InventoryItem}}(item.id, item.name, item.description, item.image\_path, count)}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00064}00064     }
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00065}00065     \textcolor{preprocessor}{@staticmethod}}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00066}\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_ae95b386159a56fcc79ab76bcb1d9d3b6}{00066}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_ae95b386159a56fcc79ab76bcb1d9d3b6}{from\_dict}}(d):}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00067}00067         \textcolor{keywordflow}{if} type(d) != dict:}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00068}00068             \textcolor{keywordflow}{raise} TypeError(\textcolor{stringliteral}{"{}\{\} is of type \{\}, not \{\}"{}}.format(d, type(d), dict))}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00069}00069         \textcolor{keywordflow}{return} InventoryItem.from\_item(super(InventoryItem, InventoryItem).\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item_ae95b386159a56fcc79ab76bcb1d9d3b6}{from\_dict}}(d))}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00071}\mbox{\hyperlink{classsystems_1_1item_1_1_placeholder_inventory_item}{00071}} \textcolor{keyword}{class }\mbox{\hyperlink{classsystems_1_1item_1_1_placeholder_inventory_item}{PlaceholderInventoryItem}}(\mbox{\hyperlink{classsystems_1_1item_1_1_inventory_item}{InventoryItem}}):}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00072}\mbox{\hyperlink{classsystems_1_1item_1_1_placeholder_inventory_item_a4a7fa46251a0da36222919d0268f1df5}{00072}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1item_1_1_placeholder_inventory_item_a4a7fa46251a0da36222919d0268f1df5}{\_\_init\_\_}}(self,id, count=0):}
+\DoxyCodeLine{\Hypertarget{item_8py_source_l00073}00073         super(PlaceholderInventoryItem, self).\mbox{\hyperlink{classsystems_1_1item_1_1_placeholder_inventory_item_a4a7fa46251a0da36222919d0268f1df5}{\_\_init\_\_}}(id, \textcolor{stringliteral}{"{}placeholder"{}}, \textcolor{stringliteral}{"{}placeholder"{}}, \textcolor{stringliteral}{"{}placeholder"{}}, count=count)}
+
+\end{DoxyCode}

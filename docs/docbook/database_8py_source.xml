@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_database_8py_source" xml:lang="en-US">
+<title>database.py</title>
+<indexterm><primary>systems/database.py</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_database_8py_source_1l00001"/><link linkend="_namespacesystems">00001</link> <emphasis role="keyword">import</emphasis>&#32;json
+<anchor xml:id="_database_8py_source_1l00002"/>00002 <emphasis role="keyword">import</emphasis>&#32;os.path&#32;<emphasis role="keyword">as</emphasis>&#32;path
+<anchor xml:id="_database_8py_source_1l00003"/>00003 <emphasis role="keyword">from</emphasis>&#32;.item&#32;<emphasis role="keyword">import</emphasis>&#32;Item
+<anchor xml:id="_database_8py_source_1l00004"/>00004 <emphasis role="keyword">from</emphasis>&#32;.recipe&#32;<emphasis role="keyword">import</emphasis>&#32;Recipe,&#32;RecipeBook
+<anchor xml:id="_database_8py_source_1l00005"/><link linkend="_classsystems_1_1database_1_1_database">00005</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classsystems_1_1database_1_1_database">Database</link>(object):
+<anchor xml:id="_database_8py_source_1l00006"/><link linkend="_classsystems_1_1database_1_1_database_1ae88b2cf4bfd42a0f97126c3888b08093">00006</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1database_1_1_database_1ae88b2cf4bfd42a0f97126c3888b08093">__init__</link>(
+<anchor xml:id="_database_8py_source_1l00007"/>00007 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self,
+<anchor xml:id="_database_8py_source_1l00008"/>00008 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;directory=&apos;data&apos;,&#32;
+<anchor xml:id="_database_8py_source_1l00009"/>00009 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;item_fp=&apos;items.json&apos;,&#32;
+<anchor xml:id="_database_8py_source_1l00010"/>00010 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;recipe_fp=&apos;recipes.json&apos;
+<anchor xml:id="_database_8py_source_1l00011"/>00011 &#32;&#32;&#32;&#32;):
+<anchor xml:id="_database_8py_source_1l00012"/><link linkend="_classsystems_1_1database_1_1_database_1a1f56514ed45936404077190fd9ee2629">00012</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.directory,&#32;self.items_fp,&#32;self.<link linkend="_classsystems_1_1database_1_1_database_1a1f56514ed45936404077190fd9ee2629">recipes_fp</link>&#32;=&#32;directory,&#32;item_fp,&#32;recipe_fp
+<anchor xml:id="_database_8py_source_1l00013"/>00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;self.item_list&#32;=&#32;self.load_items_from_file()</emphasis>
+<anchor xml:id="_database_8py_source_1l00014"/><link linkend="_classsystems_1_1database_1_1_database_1a4479a0266adc641b4dd623e598e02930">00014</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.<link linkend="_classsystems_1_1database_1_1_database_1a4479a0266adc641b4dd623e598e02930">items</link>&#32;=&#32;{}
+<anchor xml:id="_database_8py_source_1l00015"/><link linkend="_classsystems_1_1database_1_1_database_1a313a714187f831c4189f9fd1a0172b85">00015</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.<link linkend="_classsystems_1_1database_1_1_database_1a313a714187f831c4189f9fd1a0172b85">recipes</link>&#32;=&#32;{}
+<anchor xml:id="_database_8py_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;self.recipe_list&#32;=&#32;self.load_recipes_from_file()</emphasis>
+<anchor xml:id="_database_8py_source_1l00017"/>00017 
+<anchor xml:id="_database_8py_source_1l00018"/><link linkend="_classsystems_1_1database_1_1_database_1ae9390d3807a6a781fb7914480fc65186">00018</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1database_1_1_database_1ae9390d3807a6a781fb7914480fc65186">load_items_from_file</link>(self,&#32;file):
+<anchor xml:id="_database_8py_source_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;data&#32;=&#32;json.load(file)
+<anchor xml:id="_database_8py_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;items&#32;=&#32;{}
+<anchor xml:id="_database_8py_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;i&#32;<emphasis role="keywordflow">in</emphasis>&#32;data:
+<anchor xml:id="_database_8py_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;items[i[<emphasis role="stringliteral">&apos;id&apos;</emphasis>]&#32;<emphasis role="keywordflow">if</emphasis>&#32;<emphasis role="stringliteral">&apos;id&apos;</emphasis>&#32;<emphasis role="keywordflow">in</emphasis>&#32;i&#32;<emphasis role="keywordflow">else</emphasis>&#32;i[<emphasis role="stringliteral">&apos;name&apos;</emphasis>].lower()]&#32;=&#32;Item.from_dict(i)
+<anchor xml:id="_database_8py_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.<link linkend="_classsystems_1_1database_1_1_database_1a4479a0266adc641b4dd623e598e02930">items</link>&#32;=&#32;items
+<anchor xml:id="_database_8py_source_1l00024"/>00024 
+<anchor xml:id="_database_8py_source_1l00025"/><link linkend="_classsystems_1_1database_1_1_database_1ad12b50fec2c22d2df20651cb48844311">00025</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1database_1_1_database_1ad12b50fec2c22d2df20651cb48844311">load_recipes_from_file</link>(self,&#32;file):
+<anchor xml:id="_database_8py_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;data&#32;=&#32;json.load(file)
+<anchor xml:id="_database_8py_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;recipes&#32;=&#32;{}
+<anchor xml:id="_database_8py_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;r&#32;<emphasis role="keywordflow">in</emphasis>&#32;data:
+<anchor xml:id="_database_8py_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;recipes[r[<emphasis role="stringliteral">&apos;id&apos;</emphasis>]&#32;<emphasis role="keywordflow">if</emphasis>&#32;<emphasis role="stringliteral">&apos;id&apos;</emphasis>&#32;<emphasis role="keywordflow">in</emphasis>&#32;r&#32;<emphasis role="keywordflow">else</emphasis>&#32;r[<emphasis role="stringliteral">&apos;name&apos;</emphasis>].lower()]&#32;=&#32;Recipe.from_dict(r)
+<anchor xml:id="_database_8py_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.<link linkend="_classsystems_1_1database_1_1_database_1a313a714187f831c4189f9fd1a0172b85">recipes</link>&#32;=&#32;recipes
+<anchor xml:id="_database_8py_source_1l00031"/>00031 &#32;&#32;&#32;&#32;
+<anchor xml:id="_database_8py_source_1l00032"/><link linkend="_classsystems_1_1database_1_1_database_1a62ca49b164a863f5f9e6538f25b3274c">00032</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1database_1_1_database_1a62ca49b164a863f5f9e6538f25b3274c">get_item</link>(self,&#32;item_id=&apos;&apos;):
+<anchor xml:id="_database_8py_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;self.item_list[item_id]
+<anchor xml:id="_database_8py_source_1l00034"/>00034 
+<anchor xml:id="_database_8py_source_1l00035"/><link linkend="_classsystems_1_1database_1_1_database_1aac860297aa534950d9754facfdda4848">00035</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1database_1_1_database_1aac860297aa534950d9754facfdda4848">get_recipe</link>(self,&#32;recipe_id=&apos;&apos;):
+<anchor xml:id="_database_8py_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;self.<link linkend="_classsystems_1_1database_1_1_database_1a313a714187f831c4189f9fd1a0172b85">recipes</link>[recipe_id]
+</programlisting></section>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_game_8py_source" xml:lang="en-US">
+<title>game.py</title>
+<indexterm><primary>systems/game.py</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_game_8py_source_1l00001"/><link linkend="_namespacesystems_1_1game">00001</link> 
+<anchor xml:id="_game_8py_source_1l00002"/>00002 
+<anchor xml:id="_game_8py_source_1l00003"/><link linkend="_classsystems_1_1game_1_1_game">00003</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classsystems_1_1game_1_1_game">Game</link>(object):
+<anchor xml:id="_game_8py_source_1l00004"/><link linkend="_classsystems_1_1game_1_1_game_1a0dad2af0de9d446b1c89ff17b6b3967c">00004</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1game_1_1_game_1a0dad2af0de9d446b1c89ff17b6b3967c">__init__</link>(self):
+<anchor xml:id="_game_8py_source_1l00005"/><link linkend="_classsystems_1_1game_1_1_game_1a8d2c7ed5a3b01cdfbc317e59fd0b9f40">00005</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.<link linkend="_classsystems_1_1game_1_1_game_1a8d2c7ed5a3b01cdfbc317e59fd0b9f40">people</link>&#32;=&#32;{}
+<anchor xml:id="_game_8py_source_1l00006"/>00006 &#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;characters&#32;=&#32;{</emphasis>
+<anchor xml:id="_game_8py_source_1l00007"/>00007 &#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;&#32;&#32;#&#32;list&#32;of&#32;character&#32;and&#32;info</emphasis>
+<anchor xml:id="_game_8py_source_1l00008"/>00008 &#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;}</emphasis>
+</programlisting></section>
