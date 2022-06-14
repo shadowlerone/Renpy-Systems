@@ -34,3 +34,6 @@ class Database(object):
 
 	def get_recipe(self, recipe_id=''):
 		return self.recipes[recipe_id]
+	
+	def get_quest(self, quest_id):
+		pass

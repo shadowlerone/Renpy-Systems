@@ -1,0 +1,27 @@
+{
+	"$schema": "http://json-schema.org/schema",
+	"$id": "https://singlecellstudios.ca/systems.item.schema.json",
+	"title":"item",
+	"description":"A game item.",
+	"type":"object",
+	"properties": {
+		"name": {
+			"description":"The name of the item",
+			"type":"string"
+		},
+		"id": {
+			"description":"This is the item id. This must be unique.",
+			"type":"string"
+		},
+		"image": {
+			"description": "This is the filepath to the item's image",
+			"type":"string"
+		},
+		"icon": {
+			"description": "Path to item's icon",
+			"type":"string"
+		}
+	},
+	"required": ["name","id"]
+	
+}

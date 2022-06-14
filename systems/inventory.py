@@ -30,9 +30,15 @@ class Inventory():
 		if type(key) == str:
 			return key in self.items
 		elif type(key) == dict:
-			return self.items[key['id']].count >= key['count']
+			if key['id'] in self.items:
+				return self.items[key['id']].count >= key['count']
+			else:
+				return False
 		elif type(key) == tuple:
-			return self.items[key[0]].count >= key[1]
+			if key[0] in self.items:
+				return self.items[key[0]].count >= key[1]
+			else:
+				return False
 		elif type(key) == list:
 			if all([type(i) == tuple for i in key]):
 				if all([len(i) == 2 for i in key]):

@@ -1,0 +1,6 @@
+{
+	"$schema": "http://json-schema.org/schema",
+	"$id":"https://singlecellstudios.ca/systems.questr.schema.json",
+	"title":"quest",
+	"description": "An object that describes a quest."
+}

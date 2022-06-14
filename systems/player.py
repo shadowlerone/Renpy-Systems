@@ -18,3 +18,7 @@ class Player(object):
 
 	def craft(self, recipe):
 		pass
+
+	def start_quest(self, quest_id, quest_object):
+		self.questlog.add_quest(quest_id, quest_object)
+		# self.questlog

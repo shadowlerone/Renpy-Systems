@@ -1,0 +1,12 @@
+{
+	"id": "test_quest",
+	"substages": [],
+	"requirements": {
+		"item": {
+			"all": false,
+			"ids": [
+				["paint_bucket", 1]
+			]
+		}
+	}
+}
