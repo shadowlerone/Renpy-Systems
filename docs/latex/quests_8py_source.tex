@@ -20,57 +20,85 @@
 \DoxyCodeLine{\Hypertarget{quests_8py_source_l00016}00016             self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a6e2986196ce9266dae943f11b0b39906}{stages}}[qs.id] = qs}
 \DoxyCodeLine{\Hypertarget{quests_8py_source_l00017}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a40f43eda1962e845ce4804ba8e60e5a9}{00017}}         self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a40f43eda1962e845ce4804ba8e60e5a9}{current\_stage}} = 0}
 \DoxyCodeLine{\Hypertarget{quests_8py_source_l00018}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a1ac33fb9661f0739369631cbae7e1637}{00018}}         self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a1ac33fb9661f0739369631cbae7e1637}{started}} = \textcolor{keyword}{False}}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00019}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a8f8536572daabd7a42e718edf846ced0}{00019}}         self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a8f8536572daabd7a42e718edf846ced0}{finished}} = \textcolor{keyword}{False}}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00020}00020         \textcolor{comment}{\# if final\_stage == None:}}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00021}00021         \textcolor{comment}{\#   self.final\_stage = len(stages)}}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00022}00022         \textcolor{comment}{\# else:}}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00023}00023         \textcolor{comment}{\#   self.final\_stage = final\_stage}}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00024}00024 }
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00025}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a4a873682397bdbc0ed5d75c962efc23e}{00025}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a4a873682397bdbc0ed5d75c962efc23e}{start}}(self, stage=None):}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00026}00026         self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a1ac33fb9661f0739369631cbae7e1637}{started}} = \textcolor{keyword}{True}}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00027}00027         \textcolor{keywordflow}{if} stage == \textcolor{keywordtype}{None}:}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00028}00028             self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a40f43eda1962e845ce4804ba8e60e5a9}{current\_stage}} = self.start\_stage}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00029}00029         \textcolor{keywordflow}{else}:}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00030}00030             self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a40f43eda1962e845ce4804ba8e60e5a9}{current\_stage}} = stage}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00031}00031 }
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00032}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a33bac13151a4840b1e8fcc76f8c516d2}{00032}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a33bac13151a4840b1e8fcc76f8c516d2}{get\_stage}}(self, stage= None):}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00033}00033         \textcolor{keywordflow}{if} stage == \textcolor{keywordtype}{None}:}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00034}00034             \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a6e2986196ce9266dae943f11b0b39906}{stages}}[self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a40f43eda1962e845ce4804ba8e60e5a9}{current\_stage}}]}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00035}00035         \textcolor{keywordflow}{else}:}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00036}00036             \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a6e2986196ce9266dae943f11b0b39906}{stages}}[stage]}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00037}00037 }
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00038}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a2945b7f8020eb70ddacfbd77b49577e2}{00038}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a2945b7f8020eb70ddacfbd77b49577e2}{next\_stage}}(self):}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00039}00039         self.stage += 1}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00040}00040 }
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00041}00041     \textcolor{preprocessor}{@staticmethod}}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00042}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_aa97e41d9a177bda9054a2e7a14bc8cb7}{00042}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_aa97e41d9a177bda9054a2e7a14bc8cb7}{from\_dict}}(d):}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00043}00043         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsystems_1_1quests_1_1_quest}{Quest}}(}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00044}00044             d[\textcolor{stringliteral}{'id'}],}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00045}00045             d[\textcolor{stringliteral}{'name'}], }
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00046}00046             d[\textcolor{stringliteral}{'description'}], }
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00047}00047             stages=[QuestStage.from\_dict(s) \textcolor{keywordflow}{for} s \textcolor{keywordflow}{in} d[\textcolor{stringliteral}{'stages'}]],}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00048}00048             first\_stage=d[\textcolor{stringliteral}{'first\_stage'}],}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00049}00049 }
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00050}00050             )}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00019}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a85cb8b27615bd76d0950a9c8c266b605}{00019}}         self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a85cb8b27615bd76d0950a9c8c266b605}{complete}} = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00020}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a537e85fb916dbf56304db4030a33b471}{00020}}         self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a537e85fb916dbf56304db4030a33b471}{first\_stage}} = first\_stage}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00021}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_ab302040819db638e57e5287393932ee4}{00021}}         self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_ab302040819db638e57e5287393932ee4}{final\_stage}} = final\_stage}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00022}00022         \textcolor{comment}{\# if final\_stage == None:}}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00023}00023         \textcolor{comment}{\#   self.final\_stage = len(stages)}}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00024}00024         \textcolor{comment}{\# else:}}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00025}00025         \textcolor{comment}{\#   self.final\_stage = final\_stage}}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00027}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a4a873682397bdbc0ed5d75c962efc23e}{00027}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a4a873682397bdbc0ed5d75c962efc23e}{start}}(self, stage=None):}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00028}00028         self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a1ac33fb9661f0739369631cbae7e1637}{started}} = \textcolor{keyword}{True}}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00029}00029         \textcolor{keywordflow}{if} stage == \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00030}00030             self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a40f43eda1962e845ce4804ba8e60e5a9}{current\_stage}} = self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a537e85fb916dbf56304db4030a33b471}{first\_stage}}}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00031}00031         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00032}00032             self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a40f43eda1962e845ce4804ba8e60e5a9}{current\_stage}} = stage}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00034}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a33bac13151a4840b1e8fcc76f8c516d2}{00034}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a33bac13151a4840b1e8fcc76f8c516d2}{get\_stage}}(self, stage= None):}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00035}00035         \textcolor{keywordflow}{if} stage == \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00036}00036             \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a6e2986196ce9266dae943f11b0b39906}{stages}}[\textcolor{stringliteral}{"{}."{}}.join([self.\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_aba5d7f2977d90fb287e79b092febe3cb}{id}}, str(self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a40f43eda1962e845ce4804ba8e60e5a9}{current\_stage}})])]}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00037}00037         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00038}00038             \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a6e2986196ce9266dae943f11b0b39906}{stages}}[\textcolor{stringliteral}{"{}."{}}.join([self.\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_aba5d7f2977d90fb287e79b092febe3cb}{id}}, str(stage)])]}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00040}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a2945b7f8020eb70ddacfbd77b49577e2}{00040}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a2945b7f8020eb70ddacfbd77b49577e2}{next\_stage}}(self):}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00041}00041         self.stage += 1}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00043}00043     \textcolor{preprocessor}{@staticmethod}}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00044}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_aa97e41d9a177bda9054a2e7a14bc8cb7}{00044}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_aa97e41d9a177bda9054a2e7a14bc8cb7}{from\_dict}}(d):}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00045}00045         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsystems_1_1quests_1_1_quest}{Quest}}(}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00046}00046             d[\textcolor{stringliteral}{'id'}],}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00047}00047             d[\textcolor{stringliteral}{'name'}], }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00048}00048             d[\textcolor{stringliteral}{'description'}], }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00049}00049             stages=[QuestStage.from\_dict(s) \textcolor{keywordflow}{for} s \textcolor{keywordflow}{in} d[\textcolor{stringliteral}{'stages'}]],}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00050}00050             first\_stage=d[\textcolor{stringliteral}{'first\_stage'}],}
 \DoxyCodeLine{\Hypertarget{quests_8py_source_l00051}00051 }
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00052}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage}{00052}} \textcolor{keyword}{class }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage}{QuestStage}}(\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object}{GameObject}}):}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00053}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_a82815376d97067d4dc3dcc02fef446f2}{00053}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_a82815376d97067d4dc3dcc02fef446f2}{\_\_init\_\_}}(self, id, parent\_quest\_id, name='', description='', next\_stage=0, substages = []):}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00054}00054         super(QuestStage, self).\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_a82815376d97067d4dc3dcc02fef446f2}{\_\_init\_\_}}(\textcolor{stringliteral}{"{}."{}}.join(parent\_quest\_id, id),name, description)}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00055}00055         completed = \textcolor{keyword}{False}}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00056}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_a37f60c2ab9dee0457916e20acb20adde}{00056}}         self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_a37f60c2ab9dee0457916e20acb20adde}{substages}} = substages}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00057}00057 }
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00058}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_af69eb4aece6270693fe65dc02d2c21d4}{00058}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_af69eb4aece6270693fe65dc02d2c21d4}{\_\_str\_\_}}(self):}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00059}00059         \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_a2a7d149c3e1a21ce18e83bf54db345b4}{name}}}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00060}00060     }
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00061}00061     \textcolor{preprocessor}{@staticmethod}}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00062}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_a959ece306a4e5ce9abc180021594a0f0}{00062}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_a959ece306a4e5ce9abc180021594a0f0}{from\_dict}}(d):}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00063}00063         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage}{QuestStage}}(name=d[\textcolor{stringliteral}{'name'}], description=d[\textcolor{stringliteral}{'description'}])}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00064}00064 }
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00065}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log}{00065}} \textcolor{keyword}{class }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log}{QuestLog}}(object):}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00066}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_a4c93b5ac927e2fb7a6f107d65dab768f}{00066}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_a4c93b5ac927e2fb7a6f107d65dab768f}{\_\_init\_\_}}(self):}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00067}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_adef94754405eaa2f2a6d927d87c1b7d1}{00067}}         self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_adef94754405eaa2f2a6d927d87c1b7d1}{quests}} = \{\}}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00068}00068     }
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00069}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_aeefec1f7d521214a229a28ceb480819f}{00069}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_aeefec1f7d521214a229a28ceb480819f}{get\_quest}}(self, id):}
-\DoxyCodeLine{\Hypertarget{quests_8py_source_l00070}00070         \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_adef94754405eaa2f2a6d927d87c1b7d1}{quests}}[id]}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00052}00052             )}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00054}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage}{00054}} \textcolor{keyword}{class }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage}{QuestStage}}(\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object}{GameObject}}):}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00055}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_a67a01eb10393b202f36d0562509866bb}{00055}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_a67a01eb10393b202f36d0562509866bb}{\_\_init\_\_}}(}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00056}00056         self, }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00057}00057         id, }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00058}00058         parent\_quest\_id, }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00059}00059         name='', }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00060}00060         description='', }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00061}00061         next\_stage=0, }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00062}00062         substages = [],}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00063}00063         requirements= \{\}}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00064}00064     ):}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00065}00065         super(QuestStage, self).\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_a67a01eb10393b202f36d0562509866bb}{\_\_init\_\_}}(\textcolor{stringliteral}{"{}."{}}.join([parent\_quest\_id, str(id)]),name, description)}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00066}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_a1da11e317bde7c3a5897a04b673681e4}{00066}}         self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_a1da11e317bde7c3a5897a04b673681e4}{complete}} = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00067}00067         \textcolor{keywordflow}{for} ss \textcolor{keywordflow}{in} substages:}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00068}00068             \textcolor{keywordflow}{pass}}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00069}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_a37f60c2ab9dee0457916e20acb20adde}{00069}}         self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_a37f60c2ab9dee0457916e20acb20adde}{substages}} = substages}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00070}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_aac9db10d0c6153e8c2b649d5e850fb53}{00070}}         self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_aac9db10d0c6153e8c2b649d5e850fb53}{requirements}} = requirements}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00072}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_af69eb4aece6270693fe65dc02d2c21d4}{00072}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_af69eb4aece6270693fe65dc02d2c21d4}{\_\_str\_\_}}(self):}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00073}00073         \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_a2a7d149c3e1a21ce18e83bf54db345b4}{name}}}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00076}00076     \textcolor{preprocessor}{@staticmethod}}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00077}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_a959ece306a4e5ce9abc180021594a0f0}{00077}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage_a959ece306a4e5ce9abc180021594a0f0}{from\_dict}}(d):}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00078}00078         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsystems_1_1quests_1_1_quest_stage}{QuestStage}}(name=d[\textcolor{stringliteral}{'name'}], description=d[\textcolor{stringliteral}{'description'}])}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00080}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log}{00080}} \textcolor{keyword}{class }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log}{QuestLog}}(object):}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00081}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_a4c93b5ac927e2fb7a6f107d65dab768f}{00081}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_a4c93b5ac927e2fb7a6f107d65dab768f}{\_\_init\_\_}}(self):}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00082}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_adef94754405eaa2f2a6d927d87c1b7d1}{00082}}         self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_adef94754405eaa2f2a6d927d87c1b7d1}{quests}} = \{\}}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00083}00083     }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00084}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_aeefec1f7d521214a229a28ceb480819f}{00084}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_aeefec1f7d521214a229a28ceb480819f}{get\_quest}}(self, id):}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00085}00085         \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_adef94754405eaa2f2a6d927d87c1b7d1}{quests}}[id]}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00087}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_a45f6cf5bd71ca27aa99ec77059acd004}{00087}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_a45f6cf5bd71ca27aa99ec77059acd004}{add\_quest}}(self, id, quest):}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00088}00088         self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_adef94754405eaa2f2a6d927d87c1b7d1}{quests}}[id] = quest}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00089}00089         self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_adef94754405eaa2f2a6d927d87c1b7d1}{quests}}[id].start()}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00091}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_a0be65bc410203e8982352398f23cc80b}{00091}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_a0be65bc410203e8982352398f23cc80b}{get\_active}}(self):}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00092}00092         qs = [q.get\_stage() \textcolor{keywordflow}{for} q \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_adef94754405eaa2f2a6d927d87c1b7d1}{quests}}.values() \textcolor{keywordflow}{if} (q.started \textcolor{keywordflow}{and} \textcolor{keywordflow}{not} q.complete)]}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00093}00093         sq = [q.substages \textcolor{keywordflow}{for} q \textcolor{keywordflow}{in} qs]}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00094}00094         \textcolor{comment}{\# python is objectively a stupid language. This is just to flatten a list. Fuck's sake.}}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00095}00095         \textcolor{keywordflow}{return} qs + [s \textcolor{keywordflow}{for} sublist \textcolor{keywordflow}{in} sq \textcolor{keywordflow}{for} s \textcolor{keywordflow}{in} sublist]}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00097}\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_ad4c2b23e819ab33594de9d9f292cc0f5}{00097}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_ad4c2b23e819ab33594de9d9f292cc0f5}{\_\_getitem\_\_}}(self, key):}
+\DoxyCodeLine{\Hypertarget{quests_8py_source_l00098}00098         \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_log_adef94754405eaa2f2a6d927d87c1b7d1}{quests}}[key]}
 
 \end{DoxyCode}

@@ -22,4 +22,8 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 <anchor xml:id="_player_8py_source_1l00018"/>00018 
 <anchor xml:id="_player_8py_source_1l00019"/><link linkend="_classsystems_1_1player_1_1_player_1ae1a17a36e040ee120ac7221a3fc4e6cf">00019</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1player_1_1_player_1ae1a17a36e040ee120ac7221a3fc4e6cf">craft</link>(self,&#32;recipe):
 <anchor xml:id="_player_8py_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">pass</emphasis>
+<anchor xml:id="_player_8py_source_1l00021"/>00021 
+<anchor xml:id="_player_8py_source_1l00022"/><link linkend="_classsystems_1_1player_1_1_player_1a8d3c8a24a7b74cb4648486b2eeda35f0">00022</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1player_1_1_player_1a8d3c8a24a7b74cb4648486b2eeda35f0">start_quest</link>(self,&#32;quest_id,&#32;quest_object):
+<anchor xml:id="_player_8py_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;self.questlog.add_quest(quest_id,&#32;quest_object)
+<anchor xml:id="_player_8py_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;self.questlog</emphasis>
 </programlisting></section>

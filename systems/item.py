@@ -1,9 +1,10 @@
 from .gameobject import GameObject
 
 class Item(GameObject):
-	def __init__(self, id, name, description= '', image_path=''):
+	def __init__(self, id, name, description= '', image_path='', icon_path = ""):
 		super(Item, self).__init__(id, name, description)
 		self.image_path = image_path
+		self.icon_path = icon_path
 	def __str__(self):
 		return self.name
 	@staticmethod
@@ -27,14 +28,14 @@ class InventoryItem(Item):
 		self.count = count
 	
 	def set_count(self, count):
-		if type(count) != int:
+		if not isinstance(count, int):
 			raise TypeError("{} is of type {}, not {}".format(count, type(count), int))
 		if count < 0:
 			raise ValueError("Count cannot be less than 0")
 		
 		self.count = count
 	def __iadd__(self, other):
-		if type(other) != int:
+		if not isinstance(other, int):
 			raise TypeError("{} is of type {}, not {}".format(other, type(other), int))
 
 		if other < 0:
@@ -44,7 +45,7 @@ class InventoryItem(Item):
 		return self
 	
 	def __isub__(self, other):
-		if type(other) != int:
+		if not isinstance(other, int):
 			raise TypeError("{} is of type {}, not {}".format(other, type(other), int))
 
 		if other < 0:
@@ -57,14 +58,14 @@ class InventoryItem(Item):
 
 	@staticmethod
 	def from_item(item, count = 0):
-		if type(item) != Item:
+		if not isinstance(item, Item):# if type(item) != Item:
 			raise TypeError("{} is of type {}, not {}".format(item, type(item), Item))
 		
 		return InventoryItem(item.id, item.name, item.description, item.image_path, count)
 	
 	@staticmethod
 	def from_dict(d):
-		if type(d) != dict:
+		if not isinstance(d, dict):
 			raise TypeError("{} is of type {}, not {}".format(d, type(d), dict))
 		return InventoryItem.from_item(super(InventoryItem, InventoryItem).from_dict(d))
 

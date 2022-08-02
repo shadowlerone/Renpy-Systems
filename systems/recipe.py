@@ -1,10 +1,10 @@
 from .gameobject import GameObject
 
 class Recipe(GameObject):
-	def __init__(self, name, requirements, item, description=''):
-		super(Recipe, self).__init__(name, description)
+	def __init__(self, id, name, requirements, items, description=''):
+		super(Recipe, self).__init__(id, name, description)
 		self.requirements = requirements
-		self.item = item
+		self.items = items
 	def is_craftable(self, item_list):
 
 		pass
@@ -28,17 +28,15 @@ class Recipe(GameObject):
 class RecipeBook(object):
 	def __init__(self):
 		self.recipes = {}
-		self.current_recipe = Recipe("Nothing here", {"not sure": 0}, None)
-	def add_recipe(self, recipe_id):
-		pass
+		self.current_recipe = Recipe("", "Nothing here", [("nothing", 0)], [(None, 0)])
 
 	def add_recipe(self, recipe):
-		self.recipes.add(recipe)
-		for r in recipe.requirements.keys():
-			self.add_item(r, 0)
+		self.recipes[recipe.id] = recipe
 	def remove_recipe(self, recipe):
 		self.recipes.remove(recipe)
 
+	def get_recipe(recipe_id):
+		return self.recipes[recipe_id]
 	def get_craftable(self):
 		return [i for i in self.recipes if i.is_craftable(self.items)]
 

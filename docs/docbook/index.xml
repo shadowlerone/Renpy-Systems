@@ -4,6 +4,10 @@
     <title>Detritus 2 - Systems</title>
     </info>
 <chapter>
+    <title>requirements_syntax</title>
+    <xi:include href="md_systems_requirements_syntax.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
     <title>Namespace Documentation</title>
 <xi:include href="namespacesystems.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <xi:include href="namespacesystems_1_1database.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -55,6 +59,7 @@
     <xi:include href="quests_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="recipe_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="recipe_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="requirements__syntax_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </chapter>
 <index/>
 </book>

@@ -21,7 +21,7 @@ Collaboration diagram for systems.\+quests.\+Quest\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a506e5d43ac95a74350033065673d1696}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_aba5d7f2977d90fb287e79b092febe3cb}{id}}, \mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_a2a7d149c3e1a21ce18e83bf54db345b4}{name}}, \mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_acedafdd78e44e6e95d155caf0a4b8cdd}{description}}, \mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a6e2986196ce9266dae943f11b0b39906}{stages}}=\mbox{[}$\,$\mbox{]}, first\+\_\+stage=None, final\+\_\+stage=None)
+def \mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a506e5d43ac95a74350033065673d1696}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_aba5d7f2977d90fb287e79b092febe3cb}{id}}, \mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_a2a7d149c3e1a21ce18e83bf54db345b4}{name}}, \mbox{\hyperlink{classsystems_1_1gameobject_1_1_game_object_acedafdd78e44e6e95d155caf0a4b8cdd}{description}}, \mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a6e2986196ce9266dae943f11b0b39906}{stages}}=\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a537e85fb916dbf56304db4030a33b471}{first\+\_\+stage}}=None, \mbox{\hyperlink{classsystems_1_1quests_1_1_quest_ab302040819db638e57e5287393932ee4}{final\+\_\+stage}}=None)
 \item 
 def \mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a4a873682397bdbc0ed5d75c962efc23e}{start}} (self, stage=None)
 \item 
@@ -43,7 +43,11 @@ def \mbox{\hyperlink{classsystems_1_1quests_1_1_quest_aa97e41d9a177bda9054a2e7a1
 \item 
 \mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a1ac33fb9661f0739369631cbae7e1637}{started}}
 \item 
-\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a8f8536572daabd7a42e718edf846ced0}{finished}}
+\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a85cb8b27615bd76d0950a9c8c266b605}{complete}}
+\item 
+\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_a537e85fb916dbf56304db4030a33b471}{first\+\_\+stage}}
+\item 
+\mbox{\hyperlink{classsystems_1_1quests_1_1_quest_ab302040819db638e57e5287393932ee4}{final\+\_\+stage}}
 \end{DoxyCompactItemize}
 
 
@@ -94,7 +98,7 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
-Definition at line \mbox{\hyperlink{quests_8py_source_l00042}{42}} of file \mbox{\hyperlink{quests_8py_source}{quests.\+py}}.
+Definition at line \mbox{\hyperlink{quests_8py_source_l00044}{44}} of file \mbox{\hyperlink{quests_8py_source}{quests.\+py}}.
 
 \mbox{\Hypertarget{classsystems_1_1quests_1_1_quest_a33bac13151a4840b1e8fcc76f8c516d2}\label{classsystems_1_1quests_1_1_quest_a33bac13151a4840b1e8fcc76f8c516d2}} 
 \index{systems.quests.Quest@{systems.quests.Quest}!get\_stage@{get\_stage}}
@@ -104,7 +108,7 @@ Definition at line \mbox{\hyperlink{quests_8py_source_l00042}{42}} of file \mbox
 
 
 
-Definition at line \mbox{\hyperlink{quests_8py_source_l00032}{32}} of file \mbox{\hyperlink{quests_8py_source}{quests.\+py}}.
+Definition at line \mbox{\hyperlink{quests_8py_source_l00034}{34}} of file \mbox{\hyperlink{quests_8py_source}{quests.\+py}}.
 
 \mbox{\Hypertarget{classsystems_1_1quests_1_1_quest_a2945b7f8020eb70ddacfbd77b49577e2}\label{classsystems_1_1quests_1_1_quest_a2945b7f8020eb70ddacfbd77b49577e2}} 
 \index{systems.quests.Quest@{systems.quests.Quest}!next\_stage@{next\_stage}}
@@ -114,7 +118,7 @@ Definition at line \mbox{\hyperlink{quests_8py_source_l00032}{32}} of file \mbox
 
 
 
-Definition at line \mbox{\hyperlink{quests_8py_source_l00038}{38}} of file \mbox{\hyperlink{quests_8py_source}{quests.\+py}}.
+Definition at line \mbox{\hyperlink{quests_8py_source_l00040}{40}} of file \mbox{\hyperlink{quests_8py_source}{quests.\+py}}.
 
 \mbox{\Hypertarget{classsystems_1_1quests_1_1_quest_a4a873682397bdbc0ed5d75c962efc23e}\label{classsystems_1_1quests_1_1_quest_a4a873682397bdbc0ed5d75c962efc23e}} 
 \index{systems.quests.Quest@{systems.quests.Quest}!start@{start}}
@@ -124,11 +128,21 @@ Definition at line \mbox{\hyperlink{quests_8py_source_l00038}{38}} of file \mbox
 
 
 
-Definition at line \mbox{\hyperlink{quests_8py_source_l00025}{25}} of file \mbox{\hyperlink{quests_8py_source}{quests.\+py}}.
+Definition at line \mbox{\hyperlink{quests_8py_source_l00027}{27}} of file \mbox{\hyperlink{quests_8py_source}{quests.\+py}}.
 
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystems_1_1quests_1_1_quest_a85cb8b27615bd76d0950a9c8c266b605}\label{classsystems_1_1quests_1_1_quest_a85cb8b27615bd76d0950a9c8c266b605}} 
+\index{systems.quests.Quest@{systems.quests.Quest}!complete@{complete}}
+\index{complete@{complete}!systems.quests.Quest@{systems.quests.Quest}}
+\doxysubsubsection{\texorpdfstring{complete}{complete}}
+{\footnotesize\ttfamily systems.\+quests.\+Quest.\+complete}
+
+
+
+Definition at line \mbox{\hyperlink{quests_8py_source_l00019}{19}} of file \mbox{\hyperlink{quests_8py_source}{quests.\+py}}.
+
 \mbox{\Hypertarget{classsystems_1_1quests_1_1_quest_a40f43eda1962e845ce4804ba8e60e5a9}\label{classsystems_1_1quests_1_1_quest_a40f43eda1962e845ce4804ba8e60e5a9}} 
 \index{systems.quests.Quest@{systems.quests.Quest}!current\_stage@{current\_stage}}
 \index{current\_stage@{current\_stage}!systems.quests.Quest@{systems.quests.Quest}}
@@ -139,15 +153,25 @@ Definition at line \mbox{\hyperlink{quests_8py_source_l00025}{25}} of file \mbox
 
 Definition at line \mbox{\hyperlink{quests_8py_source_l00017}{17}} of file \mbox{\hyperlink{quests_8py_source}{quests.\+py}}.
 
-\mbox{\Hypertarget{classsystems_1_1quests_1_1_quest_a8f8536572daabd7a42e718edf846ced0}\label{classsystems_1_1quests_1_1_quest_a8f8536572daabd7a42e718edf846ced0}} 
-\index{systems.quests.Quest@{systems.quests.Quest}!finished@{finished}}
-\index{finished@{finished}!systems.quests.Quest@{systems.quests.Quest}}
-\doxysubsubsection{\texorpdfstring{finished}{finished}}
-{\footnotesize\ttfamily systems.\+quests.\+Quest.\+finished}
+\mbox{\Hypertarget{classsystems_1_1quests_1_1_quest_ab302040819db638e57e5287393932ee4}\label{classsystems_1_1quests_1_1_quest_ab302040819db638e57e5287393932ee4}} 
+\index{systems.quests.Quest@{systems.quests.Quest}!final\_stage@{final\_stage}}
+\index{final\_stage@{final\_stage}!systems.quests.Quest@{systems.quests.Quest}}
+\doxysubsubsection{\texorpdfstring{final\_stage}{final\_stage}}
+{\footnotesize\ttfamily systems.\+quests.\+Quest.\+final\+\_\+stage}
 
 
 
-Definition at line \mbox{\hyperlink{quests_8py_source_l00019}{19}} of file \mbox{\hyperlink{quests_8py_source}{quests.\+py}}.
+Definition at line \mbox{\hyperlink{quests_8py_source_l00021}{21}} of file \mbox{\hyperlink{quests_8py_source}{quests.\+py}}.
+
+\mbox{\Hypertarget{classsystems_1_1quests_1_1_quest_a537e85fb916dbf56304db4030a33b471}\label{classsystems_1_1quests_1_1_quest_a537e85fb916dbf56304db4030a33b471}} 
+\index{systems.quests.Quest@{systems.quests.Quest}!first\_stage@{first\_stage}}
+\index{first\_stage@{first\_stage}!systems.quests.Quest@{systems.quests.Quest}}
+\doxysubsubsection{\texorpdfstring{first\_stage}{first\_stage}}
+{\footnotesize\ttfamily systems.\+quests.\+Quest.\+first\+\_\+stage}
+
+
+
+Definition at line \mbox{\hyperlink{quests_8py_source_l00020}{20}} of file \mbox{\hyperlink{quests_8py_source}{quests.\+py}}.
 
 \mbox{\Hypertarget{classsystems_1_1quests_1_1_quest_a6e2986196ce9266dae943f11b0b39906}\label{classsystems_1_1quests_1_1_quest_a6e2986196ce9266dae943f11b0b39906}} 
 \index{systems.quests.Quest@{systems.quests.Quest}!stages@{stages}}

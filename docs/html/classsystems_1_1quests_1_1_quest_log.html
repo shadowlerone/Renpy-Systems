@@ -99,6 +99,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4c93b5ac927e2fb7a6f107d65dab768f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeefec1f7d521214a229a28ceb480819f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsystems_1_1quests_1_1_quest_log.html#aeefec1f7d521214a229a28ceb480819f">get_quest</a> (self, id)</td></tr>
 <tr class="separator:aeefec1f7d521214a229a28ceb480819f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f6cf5bd71ca27aa99ec77059acd004"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsystems_1_1quests_1_1_quest_log.html#a45f6cf5bd71ca27aa99ec77059acd004">add_quest</a> (self, id, quest)</td></tr>
+<tr class="separator:a45f6cf5bd71ca27aa99ec77059acd004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0be65bc410203e8982352398f23cc80b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsystems_1_1quests_1_1_quest_log.html#a0be65bc410203e8982352398f23cc80b">get_active</a> (self)</td></tr>
+<tr class="separator:a0be65bc410203e8982352398f23cc80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4c2b23e819ab33594de9d9f292cc0f5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsystems_1_1quests_1_1_quest_log.html#ad4c2b23e819ab33594de9d9f292cc0f5">__getitem__</a> (self, key)</td></tr>
+<tr class="separator:ad4c2b23e819ab33594de9d9f292cc0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -107,7 +113,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="quests_8py_source.html#l00065">65</a> of file <a class="el" href="quests_8py_source.html">quests.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quests_8py_source.html#l00080">80</a> of file <a class="el" href="quests_8py_source.html">quests.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4c93b5ac927e2fb7a6f107d65dab768f" name="a4c93b5ac927e2fb7a6f107d65dab768f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4c93b5ac927e2fb7a6f107d65dab768f">&#9670;&nbsp;</a></span>__init__()</h2>
@@ -125,11 +131,97 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="quests_8py_source.html#l00066">66</a> of file <a class="el" href="quests_8py_source.html">quests.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quests_8py_source.html#l00081">81</a> of file <a class="el" href="quests_8py_source.html">quests.py</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad4c2b23e819ab33594de9d9f292cc0f5" name="ad4c2b23e819ab33594de9d9f292cc0f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4c2b23e819ab33594de9d9f292cc0f5">&#9670;&nbsp;</a></span>__getitem__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def systems.quests.QuestLog.__getitem__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="quests_8py_source.html#l00097">97</a> of file <a class="el" href="quests_8py_source.html">quests.py</a>.</p>
+
+</div>
+</div>
+<a id="a45f6cf5bd71ca27aa99ec77059acd004" name="a45f6cf5bd71ca27aa99ec77059acd004"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45f6cf5bd71ca27aa99ec77059acd004">&#9670;&nbsp;</a></span>add_quest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def systems.quests.QuestLog.add_quest </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>quest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="quests_8py_source.html#l00087">87</a> of file <a class="el" href="quests_8py_source.html">quests.py</a>.</p>
+
+</div>
+</div>
+<a id="a0be65bc410203e8982352398f23cc80b" name="a0be65bc410203e8982352398f23cc80b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0be65bc410203e8982352398f23cc80b">&#9670;&nbsp;</a></span>get_active()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def systems.quests.QuestLog.get_active </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="quests_8py_source.html#l00091">91</a> of file <a class="el" href="quests_8py_source.html">quests.py</a>.</p>
+
+</div>
+</div>
 <a id="aeefec1f7d521214a229a28ceb480819f" name="aeefec1f7d521214a229a28ceb480819f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeefec1f7d521214a229a28ceb480819f">&#9670;&nbsp;</a></span>get_quest()</h2>
 
@@ -156,7 +248,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="quests_8py_source.html#l00069">69</a> of file <a class="el" href="quests_8py_source.html">quests.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quests_8py_source.html#l00084">84</a> of file <a class="el" href="quests_8py_source.html">quests.py</a>.</p>
 
 </div>
 </div>
@@ -173,7 +265,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="quests_8py_source.html#l00067">67</a> of file <a class="el" href="quests_8py_source.html">quests.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="quests_8py_source.html#l00082">82</a> of file <a class="el" href="quests_8py_source.html">quests.py</a>.</p>
 
 </div>
 </div>

@@ -31,6 +31,8 @@ Collaboration diagram for systems.player.Player:<para>
 </listitem>
             <listitem><para>def <link linkend="_classsystems_1_1player_1_1_player_1ae1a17a36e040ee120ac7221a3fc4e6cf">craft</link> (self, recipe)</para>
 </listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1player_1_1_player_1a8d3c8a24a7b74cb4648486b2eeda35f0">start_quest</link> (self, quest_id, quest_object)</para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
@@ -81,6 +83,13 @@ Definition at line <link linkend="_player_8py_source_1l00013">13</link> of file 
 <indexterm><primary>systems.player.Player</primary><secondary>get_uncraftable</secondary></indexterm>
 <para><computeroutput>def systems.player.Player.get_uncraftable ( self)</computeroutput></para><para>
 Definition at line <link linkend="_player_8py_source_1l00016">16</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1player_1_1_player_1a8d3c8a24a7b74cb4648486b2eeda35f0"/><section>
+    <title>start_quest()</title>
+<indexterm><primary>start_quest</primary><secondary>systems.player.Player</secondary></indexterm>
+<indexterm><primary>systems.player.Player</primary><secondary>start_quest</secondary></indexterm>
+<para><computeroutput>def systems.player.Player.start_quest ( self,  quest_id,  quest_object)</computeroutput></para><para>
+Definition at line <link linkend="_player_8py_source_1l00022">22</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
 </section>
 </section>
 <section>

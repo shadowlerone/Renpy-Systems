@@ -34,35 +34,41 @@
 \DoxyCodeLine{\Hypertarget{inventory_8py_source_l00030}00030         \textcolor{keywordflow}{if} type(key) == str:}
 \DoxyCodeLine{\Hypertarget{inventory_8py_source_l00031}00031             \textcolor{keywordflow}{return} key \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}{items}}}
 \DoxyCodeLine{\Hypertarget{inventory_8py_source_l00032}00032         \textcolor{keywordflow}{elif} type(key) == dict:}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00033}00033             \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}{items}}[key[\textcolor{stringliteral}{'id'}]].count >= key[\textcolor{stringliteral}{'count'}]}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00034}00034         \textcolor{keywordflow}{elif} type(key) == tuple:}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00035}00035             \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}{items}}[key[0]].count >= key[1]}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00036}00036         \textcolor{keywordflow}{elif} type(key) == list:}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00037}00037             \textcolor{keywordflow}{if} all([type(i) == tuple \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} key]):}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00038}00038                 \textcolor{keywordflow}{if} all([len(i) == 2 \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} key]):}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00039}00039                     \textcolor{keywordflow}{return} all([self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}{items}}[i[0]].count >= i[1] \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} key])}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00040}00040                 \textcolor{keywordflow}{else}:}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00041}00041                     \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"{}All tuples must be of types (<str>, <int>"{}})}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00042}00042             \textcolor{keywordflow}{elif} len(key) == 2:}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00043}00043                 \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}{items}}[key[0]].count >= key[1]}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00044}00044             \textcolor{keywordflow}{else}:}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00045}00045                 \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"{}Must be a list of tuples of types (<str>, <int>)"{}})}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00046}00046         \textcolor{keywordflow}{else}:}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00047}00047             \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"{}Input must be of types <str>, <dict>, <tuple>, list[<str>, <int>] or list[(<str>,<int>)]"{}})}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00048}00048 }
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00049}00049     }
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00050}\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_ad71d92b5ac7b2b852780a28e2ece8976}{00050}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_ad71d92b5ac7b2b852780a28e2ece8976}{get\_items}}(self):}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00051}00051         \textcolor{keywordflow}{return} [[\textcolor{stringliteral}{"{}\{\} x\{\}"{}}.format(i[0], i[1]), i[0]] \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} list(filter(\textcolor{keyword}{lambda} i: i[1] > 0, self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}{items}}.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}{items}}()))]}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00052}00052 }
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00053}\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a023d4484ac865705321f25b073194c18}{00053}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a023d4484ac865705321f25b073194c18}{get\_item\_count}}(self, item):}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00054}00054         \textcolor{keywordflow}{if} self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}{items}}.has\_key(item):}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00055}00055             \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}{items}}[item]}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00056}00056         \textcolor{keywordflow}{return} 0}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00057}00057 }
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00058}\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a72472e4eb275235c6c4e88a2011050cc}{00058}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a72472e4eb275235c6c4e88a2011050cc}{set\_current\_item}}(self, item):}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00059}00059         self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_ab6e94a09686a079e880c760a95dc9fb1}{current\_item}} = item}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00060}00060     }
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00061}\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_abea50e459d120b60dae416d4ab523355}{00061}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_abea50e459d120b60dae416d4ab523355}{get\_current\_item}}(self):}
-\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00062}00062         \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_ab6e94a09686a079e880c760a95dc9fb1}{current\_item}}}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00033}00033             \textcolor{keywordflow}{if} key[\textcolor{stringliteral}{'id'}] \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}{items}}:}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00034}00034                 \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}{items}}[key[\textcolor{stringliteral}{'id'}]].count >= key[\textcolor{stringliteral}{'count'}]}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00035}00035             \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00036}00036                 \textcolor{keywordflow}{return} \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00037}00037         \textcolor{keywordflow}{elif} type(key) == tuple:}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00038}00038             \textcolor{keywordflow}{if} key[0] \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}{items}}:}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00039}00039                 \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}{items}}[key[0]].count >= key[1]}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00040}00040             \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00041}00041                 \textcolor{keywordflow}{return} \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00042}00042         \textcolor{keywordflow}{elif} type(key) == list:}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00043}00043             \textcolor{keywordflow}{if} all([type(i) == tuple \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} key]):}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00044}00044                 \textcolor{keywordflow}{if} all([len(i) == 2 \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} key]):}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00045}00045                     \textcolor{keywordflow}{return} all([self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}{items}}[i[0]].count >= i[1] \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} key])}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00046}00046                 \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00047}00047                     \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"{}All tuples must be of types (<str>, <int>"{}})}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00048}00048             \textcolor{keywordflow}{elif} len(key) == 2:}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00049}00049                 \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}{items}}[key[0]].count >= key[1]}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00050}00050             \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00051}00051                 \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"{}Must be a list of tuples of types (<str>, <int>)"{}})}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00052}00052         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00053}00053             \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"{}Input must be of types <str>, <dict>, <tuple>, list[<str>, <int>] or list[(<str>,<int>)]"{}})}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00055}00055     }
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00056}\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_ad71d92b5ac7b2b852780a28e2ece8976}{00056}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_ad71d92b5ac7b2b852780a28e2ece8976}{get\_items}}(self):}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00057}00057         \textcolor{keywordflow}{return} [[\textcolor{stringliteral}{"{}\{\} x\{\}"{}}.format(i[0], i[1]), i[0]] \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} list(filter(\textcolor{keyword}{lambda} i: i[1] > 0, self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}{items}}.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}{items}}()))]}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00059}\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a023d4484ac865705321f25b073194c18}{00059}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a023d4484ac865705321f25b073194c18}{get\_item\_count}}(self, item):}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00060}00060         \textcolor{keywordflow}{if} self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}{items}}.has\_key(item):}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00061}00061             \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}{items}}[item]}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00062}00062         \textcolor{keywordflow}{return} 0}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00064}\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a72472e4eb275235c6c4e88a2011050cc}{00064}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_a72472e4eb275235c6c4e88a2011050cc}{set\_current\_item}}(self, item):}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00065}00065         self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_ab6e94a09686a079e880c760a95dc9fb1}{current\_item}} = item}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00066}00066     }
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00067}\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_abea50e459d120b60dae416d4ab523355}{00067}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_abea50e459d120b60dae416d4ab523355}{get\_current\_item}}(self):}
+\DoxyCodeLine{\Hypertarget{inventory_8py_source_l00068}00068         \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_ab6e94a09686a079e880c760a95dc9fb1}{current\_item}}}
 
 \end{DoxyCode}

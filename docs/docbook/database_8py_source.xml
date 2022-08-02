@@ -38,4 +38,7 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 <anchor xml:id="_database_8py_source_1l00034"/>00034 
 <anchor xml:id="_database_8py_source_1l00035"/><link linkend="_classsystems_1_1database_1_1_database_1aac860297aa534950d9754facfdda4848">00035</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1database_1_1_database_1aac860297aa534950d9754facfdda4848">get_recipe</link>(self,&#32;recipe_id=&apos;&apos;):
 <anchor xml:id="_database_8py_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;self.<link linkend="_classsystems_1_1database_1_1_database_1a313a714187f831c4189f9fd1a0172b85">recipes</link>[recipe_id]
+<anchor xml:id="_database_8py_source_1l00037"/>00037 &#32;&#32;&#32;&#32;
+<anchor xml:id="_database_8py_source_1l00038"/><link linkend="_classsystems_1_1database_1_1_database_1af7366d1383a0b983b90ced39843d98b7">00038</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classsystems_1_1database_1_1_database_1af7366d1383a0b983b90ced39843d98b7">get_quest</link>(self,&#32;quest_id):
+<anchor xml:id="_database_8py_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">pass</emphasis>
 </programlisting></section>

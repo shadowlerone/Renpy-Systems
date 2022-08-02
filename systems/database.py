@@ -13,7 +13,18 @@ class Database(object):
 		# self.item_list = self.load_items_from_file()
 		self.items = {}
 		self.recipes = {}
+		self.quests = {}
+		self.people = {}
+		self.locations = {}
 		# self.recipe_list = self.load_recipes_from_file()
+
+
+	def verify(self):
+		all_ids = [i.id for i in self.items.values() + self.recipes.values() + self.quests.values() + self.people.values() + self.locations.values()]
+		dupes = [(i, all_ids.count(1)) for i in all_ids if all_ids.count(i) > 1]
+		if len(dupes) > 0:
+			raise ValueError("\n".join(["ID: {} occurs {} times in Database".format(i[0], i[1]) for i in dupes]))
+		
 
 	def load_items_from_file(self, file):
 		data = json.load(file)
@@ -37,3 +48,11 @@ class Database(object):
 	
 	def get_quest(self, quest_id):
 		pass
+
+
+	def set_items(self, items):
+		for i in items:
+			self.items[i.id] = i
+
+	def __getitem__(self, key):
+		return [i for i in self.items.values() + self.recipes.values() + self.quests.values() + self.people.values() + self.locations.values() if i.id == key][0]

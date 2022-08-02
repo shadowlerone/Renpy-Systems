@@ -1,0 +1,364 @@
+\begin{theindex}
+
+  \item {\_\_contains\_\_}
+    \subitem {systems.inventory.Inventory}, \hyperpage{24}
+  \item {\_\_eq\_\_}
+    \subitem {systems.gameobject.GameObject}, \hyperpage{22}
+    \subitem {systems.recipe.Recipe}, \hyperpage{56}
+  \item {\_\_getitem\_\_}
+    \subitem {systems.inventory.Inventory}, \hyperpage{24}
+    \subitem {systems.quests.QuestLog}, \hyperpage{49}
+  \item {\_\_hash\_\_}
+    \subitem {systems.gameobject.GameObject}, \hyperpage{22}
+    \subitem {systems.recipe.Recipe}, \hyperpage{56}
+  \item {\_\_iadd\_\_}
+    \subitem {systems.item.InventoryItem}, \hyperpage{29}
+  \item {\_\_init\_\_}
+    \subitem {systems.database.Database}, \hyperpage{14}
+    \subitem {systems.game.Game}, \hyperpage{17}
+    \subitem {systems.gameobject.GameObject}, \hyperpage{22}
+    \subitem {systems.inventory.Inventory}, \hyperpage{24}
+    \subitem {systems.item.InventoryItem}, \hyperpage{28}
+    \subitem {systems.item.Item}, \hyperpage{32}
+    \subitem {systems.item.PlaceholderInventoryItem}, \hyperpage{39}
+    \subitem {systems.person.Person}, \hyperpage{35}
+    \subitem {systems.player.Player}, \hyperpage{42}
+    \subitem {systems.quests.Quest}, \hyperpage{45}
+    \subitem {systems.quests.QuestLog}, \hyperpage{49}
+    \subitem {systems.quests.QuestStage}, \hyperpage{52}
+    \subitem {systems.recipe.Recipe}, \hyperpage{55}
+    \subitem {systems.recipe.RecipeBook}, \hyperpage{58}
+  \item {\_\_isub\_\_}
+    \subitem {systems.item.InventoryItem}, \hyperpage{29}
+  \item {\_\_ne\_\_}
+    \subitem {systems.gameobject.GameObject}, \hyperpage{22}
+  \item {\_\_repr\_\_}
+    \subitem {systems.gameobject.GameObject}, \hyperpage{22}
+  \item {\_\_str\_\_}
+    \subitem {systems.item.Item}, \hyperpage{33}
+    \subitem {systems.person.Person}, \hyperpage{36}
+    \subitem {systems.quests.QuestStage}, \hyperpage{53}
+
+  \indexspace
+
+  \item {add\_item}
+    \subitem {systems.inventory.Inventory}, \hyperpage{24}
+  \item {add\_quest}
+    \subitem {systems.quests.QuestLog}, \hyperpage{49}
+  \item {add\_recipe}
+    \subitem {systems.recipe.RecipeBook}, \hyperpage{58}
+  \item {affinity}
+    \subitem {systems.person.Person}, \hyperpage{37}
+
+  \indexspace
+
+  \item {base\_affinity}
+    \subitem {systems.person.Person}, \hyperpage{37}
+
+  \indexspace
+
+  \item {complete}
+    \subitem {systems.quests.Quest}, \hyperpage{47}
+    \subitem {systems.quests.QuestStage}, \hyperpage{53}
+  \item {count}
+    \subitem {systems.item.InventoryItem}, \hyperpage{31}
+  \item {craft}
+    \subitem {systems.player.Player}, \hyperpage{42}
+    \subitem {systems.recipe.RecipeBook}, \hyperpage{59}
+  \item {current\_item}
+    \subitem {systems.inventory.Inventory}, \hyperpage{26}
+  \item {current\_recipe}
+    \subitem {systems.recipe.RecipeBook}, \hyperpage{60}
+  \item {current\_stage}
+    \subitem {systems.quests.Quest}, \hyperpage{47}
+
+  \indexspace
+
+  \item {db}
+    \subitem {systems.game.Game}, \hyperpage{20}
+  \item {decrease\_affinity}
+    \subitem {systems.person.Person}, \hyperpage{36}
+  \item {description}
+    \subitem {systems.gameobject.GameObject}, \hyperpage{23}
+
+  \indexspace
+
+  \item {final\_stage}
+    \subitem {systems.quests.Quest}, \hyperpage{47}
+  \item {first\_stage}
+    \subitem {systems.quests.Quest}, \hyperpage{47}
+  \item {from\_dict}
+    \subitem {systems.item.InventoryItem}, \hyperpage{30}
+    \subitem {systems.item.Item}, \hyperpage{33}
+    \subitem {systems.quests.Quest}, \hyperpage{46}
+    \subitem {systems.quests.QuestStage}, \hyperpage{53}
+    \subitem {systems.recipe.Recipe}, \hyperpage{56}
+  \item {from\_item}
+    \subitem {systems.item.InventoryItem}, \hyperpage{30}
+
+  \indexspace
+
+  \item {game\_event}
+    \subitem {systems.game.Game}, \hyperpage{17}
+  \item {get\_active}
+    \subitem {systems.quests.QuestLog}, \hyperpage{50}
+  \item {get\_affinity}
+    \subitem {systems.person.Person}, \hyperpage{37}
+  \item {get\_craftable}
+    \subitem {systems.player.Player}, \hyperpage{42}
+    \subitem {systems.recipe.RecipeBook}, \hyperpage{59}
+  \item {get\_current\_item}
+    \subitem {systems.inventory.Inventory}, \hyperpage{25}
+  \item {get\_item}
+    \subitem {systems.database.Database}, \hyperpage{14}
+  \item {get\_item\_count}
+    \subitem {systems.inventory.Inventory}, \hyperpage{25}
+  \item {get\_items}
+    \subitem {systems.inventory.Inventory}, \hyperpage{25}
+  \item {get\_quest}
+    \subitem {systems.database.Database}, \hyperpage{14}
+    \subitem {systems.quests.QuestLog}, \hyperpage{50}
+  \item {get\_recipe}
+    \subitem {systems.database.Database}, \hyperpage{15}
+  \item {get\_stage}
+    \subitem {systems.quests.Quest}, \hyperpage{46}
+  \item {get\_uncraftable}
+    \subitem {systems.player.Player}, \hyperpage{42}
+    \subitem {systems.recipe.RecipeBook}, \hyperpage{59}
+
+  \indexspace
+
+  \item {id}
+    \subitem {systems.gameobject.GameObject}, \hyperpage{23}
+  \item {image\_path}
+    \subitem {systems.item.Item}, \hyperpage{34}
+  \item {increase\_affinity}
+    \subitem {systems.person.Person}, \hyperpage{37}
+  \item {inventory}
+    \subitem {systems.player.Player}, \hyperpage{43}
+  \item {is\_craftable}
+    \subitem {systems.recipe.Recipe}, \hyperpage{56}
+  \item {item}
+    \subitem {systems.recipe.Recipe}, \hyperpage{56}
+  \item {items}
+    \subitem {systems.database.Database}, \hyperpage{15}
+    \subitem {systems.inventory.Inventory}, \hyperpage{26}
+
+  \indexspace
+
+  \item {load\_items\_from\_file}
+    \subitem {systems.database.Database}, \hyperpage{15}
+  \item {load\_recipes\_from\_file}
+    \subitem {systems.database.Database}, \hyperpage{15}
+  \item {location}
+    \subitem {systems.game.Game}, \hyperpage{20}
+    \subitem {systems.person.Person}, \hyperpage{38}
+
+  \indexspace
+
+  \item {name}
+    \subitem {systems.gameobject.GameObject}, \hyperpage{23}
+  \item {next\_stage}
+    \subitem {systems.quests.Quest}, \hyperpage{46}
+
+  \indexspace
+
+  \item {people}
+    \subitem {systems.game.Game}, \hyperpage{20}
+  \item {player}
+    \subitem {systems.game.Game}, \hyperpage{20}
+
+  \indexspace
+
+  \item {questlog}
+    \subitem {systems.player.Player}, \hyperpage{43}
+  \item {quests}
+    \subitem {systems.quests.QuestLog}, \hyperpage{50}
+
+  \indexspace
+
+  \item {recipebook}
+    \subitem {systems.player.Player}, \hyperpage{43}
+  \item {recipes}
+    \subitem {systems.database.Database}, \hyperpage{15}
+    \subitem {systems.recipe.RecipeBook}, \hyperpage{60}
+  \item {recipes\_fp}
+    \subitem {systems.database.Database}, \hyperpage{16}
+  \item {remove\_item}
+    \subitem {systems.inventory.Inventory}, \hyperpage{25}
+  \item {remove\_recipe}
+    \subitem {systems.recipe.RecipeBook}, \hyperpage{59}
+  \item {requirements}
+    \subitem {systems.quests.QuestStage}, \hyperpage{53}
+    \subitem {systems.recipe.Recipe}, \hyperpage{57}
+
+  \indexspace
+
+  \item {set\_affinity}
+    \subitem {systems.person.Person}, \hyperpage{37}
+  \item {set\_count}
+    \subitem {systems.item.InventoryItem}, \hyperpage{30}
+  \item {set\_current\_item}
+    \subitem {systems.inventory.Inventory}, \hyperpage{26}
+  \item {setup}
+    \subitem {systems.game.Game}, \hyperpage{17}
+  \item {stages}
+    \subitem {systems.quests.Quest}, \hyperpage{47}
+  \item {start}
+    \subitem {systems.quests.Quest}, \hyperpage{46}
+  \item {start\_quest}
+    \subitem {systems.game.Game}, \hyperpage{18}
+    \subitem {systems.player.Player}, \hyperpage{42}
+  \item {started}
+    \subitem {systems.quests.Quest}, \hyperpage{48}
+  \item {substages}
+    \subitem {systems.quests.QuestStage}, \hyperpage{53}
+  \item {systems}, \hyperpage{11}
+  \item {systems.database}, \hyperpage{11}
+  \item {systems.database.Database}, \hyperpage{13}
+    \subitem {\_\_init\_\_}, \hyperpage{14}
+    \subitem {get\_item}, \hyperpage{14}
+    \subitem {get\_quest}, \hyperpage{14}
+    \subitem {get\_recipe}, \hyperpage{15}
+    \subitem {items}, \hyperpage{15}
+    \subitem {load\_items\_from\_file}, \hyperpage{15}
+    \subitem {load\_recipes\_from\_file}, \hyperpage{15}
+    \subitem {recipes}, \hyperpage{15}
+    \subitem {recipes\_fp}, \hyperpage{16}
+  \item {systems.game}, \hyperpage{11}
+  \item {systems.game.Game}, \hyperpage{16}
+    \subitem {\_\_init\_\_}, \hyperpage{17}
+    \subitem {db}, \hyperpage{20}
+    \subitem {game\_event}, \hyperpage{17}
+    \subitem {location}, \hyperpage{20}
+    \subitem {people}, \hyperpage{20}
+    \subitem {player}, \hyperpage{20}
+    \subitem {setup}, \hyperpage{17}
+    \subitem {start\_quest}, \hyperpage{18}
+    \subitem {update}, \hyperpage{18}
+    \subitem {update\_quests}, \hyperpage{19}
+  \item {systems.gameobject}, \hyperpage{11}
+  \item {systems.gameobject.GameObject}, \hyperpage{21}
+    \subitem {\_\_eq\_\_}, \hyperpage{22}
+    \subitem {\_\_hash\_\_}, \hyperpage{22}
+    \subitem {\_\_init\_\_}, \hyperpage{22}
+    \subitem {\_\_ne\_\_}, \hyperpage{22}
+    \subitem {\_\_repr\_\_}, \hyperpage{22}
+    \subitem {description}, \hyperpage{23}
+    \subitem {id}, \hyperpage{23}
+    \subitem {name}, \hyperpage{23}
+  \item {systems.inventory}, \hyperpage{12}
+  \item {systems.inventory.Inventory}, \hyperpage{23}
+    \subitem {\_\_contains\_\_}, \hyperpage{24}
+    \subitem {\_\_getitem\_\_}, \hyperpage{24}
+    \subitem {\_\_init\_\_}, \hyperpage{24}
+    \subitem {add\_item}, \hyperpage{24}
+    \subitem {current\_item}, \hyperpage{26}
+    \subitem {get\_current\_item}, \hyperpage{25}
+    \subitem {get\_item\_count}, \hyperpage{25}
+    \subitem {get\_items}, \hyperpage{25}
+    \subitem {items}, \hyperpage{26}
+    \subitem {remove\_item}, \hyperpage{25}
+    \subitem {set\_current\_item}, \hyperpage{26}
+  \item {systems.item}, \hyperpage{12}
+  \item {systems.item.InventoryItem}, \hyperpage{27}
+    \subitem {\_\_iadd\_\_}, \hyperpage{29}
+    \subitem {\_\_init\_\_}, \hyperpage{28}
+    \subitem {\_\_isub\_\_}, \hyperpage{29}
+    \subitem {count}, \hyperpage{31}
+    \subitem {from\_dict}, \hyperpage{30}
+    \subitem {from\_item}, \hyperpage{30}
+    \subitem {set\_count}, \hyperpage{30}
+  \item {systems.item.Item}, \hyperpage{31}
+    \subitem {\_\_init\_\_}, \hyperpage{32}
+    \subitem {\_\_str\_\_}, \hyperpage{33}
+    \subitem {from\_dict}, \hyperpage{33}
+    \subitem {image\_path}, \hyperpage{34}
+  \item {systems.item.PlaceholderInventoryItem}, \hyperpage{38}
+    \subitem {\_\_init\_\_}, \hyperpage{39}
+  \item {systems.person}, \hyperpage{12}
+  \item {systems.person.Person}, \hyperpage{34}
+    \subitem {\_\_init\_\_}, \hyperpage{35}
+    \subitem {\_\_str\_\_}, \hyperpage{36}
+    \subitem {affinity}, \hyperpage{37}
+    \subitem {base\_affinity}, \hyperpage{37}
+    \subitem {decrease\_affinity}, \hyperpage{36}
+    \subitem {get\_affinity}, \hyperpage{37}
+    \subitem {increase\_affinity}, \hyperpage{37}
+    \subitem {location}, \hyperpage{38}
+    \subitem {set\_affinity}, \hyperpage{37}
+  \item {systems.player}, \hyperpage{12}
+  \item {systems.player.Player}, \hyperpage{41}
+    \subitem {\_\_init\_\_}, \hyperpage{42}
+    \subitem {craft}, \hyperpage{42}
+    \subitem {get\_craftable}, \hyperpage{42}
+    \subitem {get\_uncraftable}, \hyperpage{42}
+    \subitem {inventory}, \hyperpage{43}
+    \subitem {questlog}, \hyperpage{43}
+    \subitem {recipebook}, \hyperpage{43}
+    \subitem {start\_quest}, \hyperpage{42}
+  \item {systems.quests}, \hyperpage{12}
+  \item {systems.quests.Quest}, \hyperpage{44}
+    \subitem {\_\_init\_\_}, \hyperpage{45}
+    \subitem {complete}, \hyperpage{47}
+    \subitem {current\_stage}, \hyperpage{47}
+    \subitem {final\_stage}, \hyperpage{47}
+    \subitem {first\_stage}, \hyperpage{47}
+    \subitem {from\_dict}, \hyperpage{46}
+    \subitem {get\_stage}, \hyperpage{46}
+    \subitem {next\_stage}, \hyperpage{46}
+    \subitem {stages}, \hyperpage{47}
+    \subitem {start}, \hyperpage{46}
+    \subitem {started}, \hyperpage{48}
+  \item {systems.quests.QuestLog}, \hyperpage{48}
+    \subitem {\_\_getitem\_\_}, \hyperpage{49}
+    \subitem {\_\_init\_\_}, \hyperpage{49}
+    \subitem {add\_quest}, \hyperpage{49}
+    \subitem {get\_active}, \hyperpage{50}
+    \subitem {get\_quest}, \hyperpage{50}
+    \subitem {quests}, \hyperpage{50}
+  \item {systems.quests.QuestStage}, \hyperpage{51}
+    \subitem {\_\_init\_\_}, \hyperpage{52}
+    \subitem {\_\_str\_\_}, \hyperpage{53}
+    \subitem {complete}, \hyperpage{53}
+    \subitem {from\_dict}, \hyperpage{53}
+    \subitem {requirements}, \hyperpage{53}
+    \subitem {substages}, \hyperpage{53}
+  \item {systems.recipe}, \hyperpage{12}
+  \item {systems.recipe.Recipe}, \hyperpage{54}
+    \subitem {\_\_eq\_\_}, \hyperpage{56}
+    \subitem {\_\_hash\_\_}, \hyperpage{56}
+    \subitem {\_\_init\_\_}, \hyperpage{55}
+    \subitem {from\_dict}, \hyperpage{56}
+    \subitem {is\_craftable}, \hyperpage{56}
+    \subitem {item}, \hyperpage{56}
+    \subitem {requirements}, \hyperpage{57}
+  \item {systems.recipe.RecipeBook}, \hyperpage{57}
+    \subitem {\_\_init\_\_}, \hyperpage{58}
+    \subitem {add\_recipe}, \hyperpage{58}
+    \subitem {craft}, \hyperpage{59}
+    \subitem {current\_recipe}, \hyperpage{60}
+    \subitem {get\_craftable}, \hyperpage{59}
+    \subitem {get\_uncraftable}, \hyperpage{59}
+    \subitem {recipes}, \hyperpage{60}
+    \subitem {remove\_recipe}, \hyperpage{59}
+  \item {systems/\_\_init\_\_.py}, \hyperpage{61}
+  \item {systems/database.py}, \hyperpage{61}
+  \item {systems/game.py}, \hyperpage{62}
+  \item {systems/gameobject.py}, \hyperpage{63}
+  \item {systems/inventory.py}, \hyperpage{64}
+  \item {systems/item.py}, \hyperpage{65}
+  \item {systems/person.py}, \hyperpage{66, 67}
+  \item {systems/player.py}, \hyperpage{67}
+  \item {systems/quests.py}, \hyperpage{68}
+  \item {systems/recipe.py}, \hyperpage{69}
+  \item {systems/requirements\_syntax.md}, \hyperpage{70}
+
+  \indexspace
+
+  \item {update}
+    \subitem {systems.game.Game}, \hyperpage{18}
+  \item {update\_quests}
+    \subitem {systems.game.Game}, \hyperpage{19}
+
+\end{theindex}

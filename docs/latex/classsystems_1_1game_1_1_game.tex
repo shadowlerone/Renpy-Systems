@@ -22,18 +22,34 @@ Collaboration diagram for systems.\+game.\+Game\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 def \mbox{\hyperlink{classsystems_1_1game_1_1_game_a0dad2af0de9d446b1c89ff17b6b3967c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classsystems_1_1game_1_1_game_aea23c41a7da5bb1eafcf4fc46219e07e}{game\+\_\+event}} (func)
+\item 
+def \mbox{\hyperlink{classsystems_1_1game_1_1_game_a1d2b00fb7920e4736c00e851670e1761}{setup}} (self, \mbox{\hyperlink{classsystems_1_1game_1_1_game_a8d2c7ed5a3b01cdfbc317e59fd0b9f40}{people}}=None, locations=None, from\+\_\+db=None, fps=False)
+\item 
+def \mbox{\hyperlink{classsystems_1_1game_1_1_game_ae1914099705c785ad7b1d88a1481fd7e}{start\+\_\+quest}} (self, quest\+\_\+id=None, quest\+\_\+object=None)
+\item 
+def \mbox{\hyperlink{classsystems_1_1game_1_1_game_acb1e8ccfd196c887f110ee3a8f12d2b9}{update}} (self)
+\item 
+def \mbox{\hyperlink{classsystems_1_1game_1_1_game_aa72bcad0b355393a8909707989bd6578}{update\+\_\+quests}} (self)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classsystems_1_1game_1_1_game_a8d2c7ed5a3b01cdfbc317e59fd0b9f40}{people}}
+\item 
+\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab59fb836a7c2cb5a1a297f4383bdf374}{db}}
+\item 
+\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}}
+\item 
+\mbox{\hyperlink{classsystems_1_1game_1_1_game_a8ff7162c9f84eb5bd70e3f5ac1c46716}{location}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-Definition at line \mbox{\hyperlink{game_8py_source_l00003}{3}} of file \mbox{\hyperlink{game_8py_source}{game.\+py}}.
+Definition at line \mbox{\hyperlink{game_8py_source_l00004}{4}} of file \mbox{\hyperlink{game_8py_source}{game.\+py}}.
 
 
 
@@ -46,11 +62,132 @@ Definition at line \mbox{\hyperlink{game_8py_source_l00003}{3}} of file \mbox{\h
 
 
 
-Definition at line \mbox{\hyperlink{game_8py_source_l00004}{4}} of file \mbox{\hyperlink{game_8py_source}{game.\+py}}.
+Definition at line \mbox{\hyperlink{game_8py_source_l00005}{5}} of file \mbox{\hyperlink{game_8py_source}{game.\+py}}.
 
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystems_1_1game_1_1_game_aea23c41a7da5bb1eafcf4fc46219e07e}\label{classsystems_1_1game_1_1_game_aea23c41a7da5bb1eafcf4fc46219e07e}} 
+\index{systems.game.Game@{systems.game.Game}!game\_event@{game\_event}}
+\index{game\_event@{game\_event}!systems.game.Game@{systems.game.Game}}
+\doxysubsubsection{\texorpdfstring{game\_event()}{game\_event()}}
+{\footnotesize\ttfamily def systems.\+game.\+Game.\+game\+\_\+event (\begin{DoxyParamCaption}\item[{}]{func }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{game_8py_source_l00013}{13}} of file \mbox{\hyperlink{game_8py_source}{game.\+py}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsystems_1_1game_1_1_game_aea23c41a7da5bb1eafcf4fc46219e07e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsystems_1_1game_1_1_game_a1d2b00fb7920e4736c00e851670e1761}\label{classsystems_1_1game_1_1_game_a1d2b00fb7920e4736c00e851670e1761}} 
+\index{systems.game.Game@{systems.game.Game}!setup@{setup}}
+\index{setup@{setup}!systems.game.Game@{systems.game.Game}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily def systems.\+game.\+Game.\+setup (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{people = {\ttfamily None},  }\item[{}]{locations = {\ttfamily None},  }\item[{}]{from\+\_\+db = {\ttfamily None},  }\item[{}]{fps = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{game_8py_source_l00020}{20}} of file \mbox{\hyperlink{game_8py_source}{game.\+py}}.
+
+\mbox{\Hypertarget{classsystems_1_1game_1_1_game_ae1914099705c785ad7b1d88a1481fd7e}\label{classsystems_1_1game_1_1_game_ae1914099705c785ad7b1d88a1481fd7e}} 
+\index{systems.game.Game@{systems.game.Game}!start\_quest@{start\_quest}}
+\index{start\_quest@{start\_quest}!systems.game.Game@{systems.game.Game}}
+\doxysubsubsection{\texorpdfstring{start\_quest()}{start\_quest()}}
+{\footnotesize\ttfamily def systems.\+game.\+Game.\+start\+\_\+quest (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{quest\+\_\+id = {\ttfamily None},  }\item[{}]{quest\+\_\+object = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{game_8py_source_l00036}{36}} of file \mbox{\hyperlink{game_8py_source}{game.\+py}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsystems_1_1game_1_1_game_ae1914099705c785ad7b1d88a1481fd7e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classsystems_1_1game_1_1_game_ae1914099705c785ad7b1d88a1481fd7e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsystems_1_1game_1_1_game_acb1e8ccfd196c887f110ee3a8f12d2b9}\label{classsystems_1_1game_1_1_game_acb1e8ccfd196c887f110ee3a8f12d2b9}} 
+\index{systems.game.Game@{systems.game.Game}!update@{update}}
+\index{update@{update}!systems.game.Game@{systems.game.Game}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily def systems.\+game.\+Game.\+update (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{game_8py_source_l00051}{51}} of file \mbox{\hyperlink{game_8py_source}{game.\+py}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsystems_1_1game_1_1_game_acb1e8ccfd196c887f110ee3a8f12d2b9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsystems_1_1game_1_1_game_acb1e8ccfd196c887f110ee3a8f12d2b9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsystems_1_1game_1_1_game_aa72bcad0b355393a8909707989bd6578}\label{classsystems_1_1game_1_1_game_aa72bcad0b355393a8909707989bd6578}} 
+\index{systems.game.Game@{systems.game.Game}!update\_quests@{update\_quests}}
+\index{update\_quests@{update\_quests}!systems.game.Game@{systems.game.Game}}
+\doxysubsubsection{\texorpdfstring{update\_quests()}{update\_quests()}}
+{\footnotesize\ttfamily def systems.\+game.\+Game.\+update\+\_\+quests (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{game_8py_source_l00055}{55}} of file \mbox{\hyperlink{game_8py_source}{game.\+py}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsystems_1_1game_1_1_game_aa72bcad0b355393a8909707989bd6578_icgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystems_1_1game_1_1_game_ab59fb836a7c2cb5a1a297f4383bdf374}\label{classsystems_1_1game_1_1_game_ab59fb836a7c2cb5a1a297f4383bdf374}} 
+\index{systems.game.Game@{systems.game.Game}!db@{db}}
+\index{db@{db}!systems.game.Game@{systems.game.Game}}
+\doxysubsubsection{\texorpdfstring{db}{db}}
+{\footnotesize\ttfamily systems.\+game.\+Game.\+db}
+
+
+
+Definition at line \mbox{\hyperlink{game_8py_source_l00007}{7}} of file \mbox{\hyperlink{game_8py_source}{game.\+py}}.
+
+\mbox{\Hypertarget{classsystems_1_1game_1_1_game_a8ff7162c9f84eb5bd70e3f5ac1c46716}\label{classsystems_1_1game_1_1_game_a8ff7162c9f84eb5bd70e3f5ac1c46716}} 
+\index{systems.game.Game@{systems.game.Game}!location@{location}}
+\index{location@{location}!systems.game.Game@{systems.game.Game}}
+\doxysubsubsection{\texorpdfstring{location}{location}}
+{\footnotesize\ttfamily systems.\+game.\+Game.\+location}
+
+
+
+Definition at line \mbox{\hyperlink{game_8py_source_l00034}{34}} of file \mbox{\hyperlink{game_8py_source}{game.\+py}}.
+
 \mbox{\Hypertarget{classsystems_1_1game_1_1_game_a8d2c7ed5a3b01cdfbc317e59fd0b9f40}\label{classsystems_1_1game_1_1_game_a8d2c7ed5a3b01cdfbc317e59fd0b9f40}} 
 \index{systems.game.Game@{systems.game.Game}!people@{people}}
 \index{people@{people}!systems.game.Game@{systems.game.Game}}
@@ -59,7 +196,17 @@ Definition at line \mbox{\hyperlink{game_8py_source_l00004}{4}} of file \mbox{\h
 
 
 
-Definition at line \mbox{\hyperlink{game_8py_source_l00005}{5}} of file \mbox{\hyperlink{game_8py_source}{game.\+py}}.
+Definition at line \mbox{\hyperlink{game_8py_source_l00006}{6}} of file \mbox{\hyperlink{game_8py_source}{game.\+py}}.
+
+\mbox{\Hypertarget{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}\label{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}} 
+\index{systems.game.Game@{systems.game.Game}!player@{player}}
+\index{player@{player}!systems.game.Game@{systems.game.Game}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily systems.\+game.\+Game.\+player}
+
+
+
+Definition at line \mbox{\hyperlink{game_8py_source_l00008}{8}} of file \mbox{\hyperlink{game_8py_source}{game.\+py}}.
 
 
 

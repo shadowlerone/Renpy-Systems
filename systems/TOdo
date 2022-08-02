@@ -1,0 +1,23 @@
+(A) game.player.recipebook.add_recipe(recipe)  -> game.player.add_recipe(recipe) /
+
+
+any([
+	q.complete for q in game.player.questlog['test_quest'].get_stage(0).substages
+])
+-> game.player.get_quest(quest_id).substages_completed(all=False) /
+
+game.player.questlog.set_selected_quest() -> game.set_selected_quest() /
+
+game.player.questlog.selected_quest.name -> game.get_selected_quest() /
+
+game.player.questlog.selected_quest.description -> game.player.get_selected_quest().get_description()
+
+game.player.questlog.selected_quest.get_stage().name -> game.player.get_selected_quest().get_stage().get_name()
+
+game.player.questlog.selected_quest.get_stage().description -> game.player.get_selected_quest().get_stage().get_name()
+
+
+game.player.questlog.selected_quest.get_stage().substages -> game.player.get_selected_quest().get_stage().get_substages()
+
+
+game.player.inventory.get_items() -> game.player.get_items()

@@ -7,15 +7,18 @@ class Inventory():
 		self.current_item = InventoryItem("Nothing", "I should look at something first...", 0)
 		
 	def add_item(self, item_id, count=1):
-		if type(count) != int:
-			raise TypeError("{} is of type {}, not {}".format(item_id, type(item_id), int))
-		if type(item_id) == str:
+		if not isinstance(count, int): # if type(count) != int:
+			raise TypeError("{} is of type {}, not {}".format(count, type(count), int))
+		if isinstance(item_id, str) or isinstance(item_id, unicode):
 			if item_id in self.items:
 				self.items[item_id] += count
 			else:
 				self.items[item_id] = PlaceholderInventoryItem(item_id, count)
-		elif type(item_id) == (Item):
-			self.items[item_id.id] = InventoryItem.from_item(item_id, count)
+		elif isinstance(item_id, Item): # elif type(item_id) == (Item):
+			if item_id.id not in self.items:
+				self.items[item_id.id] = InventoryItem.from_item(item_id, count)
+			else:
+				self.items[item_id.id] += count
 		else:
 			raise TypeError("{} is of type {}, not {} or {}".format(item_id, type(item_id), str, Item))
 
@@ -27,34 +30,41 @@ class Inventory():
 		return self.items[item_id]
 
 	def __contains__(self, key):
-		if type(key) == str:
+		if isinstance(key, str):
 			return key in self.items
-		elif type(key) == dict:
+		elif isinstance(key, dict):
 			if key['id'] in self.items:
 				return self.items[key['id']].count >= key['count']
 			else:
 				return False
-		elif type(key) == tuple:
+		elif isinstance(key, tuple): #type(key) == tuple:
 			if key[0] in self.items:
 				return self.items[key[0]].count >= key[1]
 			else:
 				return False
-		elif type(key) == list:
-			if all([type(i) == tuple for i in key]):
+		elif isinstance(key, list): # type(key) == list:
+			if all([isinstance(i, tuple) for i in key]):
 				if all([len(i) == 2 for i in key]):
-					return all([self.items[i[0]].count >= i[1] for i in key])
+					if all([i[0] in self.items for i in key]):
+						return all([self.items[i[0]].count >= i[1] for i in key])
+					else:
+						return False
 				else:
 					raise ValueError("All tuples must be of types (<str>, <int>")
 			elif len(key) == 2:
-				return self.items[key[0]].count >= key[1]
+				if key[0] in self.items:
+					return self.items[key[0]].count >= key[1]
+				else:
+					return False
 			else:
 				raise ValueError("Must be a list of tuples of types (<str>, <int>)")
 		else:
-			raise ValueError("Input must be of types <str>, <dict>, <tuple>, list[<str>, <int>] or list[(<str>,<int>)]")
+			raise ValueError("Input must be of types <str>, <dict>, <tuple>, list[<str>, <int>] or list[(<str>,<int>)], not {}".format(type(key)))
 
 	## To be rewritten. No tests written for these
 	def get_items(self):
-		return [["{} x{}".format(i[0], i[1]), i[0]] for i in list(filter(lambda i: i[1] > 0, self.items.items()))]
+		return [i for i in self.items.values() if i.count > 0]
+		# return [["{} x{}".format(i[0], i[1]), i[0]] for i in list(filter(lambda i: i[1] > 0, self.items.items()))]
 
 	def get_item_count(self, item):
 		if self.items.has_key(item):
