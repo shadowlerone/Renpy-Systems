@@ -25,195 +25,220 @@
 \contentsline {subsection}{\numberline {7.1.2}Constructor \& Destructor Documentation}{14}{subsection.7.1.2}%
 \contentsline {subsubsection}{\numberline {7.1.2.1}\_\_init\_\_()}{14}{subsubsection.7.1.2.1}%
 \contentsline {subsection}{\numberline {7.1.3}Member Function Documentation}{14}{subsection.7.1.3}%
-\contentsline {subsubsection}{\numberline {7.1.3.1}get\_item()}{14}{subsubsection.7.1.3.1}%
-\contentsline {subsubsection}{\numberline {7.1.3.2}get\_quest()}{15}{subsubsection.7.1.3.2}%
-\contentsline {subsubsection}{\numberline {7.1.3.3}get\_recipe()}{15}{subsubsection.7.1.3.3}%
-\contentsline {subsubsection}{\numberline {7.1.3.4}load\_items\_from\_file()}{15}{subsubsection.7.1.3.4}%
-\contentsline {subsubsection}{\numberline {7.1.3.5}load\_recipes\_from\_file()}{15}{subsubsection.7.1.3.5}%
-\contentsline {subsection}{\numberline {7.1.4}Member Data Documentation}{15}{subsection.7.1.4}%
-\contentsline {subsubsection}{\numberline {7.1.4.1}items}{15}{subsubsection.7.1.4.1}%
-\contentsline {subsubsection}{\numberline {7.1.4.2}recipes}{16}{subsubsection.7.1.4.2}%
-\contentsline {subsubsection}{\numberline {7.1.4.3}recipes\_fp}{16}{subsubsection.7.1.4.3}%
-\contentsline {section}{\numberline {7.2}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}game.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Game Class Reference}{16}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Detailed Description}{17}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Constructor \& Destructor Documentation}{17}{subsection.7.2.2}%
-\contentsline {subsubsection}{\numberline {7.2.2.1}\_\_init\_\_()}{17}{subsubsection.7.2.2.1}%
-\contentsline {subsection}{\numberline {7.2.3}Member Function Documentation}{17}{subsection.7.2.3}%
-\contentsline {subsubsection}{\numberline {7.2.3.1}game\_event()}{17}{subsubsection.7.2.3.1}%
-\contentsline {subsubsection}{\numberline {7.2.3.2}setup()}{18}{subsubsection.7.2.3.2}%
-\contentsline {subsubsection}{\numberline {7.2.3.3}start\_quest()}{18}{subsubsection.7.2.3.3}%
-\contentsline {subsubsection}{\numberline {7.2.3.4}update()}{19}{subsubsection.7.2.3.4}%
-\contentsline {subsubsection}{\numberline {7.2.3.5}update\_quests()}{19}{subsubsection.7.2.3.5}%
-\contentsline {subsection}{\numberline {7.2.4}Member Data Documentation}{20}{subsection.7.2.4}%
-\contentsline {subsubsection}{\numberline {7.2.4.1}db}{20}{subsubsection.7.2.4.1}%
-\contentsline {subsubsection}{\numberline {7.2.4.2}location}{20}{subsubsection.7.2.4.2}%
-\contentsline {subsubsection}{\numberline {7.2.4.3}people}{20}{subsubsection.7.2.4.3}%
-\contentsline {subsubsection}{\numberline {7.2.4.4}player}{20}{subsubsection.7.2.4.4}%
-\contentsline {section}{\numberline {7.3}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gameobject.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Game\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Object Class Reference}{21}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Detailed Description}{21}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Constructor \& Destructor Documentation}{22}{subsection.7.3.2}%
-\contentsline {subsubsection}{\numberline {7.3.2.1}\_\_init\_\_()}{22}{subsubsection.7.3.2.1}%
-\contentsline {subsection}{\numberline {7.3.3}Member Function Documentation}{22}{subsection.7.3.3}%
-\contentsline {subsubsection}{\numberline {7.3.3.1}\_\_eq\_\_()}{22}{subsubsection.7.3.3.1}%
-\contentsline {subsubsection}{\numberline {7.3.3.2}\_\_hash\_\_()}{22}{subsubsection.7.3.3.2}%
-\contentsline {subsubsection}{\numberline {7.3.3.3}\_\_ne\_\_()}{22}{subsubsection.7.3.3.3}%
-\contentsline {subsubsection}{\numberline {7.3.3.4}\_\_repr\_\_()}{23}{subsubsection.7.3.3.4}%
-\contentsline {subsection}{\numberline {7.3.4}Member Data Documentation}{23}{subsection.7.3.4}%
-\contentsline {subsubsection}{\numberline {7.3.4.1}description}{23}{subsubsection.7.3.4.1}%
-\contentsline {subsubsection}{\numberline {7.3.4.2}id}{23}{subsubsection.7.3.4.2}%
-\contentsline {subsubsection}{\numberline {7.3.4.3}name}{23}{subsubsection.7.3.4.3}%
-\contentsline {section}{\numberline {7.4}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}inventory.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inventory Class Reference}{23}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Detailed Description}{24}{subsection.7.4.1}%
-\contentsline {subsection}{\numberline {7.4.2}Constructor \& Destructor Documentation}{24}{subsection.7.4.2}%
-\contentsline {subsubsection}{\numberline {7.4.2.1}\_\_init\_\_()}{24}{subsubsection.7.4.2.1}%
-\contentsline {subsection}{\numberline {7.4.3}Member Function Documentation}{24}{subsection.7.4.3}%
-\contentsline {subsubsection}{\numberline {7.4.3.1}\_\_contains\_\_()}{24}{subsubsection.7.4.3.1}%
-\contentsline {subsubsection}{\numberline {7.4.3.2}\_\_getitem\_\_()}{24}{subsubsection.7.4.3.2}%
-\contentsline {subsubsection}{\numberline {7.4.3.3}add\_item()}{25}{subsubsection.7.4.3.3}%
-\contentsline {subsubsection}{\numberline {7.4.3.4}get\_current\_item()}{25}{subsubsection.7.4.3.4}%
-\contentsline {subsubsection}{\numberline {7.4.3.5}get\_item\_count()}{25}{subsubsection.7.4.3.5}%
-\contentsline {subsubsection}{\numberline {7.4.3.6}get\_items()}{25}{subsubsection.7.4.3.6}%
-\contentsline {subsubsection}{\numberline {7.4.3.7}remove\_item()}{26}{subsubsection.7.4.3.7}%
-\contentsline {subsubsection}{\numberline {7.4.3.8}set\_current\_item()}{26}{subsubsection.7.4.3.8}%
-\contentsline {subsection}{\numberline {7.4.4}Member Data Documentation}{26}{subsection.7.4.4}%
-\contentsline {subsubsection}{\numberline {7.4.4.1}current\_item}{26}{subsubsection.7.4.4.1}%
-\contentsline {subsubsection}{\numberline {7.4.4.2}items}{26}{subsubsection.7.4.4.2}%
-\contentsline {section}{\numberline {7.5}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}item.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inventory\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Item Class Reference}{27}{section.7.5}%
-\contentsline {subsection}{\numberline {7.5.1}Detailed Description}{28}{subsection.7.5.1}%
-\contentsline {subsection}{\numberline {7.5.2}Constructor \& Destructor Documentation}{28}{subsection.7.5.2}%
-\contentsline {subsubsection}{\numberline {7.5.2.1}\_\_init\_\_()}{29}{subsubsection.7.5.2.1}%
-\contentsline {subsection}{\numberline {7.5.3}Member Function Documentation}{29}{subsection.7.5.3}%
-\contentsline {subsubsection}{\numberline {7.5.3.1}\_\_iadd\_\_()}{29}{subsubsection.7.5.3.1}%
-\contentsline {subsubsection}{\numberline {7.5.3.2}\_\_isub\_\_()}{30}{subsubsection.7.5.3.2}%
-\contentsline {subsubsection}{\numberline {7.5.3.3}from\_dict()}{30}{subsubsection.7.5.3.3}%
-\contentsline {subsubsection}{\numberline {7.5.3.4}from\_item()}{30}{subsubsection.7.5.3.4}%
-\contentsline {subsubsection}{\numberline {7.5.3.5}set\_count()}{31}{subsubsection.7.5.3.5}%
-\contentsline {subsection}{\numberline {7.5.4}Member Data Documentation}{31}{subsection.7.5.4}%
-\contentsline {subsubsection}{\numberline {7.5.4.1}count}{31}{subsubsection.7.5.4.1}%
-\contentsline {section}{\numberline {7.6}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}item.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Item Class Reference}{31}{section.7.6}%
-\contentsline {subsection}{\numberline {7.6.1}Detailed Description}{32}{subsection.7.6.1}%
-\contentsline {subsection}{\numberline {7.6.2}Constructor \& Destructor Documentation}{32}{subsection.7.6.2}%
-\contentsline {subsubsection}{\numberline {7.6.2.1}\_\_init\_\_()}{33}{subsubsection.7.6.2.1}%
-\contentsline {subsection}{\numberline {7.6.3}Member Function Documentation}{33}{subsection.7.6.3}%
-\contentsline {subsubsection}{\numberline {7.6.3.1}\_\_str\_\_()}{33}{subsubsection.7.6.3.1}%
-\contentsline {subsubsection}{\numberline {7.6.3.2}from\_dict()}{34}{subsubsection.7.6.3.2}%
-\contentsline {subsection}{\numberline {7.6.4}Member Data Documentation}{34}{subsection.7.6.4}%
-\contentsline {subsubsection}{\numberline {7.6.4.1}image\_path}{34}{subsubsection.7.6.4.1}%
-\contentsline {section}{\numberline {7.7}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}person.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Person Class Reference}{34}{section.7.7}%
-\contentsline {subsection}{\numberline {7.7.1}Detailed Description}{35}{subsection.7.7.1}%
-\contentsline {subsection}{\numberline {7.7.2}Constructor \& Destructor Documentation}{35}{subsection.7.7.2}%
-\contentsline {subsubsection}{\numberline {7.7.2.1}\_\_init\_\_()}{36}{subsubsection.7.7.2.1}%
-\contentsline {subsection}{\numberline {7.7.3}Member Function Documentation}{36}{subsection.7.7.3}%
-\contentsline {subsubsection}{\numberline {7.7.3.1}\_\_str\_\_()}{36}{subsubsection.7.7.3.1}%
-\contentsline {subsubsection}{\numberline {7.7.3.2}decrease\_affinity()}{37}{subsubsection.7.7.3.2}%
-\contentsline {subsubsection}{\numberline {7.7.3.3}get\_affinity()}{37}{subsubsection.7.7.3.3}%
-\contentsline {subsubsection}{\numberline {7.7.3.4}increase\_affinity()}{37}{subsubsection.7.7.3.4}%
-\contentsline {subsubsection}{\numberline {7.7.3.5}set\_affinity()}{37}{subsubsection.7.7.3.5}%
-\contentsline {subsection}{\numberline {7.7.4}Member Data Documentation}{37}{subsection.7.7.4}%
-\contentsline {subsubsection}{\numberline {7.7.4.1}affinity}{37}{subsubsection.7.7.4.1}%
-\contentsline {subsubsection}{\numberline {7.7.4.2}base\_affinity}{38}{subsubsection.7.7.4.2}%
-\contentsline {subsubsection}{\numberline {7.7.4.3}location}{38}{subsubsection.7.7.4.3}%
-\contentsline {section}{\numberline {7.8}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}item.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Placeholder\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inventory\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Item Class Reference}{38}{section.7.8}%
-\contentsline {subsection}{\numberline {7.8.1}Detailed Description}{39}{subsection.7.8.1}%
-\contentsline {subsection}{\numberline {7.8.2}Constructor \& Destructor Documentation}{39}{subsection.7.8.2}%
-\contentsline {subsubsection}{\numberline {7.8.2.1}\_\_init\_\_()}{40}{subsubsection.7.8.2.1}%
-\contentsline {section}{\numberline {7.9}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}player.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Player Class Reference}{41}{section.7.9}%
-\contentsline {subsection}{\numberline {7.9.1}Detailed Description}{41}{subsection.7.9.1}%
-\contentsline {subsection}{\numberline {7.9.2}Constructor \& Destructor Documentation}{42}{subsection.7.9.2}%
-\contentsline {subsubsection}{\numberline {7.9.2.1}\_\_init\_\_()}{42}{subsubsection.7.9.2.1}%
-\contentsline {subsection}{\numberline {7.9.3}Member Function Documentation}{42}{subsection.7.9.3}%
-\contentsline {subsubsection}{\numberline {7.9.3.1}craft()}{42}{subsubsection.7.9.3.1}%
-\contentsline {subsubsection}{\numberline {7.9.3.2}get\_craftable()}{42}{subsubsection.7.9.3.2}%
-\contentsline {subsubsection}{\numberline {7.9.3.3}get\_uncraftable()}{42}{subsubsection.7.9.3.3}%
-\contentsline {subsubsection}{\numberline {7.9.3.4}start\_quest()}{43}{subsubsection.7.9.3.4}%
-\contentsline {subsection}{\numberline {7.9.4}Member Data Documentation}{43}{subsection.7.9.4}%
-\contentsline {subsubsection}{\numberline {7.9.4.1}inventory}{43}{subsubsection.7.9.4.1}%
-\contentsline {subsubsection}{\numberline {7.9.4.2}questlog}{43}{subsubsection.7.9.4.2}%
-\contentsline {subsubsection}{\numberline {7.9.4.3}recipebook}{43}{subsubsection.7.9.4.3}%
-\contentsline {section}{\numberline {7.10}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}quests.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Quest Class Reference}{44}{section.7.10}%
-\contentsline {subsection}{\numberline {7.10.1}Detailed Description}{45}{subsection.7.10.1}%
-\contentsline {subsection}{\numberline {7.10.2}Constructor \& Destructor Documentation}{45}{subsection.7.10.2}%
-\contentsline {subsubsection}{\numberline {7.10.2.1}\_\_init\_\_()}{45}{subsubsection.7.10.2.1}%
-\contentsline {subsection}{\numberline {7.10.3}Member Function Documentation}{46}{subsection.7.10.3}%
-\contentsline {subsubsection}{\numberline {7.10.3.1}from\_dict()}{46}{subsubsection.7.10.3.1}%
-\contentsline {subsubsection}{\numberline {7.10.3.2}get\_stage()}{46}{subsubsection.7.10.3.2}%
-\contentsline {subsubsection}{\numberline {7.10.3.3}next\_stage()}{46}{subsubsection.7.10.3.3}%
-\contentsline {subsubsection}{\numberline {7.10.3.4}start()}{47}{subsubsection.7.10.3.4}%
-\contentsline {subsection}{\numberline {7.10.4}Member Data Documentation}{47}{subsection.7.10.4}%
-\contentsline {subsubsection}{\numberline {7.10.4.1}complete}{47}{subsubsection.7.10.4.1}%
-\contentsline {subsubsection}{\numberline {7.10.4.2}current\_stage}{47}{subsubsection.7.10.4.2}%
-\contentsline {subsubsection}{\numberline {7.10.4.3}final\_stage}{47}{subsubsection.7.10.4.3}%
-\contentsline {subsubsection}{\numberline {7.10.4.4}first\_stage}{47}{subsubsection.7.10.4.4}%
-\contentsline {subsubsection}{\numberline {7.10.4.5}stages}{48}{subsubsection.7.10.4.5}%
-\contentsline {subsubsection}{\numberline {7.10.4.6}started}{48}{subsubsection.7.10.4.6}%
-\contentsline {section}{\numberline {7.11}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}quests.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Quest\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Log Class Reference}{48}{section.7.11}%
-\contentsline {subsection}{\numberline {7.11.1}Detailed Description}{49}{subsection.7.11.1}%
-\contentsline {subsection}{\numberline {7.11.2}Constructor \& Destructor Documentation}{49}{subsection.7.11.2}%
-\contentsline {subsubsection}{\numberline {7.11.2.1}\_\_init\_\_()}{49}{subsubsection.7.11.2.1}%
-\contentsline {subsection}{\numberline {7.11.3}Member Function Documentation}{49}{subsection.7.11.3}%
-\contentsline {subsubsection}{\numberline {7.11.3.1}\_\_getitem\_\_()}{49}{subsubsection.7.11.3.1}%
-\contentsline {subsubsection}{\numberline {7.11.3.2}add\_quest()}{50}{subsubsection.7.11.3.2}%
-\contentsline {subsubsection}{\numberline {7.11.3.3}get\_active()}{50}{subsubsection.7.11.3.3}%
-\contentsline {subsubsection}{\numberline {7.11.3.4}get\_quest()}{50}{subsubsection.7.11.3.4}%
-\contentsline {subsection}{\numberline {7.11.4}Member Data Documentation}{50}{subsection.7.11.4}%
-\contentsline {subsubsection}{\numberline {7.11.4.1}quests}{50}{subsubsection.7.11.4.1}%
-\contentsline {section}{\numberline {7.12}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}quests.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Quest\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stage Class Reference}{51}{section.7.12}%
-\contentsline {subsection}{\numberline {7.12.1}Detailed Description}{52}{subsection.7.12.1}%
-\contentsline {subsection}{\numberline {7.12.2}Constructor \& Destructor Documentation}{52}{subsection.7.12.2}%
-\contentsline {subsubsection}{\numberline {7.12.2.1}\_\_init\_\_()}{52}{subsubsection.7.12.2.1}%
-\contentsline {subsection}{\numberline {7.12.3}Member Function Documentation}{53}{subsection.7.12.3}%
-\contentsline {subsubsection}{\numberline {7.12.3.1}\_\_str\_\_()}{53}{subsubsection.7.12.3.1}%
-\contentsline {subsubsection}{\numberline {7.12.3.2}from\_dict()}{53}{subsubsection.7.12.3.2}%
-\contentsline {subsection}{\numberline {7.12.4}Member Data Documentation}{53}{subsection.7.12.4}%
-\contentsline {subsubsection}{\numberline {7.12.4.1}complete}{53}{subsubsection.7.12.4.1}%
-\contentsline {subsubsection}{\numberline {7.12.4.2}requirements}{53}{subsubsection.7.12.4.2}%
-\contentsline {subsubsection}{\numberline {7.12.4.3}substages}{53}{subsubsection.7.12.4.3}%
-\contentsline {section}{\numberline {7.13}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}recipe.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Recipe Class Reference}{54}{section.7.13}%
-\contentsline {subsection}{\numberline {7.13.1}Detailed Description}{55}{subsection.7.13.1}%
-\contentsline {subsection}{\numberline {7.13.2}Constructor \& Destructor Documentation}{55}{subsection.7.13.2}%
-\contentsline {subsubsection}{\numberline {7.13.2.1}\_\_init\_\_()}{55}{subsubsection.7.13.2.1}%
-\contentsline {subsection}{\numberline {7.13.3}Member Function Documentation}{56}{subsection.7.13.3}%
-\contentsline {subsubsection}{\numberline {7.13.3.1}\_\_eq\_\_()}{56}{subsubsection.7.13.3.1}%
-\contentsline {subsubsection}{\numberline {7.13.3.2}\_\_hash\_\_()}{56}{subsubsection.7.13.3.2}%
-\contentsline {subsubsection}{\numberline {7.13.3.3}from\_dict()}{56}{subsubsection.7.13.3.3}%
-\contentsline {subsubsection}{\numberline {7.13.3.4}is\_craftable()}{56}{subsubsection.7.13.3.4}%
-\contentsline {subsection}{\numberline {7.13.4}Member Data Documentation}{56}{subsection.7.13.4}%
-\contentsline {subsubsection}{\numberline {7.13.4.1}item}{57}{subsubsection.7.13.4.1}%
-\contentsline {subsubsection}{\numberline {7.13.4.2}requirements}{57}{subsubsection.7.13.4.2}%
-\contentsline {section}{\numberline {7.14}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}recipe.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Recipe\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Book Class Reference}{57}{section.7.14}%
-\contentsline {subsection}{\numberline {7.14.1}Detailed Description}{58}{subsection.7.14.1}%
-\contentsline {subsection}{\numberline {7.14.2}Constructor \& Destructor Documentation}{58}{subsection.7.14.2}%
-\contentsline {subsubsection}{\numberline {7.14.2.1}\_\_init\_\_()}{58}{subsubsection.7.14.2.1}%
-\contentsline {subsection}{\numberline {7.14.3}Member Function Documentation}{58}{subsection.7.14.3}%
-\contentsline {subsubsection}{\numberline {7.14.3.1}add\_recipe()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{58}{subsubsection.7.14.3.1}%
-\contentsline {subsubsection}{\numberline {7.14.3.2}add\_recipe()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{59}{subsubsection.7.14.3.2}%
-\contentsline {subsubsection}{\numberline {7.14.3.3}craft()}{59}{subsubsection.7.14.3.3}%
-\contentsline {subsubsection}{\numberline {7.14.3.4}get\_craftable()}{59}{subsubsection.7.14.3.4}%
-\contentsline {subsubsection}{\numberline {7.14.3.5}get\_uncraftable()}{59}{subsubsection.7.14.3.5}%
-\contentsline {subsubsection}{\numberline {7.14.3.6}remove\_recipe()}{60}{subsubsection.7.14.3.6}%
-\contentsline {subsection}{\numberline {7.14.4}Member Data Documentation}{60}{subsection.7.14.4}%
-\contentsline {subsubsection}{\numberline {7.14.4.1}current\_recipe}{60}{subsubsection.7.14.4.1}%
-\contentsline {subsubsection}{\numberline {7.14.4.2}recipes}{60}{subsubsection.7.14.4.2}%
-\contentsline {chapter}{\numberline {8}File Documentation}{61}{chapter.8}%
-\contentsline {section}{\numberline {8.1}systems/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}init\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}.py File Reference}{61}{section.8.1}%
-\contentsline {section}{\numberline {8.2}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}init\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{61}{section.8.2}%
-\contentsline {section}{\numberline {8.3}systems/database.py File Reference}{61}{section.8.3}%
-\contentsline {section}{\numberline {8.4}database.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{61}{section.8.4}%
-\contentsline {section}{\numberline {8.5}systems/game.py File Reference}{62}{section.8.5}%
-\contentsline {section}{\numberline {8.6}game.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{62}{section.8.6}%
-\contentsline {section}{\numberline {8.7}systems/gameobject.py File Reference}{63}{section.8.7}%
-\contentsline {section}{\numberline {8.8}gameobject.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{63}{section.8.8}%
-\contentsline {section}{\numberline {8.9}systems/inventory.py File Reference}{64}{section.8.9}%
-\contentsline {section}{\numberline {8.10}inventory.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{64}{section.8.10}%
-\contentsline {section}{\numberline {8.11}systems/item.py File Reference}{65}{section.8.11}%
-\contentsline {section}{\numberline {8.12}item.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{65}{section.8.12}%
-\contentsline {section}{\numberline {8.13}systems/person.py File Reference}{66}{section.8.13}%
-\contentsline {section}{\numberline {8.14}person.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{67}{section.8.14}%
-\contentsline {section}{\numberline {8.15}systems/player.py File Reference}{67}{section.8.15}%
-\contentsline {section}{\numberline {8.16}player.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{67}{section.8.16}%
-\contentsline {section}{\numberline {8.17}systems/quests.py File Reference}{68}{section.8.17}%
-\contentsline {section}{\numberline {8.18}quests.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{68}{section.8.18}%
-\contentsline {section}{\numberline {8.19}systems/recipe.py File Reference}{69}{section.8.19}%
-\contentsline {section}{\numberline {8.20}recipe.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{69}{section.8.20}%
-\contentsline {section}{\numberline {8.21}systems/requirements\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntax.md File Reference}{70}{section.8.21}%
-\contentsline {chapter}{Index}{71}{section*.113}%
+\contentsline {subsubsection}{\numberline {7.1.3.1}\_\_getitem\_\_()}{15}{subsubsection.7.1.3.1}%
+\contentsline {subsubsection}{\numberline {7.1.3.2}get\_item()}{15}{subsubsection.7.1.3.2}%
+\contentsline {subsubsection}{\numberline {7.1.3.3}get\_quest()}{15}{subsubsection.7.1.3.3}%
+\contentsline {subsubsection}{\numberline {7.1.3.4}get\_recipe()}{15}{subsubsection.7.1.3.4}%
+\contentsline {subsubsection}{\numberline {7.1.3.5}load\_items\_from\_file()}{16}{subsubsection.7.1.3.5}%
+\contentsline {subsubsection}{\numberline {7.1.3.6}load\_recipes\_from\_file()}{16}{subsubsection.7.1.3.6}%
+\contentsline {subsubsection}{\numberline {7.1.3.7}set\_items()}{16}{subsubsection.7.1.3.7}%
+\contentsline {subsubsection}{\numberline {7.1.3.8}verify()}{16}{subsubsection.7.1.3.8}%
+\contentsline {subsection}{\numberline {7.1.4}Member Data Documentation}{16}{subsection.7.1.4}%
+\contentsline {subsubsection}{\numberline {7.1.4.1}items}{16}{subsubsection.7.1.4.1}%
+\contentsline {subsubsection}{\numberline {7.1.4.2}locations}{17}{subsubsection.7.1.4.2}%
+\contentsline {subsubsection}{\numberline {7.1.4.3}people}{17}{subsubsection.7.1.4.3}%
+\contentsline {subsubsection}{\numberline {7.1.4.4}quests}{17}{subsubsection.7.1.4.4}%
+\contentsline {subsubsection}{\numberline {7.1.4.5}recipes}{17}{subsubsection.7.1.4.5}%
+\contentsline {subsubsection}{\numberline {7.1.4.6}recipes\_fp}{17}{subsubsection.7.1.4.6}%
+\contentsline {section}{\numberline {7.2}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}game.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Game Class Reference}{18}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Detailed Description}{19}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Constructor \& Destructor Documentation}{19}{subsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.2.1}\_\_init\_\_()}{19}{subsubsection.7.2.2.1}%
+\contentsline {subsection}{\numberline {7.2.3}Member Function Documentation}{19}{subsection.7.2.3}%
+\contentsline {subsubsection}{\numberline {7.2.3.1}add\_item()}{19}{subsubsection.7.2.3.1}%
+\contentsline {subsubsection}{\numberline {7.2.3.2}craft()}{20}{subsubsection.7.2.3.2}%
+\contentsline {subsubsection}{\numberline {7.2.3.3}get\_craftable()}{21}{subsubsection.7.2.3.3}%
+\contentsline {subsubsection}{\numberline {7.2.3.4}get\_selected\_quest()}{22}{subsubsection.7.2.3.4}%
+\contentsline {subsubsection}{\numberline {7.2.3.5}get\_uncraftable()}{22}{subsubsection.7.2.3.5}%
+\contentsline {subsubsection}{\numberline {7.2.3.6}remove\_item()}{23}{subsubsection.7.2.3.6}%
+\contentsline {subsubsection}{\numberline {7.2.3.7}set\_selected\_quest()}{24}{subsubsection.7.2.3.7}%
+\contentsline {subsubsection}{\numberline {7.2.3.8}setup()}{24}{subsubsection.7.2.3.8}%
+\contentsline {subsubsection}{\numberline {7.2.3.9}start\_quest()}{24}{subsubsection.7.2.3.9}%
+\contentsline {subsubsection}{\numberline {7.2.3.10}update()}{25}{subsubsection.7.2.3.10}%
+\contentsline {subsubsection}{\numberline {7.2.3.11}update\_quests()}{26}{subsubsection.7.2.3.11}%
+\contentsline {subsection}{\numberline {7.2.4}Member Data Documentation}{26}{subsection.7.2.4}%
+\contentsline {subsubsection}{\numberline {7.2.4.1}db}{26}{subsubsection.7.2.4.1}%
+\contentsline {subsubsection}{\numberline {7.2.4.2}location}{27}{subsubsection.7.2.4.2}%
+\contentsline {subsubsection}{\numberline {7.2.4.3}people}{27}{subsubsection.7.2.4.3}%
+\contentsline {subsubsection}{\numberline {7.2.4.4}player}{27}{subsubsection.7.2.4.4}%
+\contentsline {section}{\numberline {7.3}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}gameobject.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Game\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Object Class Reference}{27}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Detailed Description}{28}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Constructor \& Destructor Documentation}{28}{subsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.2.1}\_\_init\_\_()}{28}{subsubsection.7.3.2.1}%
+\contentsline {subsection}{\numberline {7.3.3}Member Function Documentation}{28}{subsection.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.3.1}\_\_eq\_\_()}{29}{subsubsection.7.3.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.3.2}\_\_hash\_\_()}{29}{subsubsection.7.3.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.3.3}\_\_ne\_\_()}{29}{subsubsection.7.3.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.3.4}\_\_repr\_\_()}{29}{subsubsection.7.3.3.4}%
+\contentsline {subsection}{\numberline {7.3.4}Member Data Documentation}{29}{subsection.7.3.4}%
+\contentsline {subsubsection}{\numberline {7.3.4.1}description}{29}{subsubsection.7.3.4.1}%
+\contentsline {subsubsection}{\numberline {7.3.4.2}id}{30}{subsubsection.7.3.4.2}%
+\contentsline {subsubsection}{\numberline {7.3.4.3}name}{30}{subsubsection.7.3.4.3}%
+\contentsline {section}{\numberline {7.4}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}inventory.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inventory Class Reference}{30}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Detailed Description}{30}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Constructor \& Destructor Documentation}{31}{subsection.7.4.2}%
+\contentsline {subsubsection}{\numberline {7.4.2.1}\_\_init\_\_()}{31}{subsubsection.7.4.2.1}%
+\contentsline {subsection}{\numberline {7.4.3}Member Function Documentation}{31}{subsection.7.4.3}%
+\contentsline {subsubsection}{\numberline {7.4.3.1}\_\_contains\_\_()}{31}{subsubsection.7.4.3.1}%
+\contentsline {subsubsection}{\numberline {7.4.3.2}\_\_getitem\_\_()}{31}{subsubsection.7.4.3.2}%
+\contentsline {subsubsection}{\numberline {7.4.3.3}add\_item()}{32}{subsubsection.7.4.3.3}%
+\contentsline {subsubsection}{\numberline {7.4.3.4}get\_current\_item()}{32}{subsubsection.7.4.3.4}%
+\contentsline {subsubsection}{\numberline {7.4.3.5}get\_item\_count()}{32}{subsubsection.7.4.3.5}%
+\contentsline {subsubsection}{\numberline {7.4.3.6}get\_items()}{33}{subsubsection.7.4.3.6}%
+\contentsline {subsubsection}{\numberline {7.4.3.7}remove\_item()}{33}{subsubsection.7.4.3.7}%
+\contentsline {subsubsection}{\numberline {7.4.3.8}set\_current\_item()}{33}{subsubsection.7.4.3.8}%
+\contentsline {subsection}{\numberline {7.4.4}Member Data Documentation}{33}{subsection.7.4.4}%
+\contentsline {subsubsection}{\numberline {7.4.4.1}current\_item}{34}{subsubsection.7.4.4.1}%
+\contentsline {subsubsection}{\numberline {7.4.4.2}items}{34}{subsubsection.7.4.4.2}%
+\contentsline {section}{\numberline {7.5}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}item.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inventory\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Item Class Reference}{34}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Detailed Description}{35}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Constructor \& Destructor Documentation}{35}{subsection.7.5.2}%
+\contentsline {subsubsection}{\numberline {7.5.2.1}\_\_init\_\_()}{36}{subsubsection.7.5.2.1}%
+\contentsline {subsection}{\numberline {7.5.3}Member Function Documentation}{36}{subsection.7.5.3}%
+\contentsline {subsubsection}{\numberline {7.5.3.1}\_\_iadd\_\_()}{36}{subsubsection.7.5.3.1}%
+\contentsline {subsubsection}{\numberline {7.5.3.2}\_\_isub\_\_()}{37}{subsubsection.7.5.3.2}%
+\contentsline {subsubsection}{\numberline {7.5.3.3}from\_dict()}{37}{subsubsection.7.5.3.3}%
+\contentsline {subsubsection}{\numberline {7.5.3.4}from\_item()}{37}{subsubsection.7.5.3.4}%
+\contentsline {subsubsection}{\numberline {7.5.3.5}set\_count()}{38}{subsubsection.7.5.3.5}%
+\contentsline {subsection}{\numberline {7.5.4}Member Data Documentation}{38}{subsection.7.5.4}%
+\contentsline {subsubsection}{\numberline {7.5.4.1}count}{38}{subsubsection.7.5.4.1}%
+\contentsline {section}{\numberline {7.6}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}item.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Item Class Reference}{38}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}Detailed Description}{39}{subsection.7.6.1}%
+\contentsline {subsection}{\numberline {7.6.2}Constructor \& Destructor Documentation}{39}{subsection.7.6.2}%
+\contentsline {subsubsection}{\numberline {7.6.2.1}\_\_init\_\_()}{40}{subsubsection.7.6.2.1}%
+\contentsline {subsection}{\numberline {7.6.3}Member Function Documentation}{40}{subsection.7.6.3}%
+\contentsline {subsubsection}{\numberline {7.6.3.1}\_\_str\_\_()}{40}{subsubsection.7.6.3.1}%
+\contentsline {subsubsection}{\numberline {7.6.3.2}from\_dict()}{41}{subsubsection.7.6.3.2}%
+\contentsline {subsection}{\numberline {7.6.4}Member Data Documentation}{41}{subsection.7.6.4}%
+\contentsline {subsubsection}{\numberline {7.6.4.1}icon\_path}{41}{subsubsection.7.6.4.1}%
+\contentsline {subsubsection}{\numberline {7.6.4.2}image\_path}{41}{subsubsection.7.6.4.2}%
+\contentsline {section}{\numberline {7.7}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}person.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Person Class Reference}{41}{section.7.7}%
+\contentsline {subsection}{\numberline {7.7.1}Detailed Description}{42}{subsection.7.7.1}%
+\contentsline {subsection}{\numberline {7.7.2}Constructor \& Destructor Documentation}{42}{subsection.7.7.2}%
+\contentsline {subsubsection}{\numberline {7.7.2.1}\_\_init\_\_()}{43}{subsubsection.7.7.2.1}%
+\contentsline {subsection}{\numberline {7.7.3}Member Function Documentation}{43}{subsection.7.7.3}%
+\contentsline {subsubsection}{\numberline {7.7.3.1}\_\_str\_\_()}{43}{subsubsection.7.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.7.3.2}decrease\_affinity()}{44}{subsubsection.7.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.7.3.3}get\_affinity()}{44}{subsubsection.7.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.7.3.4}increase\_affinity()}{44}{subsubsection.7.7.3.4}%
+\contentsline {subsubsection}{\numberline {7.7.3.5}set\_affinity()}{44}{subsubsection.7.7.3.5}%
+\contentsline {subsection}{\numberline {7.7.4}Member Data Documentation}{44}{subsection.7.7.4}%
+\contentsline {subsubsection}{\numberline {7.7.4.1}affinity}{44}{subsubsection.7.7.4.1}%
+\contentsline {subsubsection}{\numberline {7.7.4.2}base\_affinity}{45}{subsubsection.7.7.4.2}%
+\contentsline {subsubsection}{\numberline {7.7.4.3}location}{45}{subsubsection.7.7.4.3}%
+\contentsline {section}{\numberline {7.8}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}item.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Placeholder\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Inventory\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Item Class Reference}{45}{section.7.8}%
+\contentsline {subsection}{\numberline {7.8.1}Detailed Description}{46}{subsection.7.8.1}%
+\contentsline {subsection}{\numberline {7.8.2}Constructor \& Destructor Documentation}{46}{subsection.7.8.2}%
+\contentsline {subsubsection}{\numberline {7.8.2.1}\_\_init\_\_()}{47}{subsubsection.7.8.2.1}%
+\contentsline {section}{\numberline {7.9}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}player.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Player Class Reference}{48}{section.7.9}%
+\contentsline {subsection}{\numberline {7.9.1}Detailed Description}{49}{subsection.7.9.1}%
+\contentsline {subsection}{\numberline {7.9.2}Constructor \& Destructor Documentation}{49}{subsection.7.9.2}%
+\contentsline {subsubsection}{\numberline {7.9.2.1}\_\_init\_\_()}{49}{subsubsection.7.9.2.1}%
+\contentsline {subsection}{\numberline {7.9.3}Member Function Documentation}{49}{subsection.7.9.3}%
+\contentsline {subsubsection}{\numberline {7.9.3.1}add\_item()}{49}{subsubsection.7.9.3.1}%
+\contentsline {subsubsection}{\numberline {7.9.3.2}add\_recipe()}{50}{subsubsection.7.9.3.2}%
+\contentsline {subsubsection}{\numberline {7.9.3.3}craft()}{50}{subsubsection.7.9.3.3}%
+\contentsline {subsubsection}{\numberline {7.9.3.4}get\_craftable()}{51}{subsubsection.7.9.3.4}%
+\contentsline {subsubsection}{\numberline {7.9.3.5}get\_items()}{51}{subsubsection.7.9.3.5}%
+\contentsline {subsubsection}{\numberline {7.9.3.6}get\_quest()}{51}{subsubsection.7.9.3.6}%
+\contentsline {subsubsection}{\numberline {7.9.3.7}get\_selected\_quest()}{52}{subsubsection.7.9.3.7}%
+\contentsline {subsubsection}{\numberline {7.9.3.8}get\_uncraftable()}{52}{subsubsection.7.9.3.8}%
+\contentsline {subsubsection}{\numberline {7.9.3.9}remove\_item()}{52}{subsubsection.7.9.3.9}%
+\contentsline {subsubsection}{\numberline {7.9.3.10}set\_selected\_quest()}{53}{subsubsection.7.9.3.10}%
+\contentsline {subsubsection}{\numberline {7.9.3.11}start\_quest()}{53}{subsubsection.7.9.3.11}%
+\contentsline {subsection}{\numberline {7.9.4}Member Data Documentation}{53}{subsection.7.9.4}%
+\contentsline {subsubsection}{\numberline {7.9.4.1}inventory}{53}{subsubsection.7.9.4.1}%
+\contentsline {subsubsection}{\numberline {7.9.4.2}questlog}{53}{subsubsection.7.9.4.2}%
+\contentsline {subsubsection}{\numberline {7.9.4.3}recipebook}{53}{subsubsection.7.9.4.3}%
+\contentsline {section}{\numberline {7.10}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}quests.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Quest Class Reference}{54}{section.7.10}%
+\contentsline {subsection}{\numberline {7.10.1}Detailed Description}{55}{subsection.7.10.1}%
+\contentsline {subsection}{\numberline {7.10.2}Constructor \& Destructor Documentation}{55}{subsection.7.10.2}%
+\contentsline {subsubsection}{\numberline {7.10.2.1}\_\_init\_\_()}{55}{subsubsection.7.10.2.1}%
+\contentsline {subsection}{\numberline {7.10.3}Member Function Documentation}{56}{subsection.7.10.3}%
+\contentsline {subsubsection}{\numberline {7.10.3.1}from\_dict()}{56}{subsubsection.7.10.3.1}%
+\contentsline {subsubsection}{\numberline {7.10.3.2}get\_stage()}{56}{subsubsection.7.10.3.2}%
+\contentsline {subsubsection}{\numberline {7.10.3.3}get\_substages()}{57}{subsubsection.7.10.3.3}%
+\contentsline {subsubsection}{\numberline {7.10.3.4}next\_stage()}{57}{subsubsection.7.10.3.4}%
+\contentsline {subsubsection}{\numberline {7.10.3.5}start()}{57}{subsubsection.7.10.3.5}%
+\contentsline {subsubsection}{\numberline {7.10.3.6}substages\_completed()}{57}{subsubsection.7.10.3.6}%
+\contentsline {subsection}{\numberline {7.10.4}Member Data Documentation}{58}{subsection.7.10.4}%
+\contentsline {subsubsection}{\numberline {7.10.4.1}complete}{58}{subsubsection.7.10.4.1}%
+\contentsline {subsubsection}{\numberline {7.10.4.2}current\_stage}{58}{subsubsection.7.10.4.2}%
+\contentsline {subsubsection}{\numberline {7.10.4.3}final\_stage}{58}{subsubsection.7.10.4.3}%
+\contentsline {subsubsection}{\numberline {7.10.4.4}first\_stage}{58}{subsubsection.7.10.4.4}%
+\contentsline {subsubsection}{\numberline {7.10.4.5}stages}{58}{subsubsection.7.10.4.5}%
+\contentsline {subsubsection}{\numberline {7.10.4.6}started}{59}{subsubsection.7.10.4.6}%
+\contentsline {section}{\numberline {7.11}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}quests.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Quest\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Log Class Reference}{59}{section.7.11}%
+\contentsline {subsection}{\numberline {7.11.1}Detailed Description}{60}{subsection.7.11.1}%
+\contentsline {subsection}{\numberline {7.11.2}Constructor \& Destructor Documentation}{60}{subsection.7.11.2}%
+\contentsline {subsubsection}{\numberline {7.11.2.1}\_\_init\_\_()}{60}{subsubsection.7.11.2.1}%
+\contentsline {subsection}{\numberline {7.11.3}Member Function Documentation}{60}{subsection.7.11.3}%
+\contentsline {subsubsection}{\numberline {7.11.3.1}\_\_getitem\_\_()}{60}{subsubsection.7.11.3.1}%
+\contentsline {subsubsection}{\numberline {7.11.3.2}add\_quest()}{60}{subsubsection.7.11.3.2}%
+\contentsline {subsubsection}{\numberline {7.11.3.3}get\_active()}{61}{subsubsection.7.11.3.3}%
+\contentsline {subsubsection}{\numberline {7.11.3.4}get\_quest()}{61}{subsubsection.7.11.3.4}%
+\contentsline {subsubsection}{\numberline {7.11.3.5}set\_selected\_quest()}{61}{subsubsection.7.11.3.5}%
+\contentsline {subsection}{\numberline {7.11.4}Member Data Documentation}{62}{subsection.7.11.4}%
+\contentsline {subsubsection}{\numberline {7.11.4.1}quests}{62}{subsubsection.7.11.4.1}%
+\contentsline {subsubsection}{\numberline {7.11.4.2}selected\_quest}{62}{subsubsection.7.11.4.2}%
+\contentsline {section}{\numberline {7.12}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}quests.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Quest\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stage Class Reference}{62}{section.7.12}%
+\contentsline {subsection}{\numberline {7.12.1}Detailed Description}{63}{subsection.7.12.1}%
+\contentsline {subsection}{\numberline {7.12.2}Constructor \& Destructor Documentation}{63}{subsection.7.12.2}%
+\contentsline {subsubsection}{\numberline {7.12.2.1}\_\_init\_\_()}{64}{subsubsection.7.12.2.1}%
+\contentsline {subsection}{\numberline {7.12.3}Member Function Documentation}{64}{subsection.7.12.3}%
+\contentsline {subsubsection}{\numberline {7.12.3.1}\_\_str\_\_()}{64}{subsubsection.7.12.3.1}%
+\contentsline {subsubsection}{\numberline {7.12.3.2}from\_dict()}{65}{subsubsection.7.12.3.2}%
+\contentsline {subsection}{\numberline {7.12.4}Member Data Documentation}{65}{subsection.7.12.4}%
+\contentsline {subsubsection}{\numberline {7.12.4.1}complete}{65}{subsubsection.7.12.4.1}%
+\contentsline {subsubsection}{\numberline {7.12.4.2}next\_stage}{65}{subsubsection.7.12.4.2}%
+\contentsline {subsubsection}{\numberline {7.12.4.3}requirements}{65}{subsubsection.7.12.4.3}%
+\contentsline {subsubsection}{\numberline {7.12.4.4}substages}{65}{subsubsection.7.12.4.4}%
+\contentsline {section}{\numberline {7.13}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}recipe.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Recipe Class Reference}{66}{section.7.13}%
+\contentsline {subsection}{\numberline {7.13.1}Detailed Description}{67}{subsection.7.13.1}%
+\contentsline {subsection}{\numberline {7.13.2}Constructor \& Destructor Documentation}{67}{subsection.7.13.2}%
+\contentsline {subsubsection}{\numberline {7.13.2.1}\_\_init\_\_()}{67}{subsubsection.7.13.2.1}%
+\contentsline {subsection}{\numberline {7.13.3}Member Function Documentation}{68}{subsection.7.13.3}%
+\contentsline {subsubsection}{\numberline {7.13.3.1}\_\_eq\_\_()}{68}{subsubsection.7.13.3.1}%
+\contentsline {subsubsection}{\numberline {7.13.3.2}\_\_hash\_\_()}{68}{subsubsection.7.13.3.2}%
+\contentsline {subsubsection}{\numberline {7.13.3.3}from\_dict()}{68}{subsubsection.7.13.3.3}%
+\contentsline {subsubsection}{\numberline {7.13.3.4}is\_craftable()}{68}{subsubsection.7.13.3.4}%
+\contentsline {subsection}{\numberline {7.13.4}Member Data Documentation}{68}{subsection.7.13.4}%
+\contentsline {subsubsection}{\numberline {7.13.4.1}items}{69}{subsubsection.7.13.4.1}%
+\contentsline {subsubsection}{\numberline {7.13.4.2}requirements}{69}{subsubsection.7.13.4.2}%
+\contentsline {section}{\numberline {7.14}systems.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}recipe.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Recipe\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Book Class Reference}{69}{section.7.14}%
+\contentsline {subsection}{\numberline {7.14.1}Detailed Description}{70}{subsection.7.14.1}%
+\contentsline {subsection}{\numberline {7.14.2}Constructor \& Destructor Documentation}{70}{subsection.7.14.2}%
+\contentsline {subsubsection}{\numberline {7.14.2.1}\_\_init\_\_()}{70}{subsubsection.7.14.2.1}%
+\contentsline {subsection}{\numberline {7.14.3}Member Function Documentation}{70}{subsection.7.14.3}%
+\contentsline {subsubsection}{\numberline {7.14.3.1}add\_recipe()}{70}{subsubsection.7.14.3.1}%
+\contentsline {subsubsection}{\numberline {7.14.3.2}craft()}{71}{subsubsection.7.14.3.2}%
+\contentsline {subsubsection}{\numberline {7.14.3.3}get\_craftable()}{71}{subsubsection.7.14.3.3}%
+\contentsline {subsubsection}{\numberline {7.14.3.4}get\_recipe()}{71}{subsubsection.7.14.3.4}%
+\contentsline {subsubsection}{\numberline {7.14.3.5}get\_uncraftable()}{72}{subsubsection.7.14.3.5}%
+\contentsline {subsubsection}{\numberline {7.14.3.6}remove\_recipe()}{72}{subsubsection.7.14.3.6}%
+\contentsline {subsection}{\numberline {7.14.4}Member Data Documentation}{72}{subsection.7.14.4}%
+\contentsline {subsubsection}{\numberline {7.14.4.1}current\_recipe}{72}{subsubsection.7.14.4.1}%
+\contentsline {subsubsection}{\numberline {7.14.4.2}recipes}{72}{subsubsection.7.14.4.2}%
+\contentsline {chapter}{\numberline {8}File Documentation}{73}{chapter.8}%
+\contentsline {section}{\numberline {8.1}systems/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}init\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}.py File Reference}{73}{section.8.1}%
+\contentsline {section}{\numberline {8.2}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}init\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{73}{section.8.2}%
+\contentsline {section}{\numberline {8.3}systems/database.py File Reference}{73}{section.8.3}%
+\contentsline {section}{\numberline {8.4}database.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{73}{section.8.4}%
+\contentsline {section}{\numberline {8.5}systems/game.py File Reference}{74}{section.8.5}%
+\contentsline {section}{\numberline {8.6}game.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{74}{section.8.6}%
+\contentsline {section}{\numberline {8.7}systems/gameobject.py File Reference}{77}{section.8.7}%
+\contentsline {section}{\numberline {8.8}gameobject.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{77}{section.8.8}%
+\contentsline {section}{\numberline {8.9}systems/inventory.py File Reference}{77}{section.8.9}%
+\contentsline {section}{\numberline {8.10}inventory.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{78}{section.8.10}%
+\contentsline {section}{\numberline {8.11}systems/item.py File Reference}{79}{section.8.11}%
+\contentsline {section}{\numberline {8.12}item.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{79}{section.8.12}%
+\contentsline {section}{\numberline {8.13}systems/person.py File Reference}{80}{section.8.13}%
+\contentsline {section}{\numberline {8.14}person.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{81}{section.8.14}%
+\contentsline {section}{\numberline {8.15}systems/player.py File Reference}{81}{section.8.15}%
+\contentsline {section}{\numberline {8.16}player.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{81}{section.8.16}%
+\contentsline {section}{\numberline {8.17}systems/quests.py File Reference}{82}{section.8.17}%
+\contentsline {section}{\numberline {8.18}quests.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{82}{section.8.18}%
+\contentsline {section}{\numberline {8.19}systems/recipe.py File Reference}{84}{section.8.19}%
+\contentsline {section}{\numberline {8.20}recipe.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{84}{section.8.20}%
+\contentsline {section}{\numberline {8.21}systems/requirements\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntax.md File Reference}{85}{section.8.21}%
+\contentsline {chapter}{Index}{87}{section*.135}%

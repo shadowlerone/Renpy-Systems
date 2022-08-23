@@ -23,6 +23,8 @@ Collaboration diagram for systems.\+database.\+Database\+:\nopagebreak
 \item 
 def \mbox{\hyperlink{classsystems_1_1database_1_1_database_ae88b2cf4bfd42a0f97126c3888b08093}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, directory=\textquotesingle{}data\textquotesingle{}, item\+\_\+fp=\textquotesingle{}items.\+json\textquotesingle{}, recipe\+\_\+fp=\textquotesingle{}recipes.\+json\textquotesingle{})
 \item 
+def \mbox{\hyperlink{classsystems_1_1database_1_1_database_a2524a54db20049100293d4e8acf11b34}{verify}} (self)
+\item 
 def \mbox{\hyperlink{classsystems_1_1database_1_1_database_ae9390d3807a6a781fb7914480fc65186}{load\+\_\+items\+\_\+from\+\_\+file}} (self, file)
 \item 
 def \mbox{\hyperlink{classsystems_1_1database_1_1_database_ad12b50fec2c22d2df20651cb48844311}{load\+\_\+recipes\+\_\+from\+\_\+file}} (self, file)
@@ -32,6 +34,10 @@ def \mbox{\hyperlink{classsystems_1_1database_1_1_database_a62ca49b164a863f5f9e6
 def \mbox{\hyperlink{classsystems_1_1database_1_1_database_aac860297aa534950d9754facfdda4848}{get\+\_\+recipe}} (self, recipe\+\_\+id=\textquotesingle{}\textquotesingle{})
 \item 
 def \mbox{\hyperlink{classsystems_1_1database_1_1_database_af7366d1383a0b983b90ced39843d98b7}{get\+\_\+quest}} (self, quest\+\_\+id)
+\item 
+def \mbox{\hyperlink{classsystems_1_1database_1_1_database_a525c46731d55ffe552df5970d5f4228b}{set\+\_\+items}} (self, \mbox{\hyperlink{classsystems_1_1database_1_1_database_a4479a0266adc641b4dd623e598e02930}{items}})
+\item 
+def \mbox{\hyperlink{classsystems_1_1database_1_1_database_abb44337d35c276932cade20c324f115d}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, key)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -41,6 +47,12 @@ def \mbox{\hyperlink{classsystems_1_1database_1_1_database_af7366d1383a0b983b90c
 \mbox{\hyperlink{classsystems_1_1database_1_1_database_a4479a0266adc641b4dd623e598e02930}{items}}
 \item 
 \mbox{\hyperlink{classsystems_1_1database_1_1_database_a313a714187f831c4189f9fd1a0172b85}{recipes}}
+\item 
+\mbox{\hyperlink{classsystems_1_1database_1_1_database_ab3eabc6aaa2da62eff414212c02f863a}{quests}}
+\item 
+\mbox{\hyperlink{classsystems_1_1database_1_1_database_a861fb193432574ae949fc41f5c4b6061}{people}}
+\item 
+\mbox{\hyperlink{classsystems_1_1database_1_1_database_a556438deefc016bfc1d19a58ba2abb5b}{locations}}
 \end{DoxyCompactItemize}
 
 
@@ -65,6 +77,16 @@ Definition at line \mbox{\hyperlink{database_8py_source_l00006}{6}} of file \mbo
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystems_1_1database_1_1_database_abb44337d35c276932cade20c324f115d}\label{classsystems_1_1database_1_1_database_abb44337d35c276932cade20c324f115d}} 
+\index{systems.database.Database@{systems.database.Database}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!systems.database.Database@{systems.database.Database}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily def systems.\+database.\+Database.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{database_8py_source_l00057}{57}} of file \mbox{\hyperlink{database_8py_source}{database.\+py}}.
+
 \mbox{\Hypertarget{classsystems_1_1database_1_1_database_a62ca49b164a863f5f9e6538f25b3274c}\label{classsystems_1_1database_1_1_database_a62ca49b164a863f5f9e6538f25b3274c}} 
 \index{systems.database.Database@{systems.database.Database}!get\_item@{get\_item}}
 \index{get\_item@{get\_item}!systems.database.Database@{systems.database.Database}}
@@ -73,7 +95,7 @@ Definition at line \mbox{\hyperlink{database_8py_source_l00006}{6}} of file \mbo
 
 
 
-Definition at line \mbox{\hyperlink{database_8py_source_l00032}{32}} of file \mbox{\hyperlink{database_8py_source}{database.\+py}}.
+Definition at line \mbox{\hyperlink{database_8py_source_l00043}{43}} of file \mbox{\hyperlink{database_8py_source}{database.\+py}}.
 
 \mbox{\Hypertarget{classsystems_1_1database_1_1_database_af7366d1383a0b983b90ced39843d98b7}\label{classsystems_1_1database_1_1_database_af7366d1383a0b983b90ced39843d98b7}} 
 \index{systems.database.Database@{systems.database.Database}!get\_quest@{get\_quest}}
@@ -83,8 +105,15 @@ Definition at line \mbox{\hyperlink{database_8py_source_l00032}{32}} of file \mb
 
 
 
-Definition at line \mbox{\hyperlink{database_8py_source_l00038}{38}} of file \mbox{\hyperlink{database_8py_source}{database.\+py}}.
+Definition at line \mbox{\hyperlink{database_8py_source_l00049}{49}} of file \mbox{\hyperlink{database_8py_source}{database.\+py}}.
 
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsystems_1_1database_1_1_database_af7366d1383a0b983b90ced39843d98b7_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{classsystems_1_1database_1_1_database_aac860297aa534950d9754facfdda4848}\label{classsystems_1_1database_1_1_database_aac860297aa534950d9754facfdda4848}} 
 \index{systems.database.Database@{systems.database.Database}!get\_recipe@{get\_recipe}}
 \index{get\_recipe@{get\_recipe}!systems.database.Database@{systems.database.Database}}
@@ -93,7 +122,7 @@ Definition at line \mbox{\hyperlink{database_8py_source_l00038}{38}} of file \mb
 
 
 
-Definition at line \mbox{\hyperlink{database_8py_source_l00035}{35}} of file \mbox{\hyperlink{database_8py_source}{database.\+py}}.
+Definition at line \mbox{\hyperlink{database_8py_source_l00046}{46}} of file \mbox{\hyperlink{database_8py_source}{database.\+py}}.
 
 \mbox{\Hypertarget{classsystems_1_1database_1_1_database_ae9390d3807a6a781fb7914480fc65186}\label{classsystems_1_1database_1_1_database_ae9390d3807a6a781fb7914480fc65186}} 
 \index{systems.database.Database@{systems.database.Database}!load\_items\_from\_file@{load\_items\_from\_file}}
@@ -103,7 +132,7 @@ Definition at line \mbox{\hyperlink{database_8py_source_l00035}{35}} of file \mb
 
 
 
-Definition at line \mbox{\hyperlink{database_8py_source_l00018}{18}} of file \mbox{\hyperlink{database_8py_source}{database.\+py}}.
+Definition at line \mbox{\hyperlink{database_8py_source_l00029}{29}} of file \mbox{\hyperlink{database_8py_source}{database.\+py}}.
 
 \mbox{\Hypertarget{classsystems_1_1database_1_1_database_ad12b50fec2c22d2df20651cb48844311}\label{classsystems_1_1database_1_1_database_ad12b50fec2c22d2df20651cb48844311}} 
 \index{systems.database.Database@{systems.database.Database}!load\_recipes\_from\_file@{load\_recipes\_from\_file}}
@@ -113,7 +142,27 @@ Definition at line \mbox{\hyperlink{database_8py_source_l00018}{18}} of file \mb
 
 
 
-Definition at line \mbox{\hyperlink{database_8py_source_l00025}{25}} of file \mbox{\hyperlink{database_8py_source}{database.\+py}}.
+Definition at line \mbox{\hyperlink{database_8py_source_l00036}{36}} of file \mbox{\hyperlink{database_8py_source}{database.\+py}}.
+
+\mbox{\Hypertarget{classsystems_1_1database_1_1_database_a525c46731d55ffe552df5970d5f4228b}\label{classsystems_1_1database_1_1_database_a525c46731d55ffe552df5970d5f4228b}} 
+\index{systems.database.Database@{systems.database.Database}!set\_items@{set\_items}}
+\index{set\_items@{set\_items}!systems.database.Database@{systems.database.Database}}
+\doxysubsubsection{\texorpdfstring{set\_items()}{set\_items()}}
+{\footnotesize\ttfamily def systems.\+database.\+Database.\+set\+\_\+items (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{items }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{database_8py_source_l00053}{53}} of file \mbox{\hyperlink{database_8py_source}{database.\+py}}.
+
+\mbox{\Hypertarget{classsystems_1_1database_1_1_database_a2524a54db20049100293d4e8acf11b34}\label{classsystems_1_1database_1_1_database_a2524a54db20049100293d4e8acf11b34}} 
+\index{systems.database.Database@{systems.database.Database}!verify@{verify}}
+\index{verify@{verify}!systems.database.Database@{systems.database.Database}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily def systems.\+database.\+Database.\+verify (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{database_8py_source_l00022}{22}} of file \mbox{\hyperlink{database_8py_source}{database.\+py}}.
 
 
 
@@ -127,6 +176,36 @@ Definition at line \mbox{\hyperlink{database_8py_source_l00025}{25}} of file \mb
 
 
 Definition at line \mbox{\hyperlink{database_8py_source_l00014}{14}} of file \mbox{\hyperlink{database_8py_source}{database.\+py}}.
+
+\mbox{\Hypertarget{classsystems_1_1database_1_1_database_a556438deefc016bfc1d19a58ba2abb5b}\label{classsystems_1_1database_1_1_database_a556438deefc016bfc1d19a58ba2abb5b}} 
+\index{systems.database.Database@{systems.database.Database}!locations@{locations}}
+\index{locations@{locations}!systems.database.Database@{systems.database.Database}}
+\doxysubsubsection{\texorpdfstring{locations}{locations}}
+{\footnotesize\ttfamily systems.\+database.\+Database.\+locations}
+
+
+
+Definition at line \mbox{\hyperlink{database_8py_source_l00018}{18}} of file \mbox{\hyperlink{database_8py_source}{database.\+py}}.
+
+\mbox{\Hypertarget{classsystems_1_1database_1_1_database_a861fb193432574ae949fc41f5c4b6061}\label{classsystems_1_1database_1_1_database_a861fb193432574ae949fc41f5c4b6061}} 
+\index{systems.database.Database@{systems.database.Database}!people@{people}}
+\index{people@{people}!systems.database.Database@{systems.database.Database}}
+\doxysubsubsection{\texorpdfstring{people}{people}}
+{\footnotesize\ttfamily systems.\+database.\+Database.\+people}
+
+
+
+Definition at line \mbox{\hyperlink{database_8py_source_l00017}{17}} of file \mbox{\hyperlink{database_8py_source}{database.\+py}}.
+
+\mbox{\Hypertarget{classsystems_1_1database_1_1_database_ab3eabc6aaa2da62eff414212c02f863a}\label{classsystems_1_1database_1_1_database_ab3eabc6aaa2da62eff414212c02f863a}} 
+\index{systems.database.Database@{systems.database.Database}!quests@{quests}}
+\index{quests@{quests}!systems.database.Database@{systems.database.Database}}
+\doxysubsubsection{\texorpdfstring{quests}{quests}}
+{\footnotesize\ttfamily systems.\+database.\+Database.\+quests}
+
+
+
+Definition at line \mbox{\hyperlink{database_8py_source_l00016}{16}} of file \mbox{\hyperlink{database_8py_source}{database.\+py}}.
 
 \mbox{\Hypertarget{classsystems_1_1database_1_1_database_a313a714187f831c4189f9fd1a0172b85}\label{classsystems_1_1database_1_1_database_a313a714187f831c4189f9fd1a0172b85}} 
 \index{systems.database.Database@{systems.database.Database}!recipes@{recipes}}

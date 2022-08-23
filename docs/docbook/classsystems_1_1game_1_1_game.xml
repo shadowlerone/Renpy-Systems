@@ -25,15 +25,27 @@ Collaboration diagram for systems.game.Game:<para>
         <itemizedlist>
             <listitem><para>def <link linkend="_classsystems_1_1game_1_1_game_1a0dad2af0de9d446b1c89ff17b6b3967c">__init__</link> (self)</para>
 </listitem>
-            <listitem><para>def <link linkend="_classsystems_1_1game_1_1_game_1aea23c41a7da5bb1eafcf4fc46219e07e">game_event</link> (func)</para>
-</listitem>
-            <listitem><para>def <link linkend="_classsystems_1_1game_1_1_game_1a1d2b00fb7920e4736c00e851670e1761">setup</link> (self, <link linkend="_classsystems_1_1game_1_1_game_1a8d2c7ed5a3b01cdfbc317e59fd0b9f40">people</link>=None, locations=None, from_db=None, fps=False)</para>
+            <listitem><para>def <link linkend="_classsystems_1_1game_1_1_game_1a97ee49e450667af7d6b5ad9a7365fa94">setup</link> (self, <link linkend="_classsystems_1_1game_1_1_game_1a8d2c7ed5a3b01cdfbc317e59fd0b9f40">people</link>=None, locations=None, from_db=False, fps={}, items=[], recipes=[], quests=[])</para>
 </listitem>
             <listitem><para>def <link linkend="_classsystems_1_1game_1_1_game_1ae1914099705c785ad7b1d88a1481fd7e">start_quest</link> (self, quest_id=None, quest_object=None)</para>
 </listitem>
             <listitem><para>def <link linkend="_classsystems_1_1game_1_1_game_1acb1e8ccfd196c887f110ee3a8f12d2b9">update</link> (self)</para>
 </listitem>
             <listitem><para>def <link linkend="_classsystems_1_1game_1_1_game_1aa72bcad0b355393a8909707989bd6578">update_quests</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1game_1_1_game_1a754f6b7421c5f8a1cb28862aa4ec64a5">set_selected_quest</link> (self, quest_id)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1game_1_1_game_1a224faddfdd1c9e37591656faa9daddac">get_selected_quest</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1game_1_1_game_1a6d165b08a47f46fe29cea84926cce40e">add_item</link> (self, item, count=1)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1game_1_1_game_1af81c50ef6681a4f03ee49b47c2997ea5">remove_item</link> (self, item, count=1)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1game_1_1_game_1add0f2fab59333e3ac55472e401b9e58c">craft</link> (self, recipe)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1game_1_1_game_1a0573c02b980933786722a627c642361d">get_craftable</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1game_1_1_game_1a2dc59b2bb8b6be0e2692f0e4b40d8e6e">get_uncraftable</link> (self)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -53,7 +65,7 @@ Collaboration diagram for systems.game.Game:<para>
 <section>
 <title>Detailed Description</title>
 <para>
-Definition at line <link linkend="_game_8py_source_1l00004">4</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
+Definition at line <link linkend="_game_8py_source_1l00005">5</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
@@ -62,37 +74,195 @@ Definition at line <link linkend="_game_8py_source_1l00004">4</link> of file <li
 <indexterm><primary>__init__</primary><secondary>systems.game.Game</secondary></indexterm>
 <indexterm><primary>systems.game.Game</primary><secondary>__init__</secondary></indexterm>
 <para><computeroutput>def systems.game.Game.__init__ ( self)</computeroutput></para><para>
-Definition at line <link linkend="_game_8py_source_1l00005">5</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
+Definition at line <link linkend="_game_8py_source_1l00006">6</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
 </section>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_classsystems_1_1game_1_1_game_1aea23c41a7da5bb1eafcf4fc46219e07e"/><section>
-    <title>game_event()</title>
-<indexterm><primary>game_event</primary><secondary>systems.game.Game</secondary></indexterm>
-<indexterm><primary>systems.game.Game</primary><secondary>game_event</secondary></indexterm>
-<para><computeroutput>def systems.game.Game.game_event ( func)</computeroutput></para><para>
-Definition at line <link linkend="_game_8py_source_1l00013">13</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
+<anchor xml:id="_classsystems_1_1game_1_1_game_1a6d165b08a47f46fe29cea84926cce40e"/><section>
+    <title>add_item()</title>
+<indexterm><primary>add_item</primary><secondary>systems.game.Game</secondary></indexterm>
+<indexterm><primary>systems.game.Game</primary><secondary>add_item</secondary></indexterm>
+<para><computeroutput>def systems.game.Game.add_item ( self,  item,  count = <computeroutput>1</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Adds an item to the Player&apos;s inventory.
+        
+        Keyword Arguments:
+        item -- id or Item object to add
+        count -- amount of the item to add (default: 1)</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_game_8py_source_1l00141">141</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
 Here is the call graph for this function:<para>
     <informalfigure>
         <mediaobject>
             <imageobject>
-                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1game_1_1_game_aea23c41a7da5bb1eafcf4fc46219e07e_cgraph.png"></imagedata>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1game_1_1_game_a6d165b08a47f46fe29cea84926cce40e_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1game_1_1_game_a6d165b08a47f46fe29cea84926cce40e_icgraph.png"></imagedata>
             </imageobject>
         </mediaobject>
     </informalfigure>
 </para>
 </section>
-<anchor xml:id="_classsystems_1_1game_1_1_game_1a1d2b00fb7920e4736c00e851670e1761"/><section>
+<anchor xml:id="_classsystems_1_1game_1_1_game_1add0f2fab59333e3ac55472e401b9e58c"/><section>
+    <title>craft()</title>
+<indexterm><primary>craft</primary><secondary>systems.game.Game</secondary></indexterm>
+<indexterm><primary>systems.game.Game</primary><secondary>craft</secondary></indexterm>
+<para><computeroutput>def systems.game.Game.craft ( self,  recipe)</computeroutput></para>
+<para><literallayout><computeroutput>        Crafts Recipe.
+        
+        Checks player&apos;s inventory for required Item(s), removes them from the player&apos;s inventory, adds the crafted Item(s), then updates the Game object.
+
+        Arguments:
+        recipe -- id or Recipe object to craft</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_game_8py_source_1l00162">162</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1game_1_1_game_add0f2fab59333e3ac55472e401b9e58c_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classsystems_1_1game_1_1_game_1a0573c02b980933786722a627c642361d"/><section>
+    <title>get_craftable()</title>
+<indexterm><primary>get_craftable</primary><secondary>systems.game.Game</secondary></indexterm>
+<indexterm><primary>systems.game.Game</primary><secondary>get_craftable</secondary></indexterm>
+<para><computeroutput>def systems.game.Game.get_craftable ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Returns a list of craftable recipes.</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_game_8py_source_1l00189">189</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1game_1_1_game_a0573c02b980933786722a627c642361d_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1game_1_1_game_a0573c02b980933786722a627c642361d_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classsystems_1_1game_1_1_game_1a224faddfdd1c9e37591656faa9daddac"/><section>
+    <title>get_selected_quest()</title>
+<indexterm><primary>get_selected_quest</primary><secondary>systems.game.Game</secondary></indexterm>
+<indexterm><primary>systems.game.Game</primary><secondary>get_selected_quest</secondary></indexterm>
+<para><computeroutput>def systems.game.Game.get_selected_quest ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Returns the currently selected Quest</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_game_8py_source_1l00137">137</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1game_1_1_game_1a2dc59b2bb8b6be0e2692f0e4b40d8e6e"/><section>
+    <title>get_uncraftable()</title>
+<indexterm><primary>get_uncraftable</primary><secondary>systems.game.Game</secondary></indexterm>
+<indexterm><primary>systems.game.Game</primary><secondary>get_uncraftable</secondary></indexterm>
+<para><computeroutput>def systems.game.Game.get_uncraftable ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Returns a list of uncraftable recipes.</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_game_8py_source_1l00193">193</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1game_1_1_game_a2dc59b2bb8b6be0e2692f0e4b40d8e6e_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1game_1_1_game_a2dc59b2bb8b6be0e2692f0e4b40d8e6e_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classsystems_1_1game_1_1_game_1af81c50ef6681a4f03ee49b47c2997ea5"/><section>
+    <title>remove_item()</title>
+<indexterm><primary>remove_item</primary><secondary>systems.game.Game</secondary></indexterm>
+<indexterm><primary>systems.game.Game</primary><secondary>remove_item</secondary></indexterm>
+<para><computeroutput>def systems.game.Game.remove_item ( self,  item,  count = <computeroutput>1</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>        Removes an Item from the Player&apos;s Inventory.
+
+        Keyword arguments:
+        Keyword Arguments:
+        item -- id or Item object to remove
+        count -- amount of the item to add (default: 1)</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_game_8py_source_1l00150">150</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1game_1_1_game_af81c50ef6681a4f03ee49b47c2997ea5_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1game_1_1_game_af81c50ef6681a4f03ee49b47c2997ea5_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classsystems_1_1game_1_1_game_1a754f6b7421c5f8a1cb28862aa4ec64a5"/><section>
+    <title>set_selected_quest()</title>
+<indexterm><primary>set_selected_quest</primary><secondary>systems.game.Game</secondary></indexterm>
+<indexterm><primary>systems.game.Game</primary><secondary>set_selected_quest</secondary></indexterm>
+<para><computeroutput>def systems.game.Game.set_selected_quest ( self,  quest_id)</computeroutput></para>
+<para><literallayout><computeroutput>Returns Quest with given ID</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_game_8py_source_1l00133">133</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1game_1_1_game_1a97ee49e450667af7d6b5ad9a7365fa94"/><section>
     <title>setup()</title>
 <indexterm><primary>setup</primary><secondary>systems.game.Game</secondary></indexterm>
 <indexterm><primary>systems.game.Game</primary><secondary>setup</secondary></indexterm>
 <para><computeroutput>def systems.game.Game.setup ( self,  people = <computeroutput>None</computeroutput>
 ,  locations = <computeroutput>None</computeroutput>
-,  from_db = <computeroutput>None</computeroutput>
-,  fps = <computeroutput>False</computeroutput>
-)</computeroutput></para><para>
-Definition at line <link linkend="_game_8py_source_1l00020">20</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
+,  from_db = <computeroutput>False</computeroutput>
+,  fps = <computeroutput>{}</computeroutput>
+,  items = <computeroutput>[]</computeroutput>
+,  recipes = <computeroutput>[]</computeroutput>
+,  quests = <computeroutput>[]</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Setup the Game Object
+
+        Keyword Arguments:
+        people -- a list of people objects
+        locations -- a list of locations
+        from_db -- Whether or not to setup game from a Database - Currently unimplemented
+        fps -- A dict of file-like objects used to initialize the Database
+        items -- a list of Item objects
+        recipes -- a list of Recipe objects
+        quests -- a list of Quest objects</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_game_8py_source_1l00013">13</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1game_1_1_game_1ae1914099705c785ad7b1d88a1481fd7e"/><section>
     <title>start_quest()</title>
@@ -100,8 +270,15 @@ Definition at line <link linkend="_game_8py_source_1l00020">20</link> of file <l
 <indexterm><primary>systems.game.Game</primary><secondary>start_quest</secondary></indexterm>
 <para><computeroutput>def systems.game.Game.start_quest ( self,  quest_id = <computeroutput>None</computeroutput>
 ,  quest_object = <computeroutput>None</computeroutput>
-)</computeroutput></para><para>
-Definition at line <link linkend="_game_8py_source_1l00036">36</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
+)</computeroutput></para>
+<para><literallayout><computeroutput>        Starts a Quest, the updates the game object&apos;s state.
+
+        Keyword Arguments
+        quest_id -- the ID of the quest
+        quest_object -- a quest object
+        Only one is required.</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_game_8py_source_1l00052">52</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
 Here is the call graph for this function:<para>
     <informalfigure>
         <mediaobject>
@@ -125,8 +302,10 @@ Here is the caller graph for this function:<para>
     <title>update()</title>
 <indexterm><primary>update</primary><secondary>systems.game.Game</secondary></indexterm>
 <indexterm><primary>systems.game.Game</primary><secondary>update</secondary></indexterm>
-<para><computeroutput>def systems.game.Game.update ( self)</computeroutput></para><para>
-Definition at line <link linkend="_game_8py_source_1l00051">51</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
+<para><computeroutput>def systems.game.Game.update ( self)</computeroutput></para>
+<para><literallayout><computeroutput>        Updates the Game object&apos;s state</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_game_8py_source_1l00078">78</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
 Here is the call graph for this function:<para>
     <informalfigure>
         <mediaobject>
@@ -150,8 +329,12 @@ Here is the caller graph for this function:<para>
     <title>update_quests()</title>
 <indexterm><primary>update_quests</primary><secondary>systems.game.Game</secondary></indexterm>
 <indexterm><primary>systems.game.Game</primary><secondary>update_quests</secondary></indexterm>
-<para><computeroutput>def systems.game.Game.update_quests ( self)</computeroutput></para><para>
-Definition at line <link linkend="_game_8py_source_1l00055">55</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
+<para><computeroutput>def systems.game.Game.update_quests ( self)</computeroutput></para>
+<para><literallayout><computeroutput>        Updates all active quests.
+
+        More to be implemented soon.</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_game_8py_source_1l00085">85</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
 Here is the caller graph for this function:<para>
     <informalfigure>
         <mediaobject>
@@ -170,28 +353,28 @@ Here is the caller graph for this function:<para>
 <indexterm><primary>db</primary><secondary>systems.game.Game</secondary></indexterm>
 <indexterm><primary>systems.game.Game</primary><secondary>db</secondary></indexterm>
 <para><computeroutput>systems.game.Game.db</computeroutput></para><para>
-Definition at line <link linkend="_game_8py_source_1l00007">7</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
+Definition at line <link linkend="_game_8py_source_1l00008">8</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1game_1_1_game_1a8ff7162c9f84eb5bd70e3f5ac1c46716"/><section>
     <title>location</title>
 <indexterm><primary>location</primary><secondary>systems.game.Game</secondary></indexterm>
 <indexterm><primary>systems.game.Game</primary><secondary>location</secondary></indexterm>
 <para><computeroutput>systems.game.Game.location</computeroutput></para><para>
-Definition at line <link linkend="_game_8py_source_1l00034">34</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
+Definition at line <link linkend="_game_8py_source_1l00042">42</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1game_1_1_game_1a8d2c7ed5a3b01cdfbc317e59fd0b9f40"/><section>
     <title>people</title>
 <indexterm><primary>people</primary><secondary>systems.game.Game</secondary></indexterm>
 <indexterm><primary>systems.game.Game</primary><secondary>people</secondary></indexterm>
 <para><computeroutput>systems.game.Game.people</computeroutput></para><para>
-Definition at line <link linkend="_game_8py_source_1l00006">6</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
+Definition at line <link linkend="_game_8py_source_1l00007">7</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1game_1_1_game_1ab7e5f01f31ac2c8d44fccad531402534"/><section>
     <title>player</title>
 <indexterm><primary>player</primary><secondary>systems.game.Game</secondary></indexterm>
 <indexterm><primary>systems.game.Game</primary><secondary>player</secondary></indexterm>
 <para><computeroutput>systems.game.Game.player</computeroutput></para><para>
-Definition at line <link linkend="_game_8py_source_1l00008">8</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
+Definition at line <link linkend="_game_8py_source_1l00009">9</link> of file <link linkend="_game_8py_source">game.py</link>.</para>
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>

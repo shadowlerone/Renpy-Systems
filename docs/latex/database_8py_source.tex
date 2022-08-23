@@ -17,29 +17,48 @@
 \DoxyCodeLine{\Hypertarget{database_8py_source_l00013}00013         \textcolor{comment}{\# self.item\_list = self.load\_items\_from\_file()}}
 \DoxyCodeLine{\Hypertarget{database_8py_source_l00014}\mbox{\hyperlink{classsystems_1_1database_1_1_database_a4479a0266adc641b4dd623e598e02930}{00014}}         self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_a4479a0266adc641b4dd623e598e02930}{items}} = \{\}}
 \DoxyCodeLine{\Hypertarget{database_8py_source_l00015}\mbox{\hyperlink{classsystems_1_1database_1_1_database_a313a714187f831c4189f9fd1a0172b85}{00015}}         self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_a313a714187f831c4189f9fd1a0172b85}{recipes}} = \{\}}
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00016}00016         \textcolor{comment}{\# self.recipe\_list = self.load\_recipes\_from\_file()}}
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00017}00017 }
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00018}\mbox{\hyperlink{classsystems_1_1database_1_1_database_ae9390d3807a6a781fb7914480fc65186}{00018}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1database_1_1_database_ae9390d3807a6a781fb7914480fc65186}{load\_items\_from\_file}}(self, file):}
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00019}00019         data = json.load(file)}
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00020}00020         items = \{\}}
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00021}00021         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} data:}
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00022}00022             items[i[\textcolor{stringliteral}{'id'}] \textcolor{keywordflow}{if} \textcolor{stringliteral}{'id'} \textcolor{keywordflow}{in} i \textcolor{keywordflow}{else} i[\textcolor{stringliteral}{'name'}].lower()] = Item.from\_dict(i)}
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00023}00023         self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_a4479a0266adc641b4dd623e598e02930}{items}} = items}
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00024}00024 }
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00025}\mbox{\hyperlink{classsystems_1_1database_1_1_database_ad12b50fec2c22d2df20651cb48844311}{00025}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1database_1_1_database_ad12b50fec2c22d2df20651cb48844311}{load\_recipes\_from\_file}}(self, file):}
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00026}00026         data = json.load(file)}
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00027}00027         recipes = \{\}}
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00028}00028         \textcolor{keywordflow}{for} r \textcolor{keywordflow}{in} data:}
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00029}00029             recipes[r[\textcolor{stringliteral}{'id'}] \textcolor{keywordflow}{if} \textcolor{stringliteral}{'id'} \textcolor{keywordflow}{in} r \textcolor{keywordflow}{else} r[\textcolor{stringliteral}{'name'}].lower()] = Recipe.from\_dict(r)}
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00030}00030         self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_a313a714187f831c4189f9fd1a0172b85}{recipes}} = recipes}
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00031}00031     }
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00032}\mbox{\hyperlink{classsystems_1_1database_1_1_database_a62ca49b164a863f5f9e6538f25b3274c}{00032}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1database_1_1_database_a62ca49b164a863f5f9e6538f25b3274c}{get\_item}}(self, item\_id=''):}
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00033}00033         \textcolor{keywordflow}{return} self.item\_list[item\_id]}
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00034}00034 }
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00035}\mbox{\hyperlink{classsystems_1_1database_1_1_database_aac860297aa534950d9754facfdda4848}{00035}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1database_1_1_database_aac860297aa534950d9754facfdda4848}{get\_recipe}}(self, recipe\_id=''):}
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00036}00036         \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_a313a714187f831c4189f9fd1a0172b85}{recipes}}[recipe\_id]}
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00037}00037     }
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00038}\mbox{\hyperlink{classsystems_1_1database_1_1_database_af7366d1383a0b983b90ced39843d98b7}{00038}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1database_1_1_database_af7366d1383a0b983b90ced39843d98b7}{get\_quest}}(self, quest\_id):}
-\DoxyCodeLine{\Hypertarget{database_8py_source_l00039}00039         \textcolor{keywordflow}{pass}}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00016}\mbox{\hyperlink{classsystems_1_1database_1_1_database_ab3eabc6aaa2da62eff414212c02f863a}{00016}}         self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_ab3eabc6aaa2da62eff414212c02f863a}{quests}} = \{\}}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00017}\mbox{\hyperlink{classsystems_1_1database_1_1_database_a861fb193432574ae949fc41f5c4b6061}{00017}}         self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_a861fb193432574ae949fc41f5c4b6061}{people}} = \{\}}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00018}\mbox{\hyperlink{classsystems_1_1database_1_1_database_a556438deefc016bfc1d19a58ba2abb5b}{00018}}         self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_a556438deefc016bfc1d19a58ba2abb5b}{locations}} = \{\}}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00019}00019         \textcolor{comment}{\# self.recipe\_list = self.load\_recipes\_from\_file()}}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00022}\mbox{\hyperlink{classsystems_1_1database_1_1_database_a2524a54db20049100293d4e8acf11b34}{00022}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1database_1_1_database_a2524a54db20049100293d4e8acf11b34}{verify}}(self):}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00023}00023         all\_ids = [i.id \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_a4479a0266adc641b4dd623e598e02930}{items}}.values() + self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_a313a714187f831c4189f9fd1a0172b85}{recipes}}.values() + self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_ab3eabc6aaa2da62eff414212c02f863a}{quests}}.values() + self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_a861fb193432574ae949fc41f5c4b6061}{people}}.values() + self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_a556438deefc016bfc1d19a58ba2abb5b}{locations}}.values()]}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00024}00024         dupes = [(i, all\_ids.count(1)) \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} all\_ids \textcolor{keywordflow}{if} all\_ids.count(i) > 1]}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00025}00025         \textcolor{keywordflow}{if} len(dupes) > 0:}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00026}00026             \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"{}\(\backslash\)n"{}}.join([\textcolor{stringliteral}{"{}ID: \{\} occurs \{\} times in Database"{}}.format(i[0], i[1]) \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} dupes]))}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00027}00027         }
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00029}\mbox{\hyperlink{classsystems_1_1database_1_1_database_ae9390d3807a6a781fb7914480fc65186}{00029}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1database_1_1_database_ae9390d3807a6a781fb7914480fc65186}{load\_items\_from\_file}}(self, file):}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00030}00030         data = json.load(file)}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00031}00031         items = \{\}}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00032}00032         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} data:}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00033}00033             items[i[\textcolor{stringliteral}{'id'}] \textcolor{keywordflow}{if} \textcolor{stringliteral}{'id'} \textcolor{keywordflow}{in} i \textcolor{keywordflow}{else} i[\textcolor{stringliteral}{'name'}].lower()] = Item.from\_dict(i)}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00034}00034         self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_a4479a0266adc641b4dd623e598e02930}{items}} = items}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00036}\mbox{\hyperlink{classsystems_1_1database_1_1_database_ad12b50fec2c22d2df20651cb48844311}{00036}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1database_1_1_database_ad12b50fec2c22d2df20651cb48844311}{load\_recipes\_from\_file}}(self, file):}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00037}00037         data = json.load(file)}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00038}00038         recipes = \{\}}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00039}00039         \textcolor{keywordflow}{for} r \textcolor{keywordflow}{in} data:}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00040}00040             recipes[r[\textcolor{stringliteral}{'id'}] \textcolor{keywordflow}{if} \textcolor{stringliteral}{'id'} \textcolor{keywordflow}{in} r \textcolor{keywordflow}{else} r[\textcolor{stringliteral}{'name'}].lower()] = Recipe.from\_dict(r)}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00041}00041         self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_a313a714187f831c4189f9fd1a0172b85}{recipes}} = recipes}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00042}00042     }
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00043}\mbox{\hyperlink{classsystems_1_1database_1_1_database_a62ca49b164a863f5f9e6538f25b3274c}{00043}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1database_1_1_database_a62ca49b164a863f5f9e6538f25b3274c}{get\_item}}(self, item\_id=''):}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00044}00044         \textcolor{keywordflow}{return} self.item\_list[item\_id]}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00046}\mbox{\hyperlink{classsystems_1_1database_1_1_database_aac860297aa534950d9754facfdda4848}{00046}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1database_1_1_database_aac860297aa534950d9754facfdda4848}{get\_recipe}}(self, recipe\_id=''):}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00047}00047         \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_a313a714187f831c4189f9fd1a0172b85}{recipes}}[recipe\_id]}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00048}00048     }
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00049}\mbox{\hyperlink{classsystems_1_1database_1_1_database_af7366d1383a0b983b90ced39843d98b7}{00049}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1database_1_1_database_af7366d1383a0b983b90ced39843d98b7}{get\_quest}}(self, quest\_id):}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00050}00050         \textcolor{keywordflow}{pass}}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00053}\mbox{\hyperlink{classsystems_1_1database_1_1_database_a525c46731d55ffe552df5970d5f4228b}{00053}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1database_1_1_database_a525c46731d55ffe552df5970d5f4228b}{set\_items}}(self, items):}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00054}00054         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} items:}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00055}00055             self.items[i.id] = i}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00057}\mbox{\hyperlink{classsystems_1_1database_1_1_database_abb44337d35c276932cade20c324f115d}{00057}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1database_1_1_database_abb44337d35c276932cade20c324f115d}{\_\_getitem\_\_}}(self, key):}
+\DoxyCodeLine{\Hypertarget{database_8py_source_l00058}00058         \textcolor{keywordflow}{return} [i \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_a4479a0266adc641b4dd623e598e02930}{items}}.values() + self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_a313a714187f831c4189f9fd1a0172b85}{recipes}}.values() + self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_ab3eabc6aaa2da62eff414212c02f863a}{quests}}.values() + self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_a861fb193432574ae949fc41f5c4b6061}{people}}.values() + self.\mbox{\hyperlink{classsystems_1_1database_1_1_database_a556438deefc016bfc1d19a58ba2abb5b}{locations}}.values() \textcolor{keywordflow}{if} i.id == key][0]}
 
 \end{DoxyCode}

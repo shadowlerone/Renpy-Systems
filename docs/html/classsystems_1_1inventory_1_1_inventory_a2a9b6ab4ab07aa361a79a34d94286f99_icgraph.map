@@ -1,4 +1,5 @@
 <map id="systems.inventory.Inventory.add_item" name="systems.inventory.Inventory.add_item">
-<area shape="rect" id="node1" title=" " alt="" coords="268,5,507,32"/>
-<area shape="rect" id="node2" href="$classsystems_1_1recipe_1_1_recipe_book.html#ad4ef877080872c1f5d388ea11db3cd6b" title=" " alt="" coords="5,5,220,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="268,31,507,57"/>
+<area shape="rect" id="node2" href="$classsystems_1_1game_1_1_game.html#add0f2fab59333e3ac55472e401b9e58c" title=" " alt="" coords="25,5,201,32"/>
+<area shape="rect" id="node3" href="$classsystems_1_1recipe_1_1_recipe_book.html#ad4ef877080872c1f5d388ea11db3cd6b" title=" " alt="" coords="5,56,220,83"/>
 </map>

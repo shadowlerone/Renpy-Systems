@@ -28,8 +28,8 @@ init python:
     from systems.game import Game
     from systems.quests import Quest, QuestStage
     from systems.recipe import Recipe
-    one = "one_%s.png"
     game = Game()
+    one = "one_%s.png"
     paint_bucket = Item("paint_bucket", "Bucket of Paint", "It's a... bucket. Full of paint.", "bucket", "bucket")
     burger_crust = Item("burger_crust", "A Burger Crust", "What is this???", one, one)
     lost_fedora = Item("lost_fedora", "A Lost Fedora", "It's a lost fedora. Do they miss it as much as I miss my coat? Who knows.", one, one)
@@ -44,6 +44,7 @@ init python:
         items = [("empty_tube", 3), ("paint_bucket", 1)],
         description = ''
     )
+
     test_quest = Quest(
         "test_quest",
         "A Test Quest",
@@ -113,6 +114,8 @@ init python:
         first_stage = 0,
         final_stage = 30
     )
+    
+    
     game.setup(items = [paint_bucket, burger_crust, lost_fedora, empty_bucket, paint_tube, empty_tube], recipes = [paint_bucket_recipe], quests = [test_quest])
     game.player.recipebook.add_recipe(paint_bucket_recipe)
 
@@ -218,14 +221,14 @@ screen main_loop:
                 label game.player.questlog.selected_quest.name
                 text game.player.questlog.selected_quest.description
                 null height 40
-                label "Completed objectives:"
+                label "Completed objectives"
                 null height 20
                 # vbox:
                 #     for ss in [s for s in game.player.questlog.selected_quest.stages if s.complete]:
                 #         label "{1} {0}".format(ss.name, "✓" if ss.complete else "◇")
                 #         text ss.description
                 #         null height 10
-                label "Current Objective: {}".format(game.player.questlog.selected_quest.get_stage().name)
+                label "Current Objective {}".format(game.player.questlog.selected_quest.get_stage().name)
                 text game.player.questlog.selected_quest.get_stage().description
                 null height 20
                 vbox:
@@ -255,7 +258,7 @@ screen quests:
                 label game.player.questlog.selected_quest.name
                 text game.player.questlog.selected_quest.description
                 null height 40
-                label "Current Objective: {}".format(game.player.questlog.selected_quest.get_stage().name)
+                label "Current Objective {}".format(game.player.questlog.selected_quest.get_stage().name)
                 text game.player.questlog.selected_quest.get_stage().description
                 null height 20
                 vbox:

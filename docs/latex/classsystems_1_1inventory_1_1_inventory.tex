@@ -31,7 +31,10 @@ def \mbox{\hyperlink{classsystems_1_1inventory_1_1_inventory_abea50e459d120b60da
 
 
 \doxysubsection{Detailed Description}
+\begin{DoxyVerb}    An Inventory.
 
+    Organizes items. It's basically a glorified list.\end{DoxyVerb}
+ 
 
 Definition at line \mbox{\hyperlink{inventory_8py_source_l00004}{4}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
 
@@ -46,7 +49,7 @@ Definition at line \mbox{\hyperlink{inventory_8py_source_l00004}{4}} of file \mb
 
 
 
-Definition at line \mbox{\hyperlink{inventory_8py_source_l00005}{5}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
+Definition at line \mbox{\hyperlink{inventory_8py_source_l00010}{10}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
 
 
 
@@ -57,9 +60,17 @@ Definition at line \mbox{\hyperlink{inventory_8py_source_l00005}{5}} of file \mb
 \doxysubsubsection{\texorpdfstring{\_\_contains\_\_()}{\_\_contains\_\_()}}
 {\footnotesize\ttfamily def systems.\+inventory.\+Inventory.\+\_\+\+\_\+contains\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Checks if Item is in Inventory.
+        
+        Key can be:
+        str: returns True if str matches any ids in list of items
+        dict {'id': str, 'count': int}: if str is in list of items, returns True if count is greater than Item.count, else False
+        tuple (str, int): if str in list, returns int >= item.count, else False
+        list [str, int]: same as tuple
+        list [[str, int]]: for every list, same as tuple. Returns whether all are True.\end{DoxyVerb}
+ 
 
-
-Definition at line \mbox{\hyperlink{inventory_8py_source_l00029}{29}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
+Definition at line \mbox{\hyperlink{inventory_8py_source_l00044}{44}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
 
 \mbox{\Hypertarget{classsystems_1_1inventory_1_1_inventory_a62e4cb749ee3429488d73680f936df29}\label{classsystems_1_1inventory_1_1_inventory_a62e4cb749ee3429488d73680f936df29}} 
 \index{systems.inventory.Inventory@{systems.inventory.Inventory}!\_\_getitem\_\_@{\_\_getitem\_\_}}
@@ -69,7 +80,7 @@ Definition at line \mbox{\hyperlink{inventory_8py_source_l00029}{29}} of file \m
 
 
 
-Definition at line \mbox{\hyperlink{inventory_8py_source_l00026}{26}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
+Definition at line \mbox{\hyperlink{inventory_8py_source_l00041}{41}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
 
 \mbox{\Hypertarget{classsystems_1_1inventory_1_1_inventory_a2a9b6ab4ab07aa361a79a34d94286f99}\label{classsystems_1_1inventory_1_1_inventory_a2a9b6ab4ab07aa361a79a34d94286f99}} 
 \index{systems.inventory.Inventory@{systems.inventory.Inventory}!add\_item@{add\_item}}
@@ -77,9 +88,14 @@ Definition at line \mbox{\hyperlink{inventory_8py_source_l00026}{26}} of file \m
 \doxysubsubsection{\texorpdfstring{add\_item()}{add\_item()}}
 {\footnotesize\ttfamily def systems.\+inventory.\+Inventory.\+add\+\_\+item (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{item\+\_\+id,  }\item[{}]{count = {\ttfamily 1} }\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}        Adds item to the Inventory.
+        
+        Arguments:
+        item_id -- id or Item object of the Item to add
+        count -- Amount of the Item to add (default: 1)\end{DoxyVerb}
+ 
 
-
-Definition at line \mbox{\hyperlink{inventory_8py_source_l00009}{9}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
+Definition at line \mbox{\hyperlink{inventory_8py_source_l00014}{14}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
 
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -96,7 +112,7 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
-Definition at line \mbox{\hyperlink{inventory_8py_source_l00067}{67}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
+Definition at line \mbox{\hyperlink{inventory_8py_source_l00098}{98}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
 
 \mbox{\Hypertarget{classsystems_1_1inventory_1_1_inventory_a023d4484ac865705321f25b073194c18}\label{classsystems_1_1inventory_1_1_inventory_a023d4484ac865705321f25b073194c18}} 
 \index{systems.inventory.Inventory@{systems.inventory.Inventory}!get\_item\_count@{get\_item\_count}}
@@ -106,7 +122,7 @@ Definition at line \mbox{\hyperlink{inventory_8py_source_l00067}{67}} of file \m
 
 
 
-Definition at line \mbox{\hyperlink{inventory_8py_source_l00059}{59}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
+Definition at line \mbox{\hyperlink{inventory_8py_source_l00090}{90}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
 
 \mbox{\Hypertarget{classsystems_1_1inventory_1_1_inventory_ad71d92b5ac7b2b852780a28e2ece8976}\label{classsystems_1_1inventory_1_1_inventory_ad71d92b5ac7b2b852780a28e2ece8976}} 
 \index{systems.inventory.Inventory@{systems.inventory.Inventory}!get\_items@{get\_items}}
@@ -120,7 +136,7 @@ To be rewritten.
 
 No tests written for these 
 
-Definition at line \mbox{\hyperlink{inventory_8py_source_l00056}{56}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
+Definition at line \mbox{\hyperlink{inventory_8py_source_l00086}{86}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
 
 \mbox{\Hypertarget{classsystems_1_1inventory_1_1_inventory_a253e45a6b7735ad238f6b7b0e0f3a5f9}\label{classsystems_1_1inventory_1_1_inventory_a253e45a6b7735ad238f6b7b0e0f3a5f9}} 
 \index{systems.inventory.Inventory@{systems.inventory.Inventory}!remove\_item@{remove\_item}}
@@ -130,7 +146,7 @@ Definition at line \mbox{\hyperlink{inventory_8py_source_l00056}{56}} of file \m
 
 
 
-Definition at line \mbox{\hyperlink{inventory_8py_source_l00022}{22}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
+Definition at line \mbox{\hyperlink{inventory_8py_source_l00037}{37}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
 
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -147,7 +163,7 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
-Definition at line \mbox{\hyperlink{inventory_8py_source_l00064}{64}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
+Definition at line \mbox{\hyperlink{inventory_8py_source_l00095}{95}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
 
 
 
@@ -160,7 +176,7 @@ Definition at line \mbox{\hyperlink{inventory_8py_source_l00064}{64}} of file \m
 
 
 
-Definition at line \mbox{\hyperlink{inventory_8py_source_l00007}{7}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
+Definition at line \mbox{\hyperlink{inventory_8py_source_l00012}{12}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
 
 \mbox{\Hypertarget{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}\label{classsystems_1_1inventory_1_1_inventory_a46cb72d24ee7ddde3772e49f16d3626e}} 
 \index{systems.inventory.Inventory@{systems.inventory.Inventory}!items@{items}}
@@ -170,7 +186,7 @@ Definition at line \mbox{\hyperlink{inventory_8py_source_l00007}{7}} of file \mb
 
 
 
-Definition at line \mbox{\hyperlink{inventory_8py_source_l00006}{6}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
+Definition at line \mbox{\hyperlink{inventory_8py_source_l00011}{11}} of file \mbox{\hyperlink{inventory_8py_source}{inventory.\+py}}.
 
 
 

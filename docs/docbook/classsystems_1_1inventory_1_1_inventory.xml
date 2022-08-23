@@ -38,6 +38,10 @@
 </simplesect>
 <section>
 <title>Detailed Description</title>
+
+<para><literallayout><computeroutput>    An Inventory.
+
+    Organizes items. It&apos;s basically a glorified list.</computeroutput></literallayout> </para>
 <para>
 Definition at line <link linkend="_inventory_8py_source_1l00004">4</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
 </section>
@@ -48,7 +52,7 @@ Definition at line <link linkend="_inventory_8py_source_1l00004">4</link> of fil
 <indexterm><primary>__init__</primary><secondary>systems.inventory.Inventory</secondary></indexterm>
 <indexterm><primary>systems.inventory.Inventory</primary><secondary>__init__</secondary></indexterm>
 <para><computeroutput>def systems.inventory.Inventory.__init__ ( self)</computeroutput></para><para>
-Definition at line <link linkend="_inventory_8py_source_1l00005">5</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
+Definition at line <link linkend="_inventory_8py_source_1l00010">10</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
 </section>
 </section>
 <section>
@@ -57,23 +61,38 @@ Definition at line <link linkend="_inventory_8py_source_1l00005">5</link> of fil
     <title>__contains__()</title>
 <indexterm><primary>__contains__</primary><secondary>systems.inventory.Inventory</secondary></indexterm>
 <indexterm><primary>systems.inventory.Inventory</primary><secondary>__contains__</secondary></indexterm>
-<para><computeroutput>def systems.inventory.Inventory.__contains__ ( self,  key)</computeroutput></para><para>
-Definition at line <link linkend="_inventory_8py_source_1l00029">29</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
+<para><computeroutput>def systems.inventory.Inventory.__contains__ ( self,  key)</computeroutput></para>
+<para><literallayout><computeroutput>Checks if Item is in Inventory.
+        
+        Key can be:
+        str: returns True if str matches any ids in list of items
+        dict {&apos;id&apos;: str, &apos;count&apos;: int}: if str is in list of items, returns True if count is greater than Item.count, else False
+        tuple (str, int): if str in list, returns int &gt;= item.count, else False
+        list [str, int]: same as tuple
+        list [[str, int]]: for every list, same as tuple. Returns whether all are True.</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_inventory_8py_source_1l00044">44</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1inventory_1_1_inventory_1a62e4cb749ee3429488d73680f936df29"/><section>
     <title>__getitem__()</title>
 <indexterm><primary>__getitem__</primary><secondary>systems.inventory.Inventory</secondary></indexterm>
 <indexterm><primary>systems.inventory.Inventory</primary><secondary>__getitem__</secondary></indexterm>
 <para><computeroutput>def systems.inventory.Inventory.__getitem__ ( self,  item_id)</computeroutput></para><para>
-Definition at line <link linkend="_inventory_8py_source_1l00026">26</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
+Definition at line <link linkend="_inventory_8py_source_1l00041">41</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1inventory_1_1_inventory_1a2a9b6ab4ab07aa361a79a34d94286f99"/><section>
     <title>add_item()</title>
 <indexterm><primary>add_item</primary><secondary>systems.inventory.Inventory</secondary></indexterm>
 <indexterm><primary>systems.inventory.Inventory</primary><secondary>add_item</secondary></indexterm>
 <para><computeroutput>def systems.inventory.Inventory.add_item ( self,  item_id,  count = <computeroutput>1</computeroutput>
-)</computeroutput></para><para>
-Definition at line <link linkend="_inventory_8py_source_1l00009">9</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
+)</computeroutput></para>
+<para><literallayout><computeroutput>        Adds item to the Inventory.
+        
+        Arguments:
+        item_id -- id or Item object of the Item to add
+        count -- Amount of the Item to add (default: 1)</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_inventory_8py_source_1l00014">14</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
 Here is the caller graph for this function:<para>
     <informalfigure>
         <mediaobject>
@@ -89,14 +108,14 @@ Here is the caller graph for this function:<para>
 <indexterm><primary>get_current_item</primary><secondary>systems.inventory.Inventory</secondary></indexterm>
 <indexterm><primary>systems.inventory.Inventory</primary><secondary>get_current_item</secondary></indexterm>
 <para><computeroutput>def systems.inventory.Inventory.get_current_item ( self)</computeroutput></para><para>
-Definition at line <link linkend="_inventory_8py_source_1l00067">67</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
+Definition at line <link linkend="_inventory_8py_source_1l00098">98</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1inventory_1_1_inventory_1a023d4484ac865705321f25b073194c18"/><section>
     <title>get_item_count()</title>
 <indexterm><primary>get_item_count</primary><secondary>systems.inventory.Inventory</secondary></indexterm>
 <indexterm><primary>systems.inventory.Inventory</primary><secondary>get_item_count</secondary></indexterm>
 <para><computeroutput>def systems.inventory.Inventory.get_item_count ( self,  item)</computeroutput></para><para>
-Definition at line <link linkend="_inventory_8py_source_1l00059">59</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
+Definition at line <link linkend="_inventory_8py_source_1l00090">90</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1inventory_1_1_inventory_1ad71d92b5ac7b2b852780a28e2ece8976"/><section>
     <title>get_items()</title>
@@ -109,7 +128,7 @@ Definition at line <link linkend="_inventory_8py_source_1l00059">59</link> of fi
 
 <para>No tests written for these </para>
 <para>
-Definition at line <link linkend="_inventory_8py_source_1l00056">56</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
+Definition at line <link linkend="_inventory_8py_source_1l00086">86</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1inventory_1_1_inventory_1a253e45a6b7735ad238f6b7b0e0f3a5f9"/><section>
     <title>remove_item()</title>
@@ -117,7 +136,7 @@ Definition at line <link linkend="_inventory_8py_source_1l00056">56</link> of fi
 <indexterm><primary>systems.inventory.Inventory</primary><secondary>remove_item</secondary></indexterm>
 <para><computeroutput>def systems.inventory.Inventory.remove_item ( self,  item,  count = <computeroutput>1</computeroutput>
 )</computeroutput></para><para>
-Definition at line <link linkend="_inventory_8py_source_1l00022">22</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
+Definition at line <link linkend="_inventory_8py_source_1l00037">37</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
 Here is the caller graph for this function:<para>
     <informalfigure>
         <mediaobject>
@@ -133,7 +152,7 @@ Here is the caller graph for this function:<para>
 <indexterm><primary>set_current_item</primary><secondary>systems.inventory.Inventory</secondary></indexterm>
 <indexterm><primary>systems.inventory.Inventory</primary><secondary>set_current_item</secondary></indexterm>
 <para><computeroutput>def systems.inventory.Inventory.set_current_item ( self,  item)</computeroutput></para><para>
-Definition at line <link linkend="_inventory_8py_source_1l00064">64</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
+Definition at line <link linkend="_inventory_8py_source_1l00095">95</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
 </section>
 </section>
 <section>
@@ -143,14 +162,14 @@ Definition at line <link linkend="_inventory_8py_source_1l00064">64</link> of fi
 <indexterm><primary>current_item</primary><secondary>systems.inventory.Inventory</secondary></indexterm>
 <indexterm><primary>systems.inventory.Inventory</primary><secondary>current_item</secondary></indexterm>
 <para><computeroutput>systems.inventory.Inventory.current_item</computeroutput></para><para>
-Definition at line <link linkend="_inventory_8py_source_1l00007">7</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
+Definition at line <link linkend="_inventory_8py_source_1l00012">12</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1inventory_1_1_inventory_1a46cb72d24ee7ddde3772e49f16d3626e"/><section>
     <title>items</title>
 <indexterm><primary>items</primary><secondary>systems.inventory.Inventory</secondary></indexterm>
 <indexterm><primary>systems.inventory.Inventory</primary><secondary>items</secondary></indexterm>
 <para><computeroutput>systems.inventory.Inventory.items</computeroutput></para><para>
-Definition at line <link linkend="_inventory_8py_source_1l00006">6</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
+Definition at line <link linkend="_inventory_8py_source_1l00011">11</link> of file <link linkend="_inventory_8py_source">inventory.py</link>.</para>
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>

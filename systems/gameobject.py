@@ -1,4 +1,8 @@
 class GameObject(object):
+	"""
+	Generic GameObject class.
+	Inherited by all obtainable "things" in the game.
+	"""
 	def __init__(self, id, name='', description=''):
 		self.id = id
 		self.name = name

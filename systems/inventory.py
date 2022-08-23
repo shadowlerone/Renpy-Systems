@@ -2,11 +2,23 @@ from .item import InventoryItem, Item, PlaceholderInventoryItem
 from .recipe import Recipe
 
 class Inventory():
+	"""
+	An Inventory.
+
+	Organizes items. It's basically a glorified list.
+	"""
 	def __init__(self):
 		self.items = {}
 		self.current_item = InventoryItem("Nothing", "I should look at something first...", 0)
 		
 	def add_item(self, item_id, count=1):
+		"""
+		Adds item to the Inventory.
+		
+		Arguments:
+		item_id -- id or Item object of the Item to add
+		count -- Amount of the Item to add (default: 1)
+		"""
 		if not isinstance(count, int): # if type(count) != int:
 			raise TypeError("{} is of type {}, not {}".format(count, type(count), int))
 		if isinstance(item_id, str) or isinstance(item_id, unicode):
@@ -30,6 +42,16 @@ class Inventory():
 		return self.items[item_id]
 
 	def __contains__(self, key):
+		"""Checks if Item is in Inventory.
+		
+		Key can be:
+		str: returns True if str matches any ids in list of items
+		dict {'id': str, 'count': int}: if str is in list of items, 
+			returns True if count is greater than Item.count, else False
+		tuple (str, int): if str in list, returns int >= item.count, else False
+		list [str, int]: same as tuple
+		list [[str, int]]: for every list, same as tuple. Returns whether all are True.
+		"""
 		if isinstance(key, str):
 			return key in self.items
 		elif isinstance(key, dict):

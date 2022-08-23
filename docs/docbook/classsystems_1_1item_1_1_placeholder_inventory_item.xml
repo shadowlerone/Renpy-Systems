@@ -33,7 +33,7 @@ Collaboration diagram for systems.item.PlaceholderInventoryItem:<para>
 <section>
 <title>Detailed Description</title>
 <para>
-Definition at line <link linkend="_item_8py_source_1l00071">71</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
+Definition at line <link linkend="_item_8py_source_1l00072">72</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
@@ -45,7 +45,7 @@ Definition at line <link linkend="_item_8py_source_1l00071">71</link> of file <l
 )</computeroutput></para><para>
 Reimplemented from <link linkend="_classsystems_1_1item_1_1_inventory_item_1af4a4aa34dc034729346ce72e2d173cb6">systems.item.InventoryItem</link>.</para>
 <para>
-Definition at line <link linkend="_item_8py_source_1l00072">72</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
+Definition at line <link linkend="_item_8py_source_1l00073">73</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
 Here is the call graph for this function:<para>
     <informalfigure>
         <mediaobject>

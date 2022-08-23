@@ -1,5 +1,11 @@
 <map id="systems.recipe.RecipeBook.craft" name="systems.recipe.RecipeBook.craft">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,220,57"/>
-<area shape="rect" id="node2" href="$classsystems_1_1inventory_1_1_inventory.html#a2a9b6ab4ab07aa361a79a34d94286f99" title=" " alt="" coords="278,5,517,32"/>
-<area shape="rect" id="node3" href="$classsystems_1_1inventory_1_1_inventory.html#a253e45a6b7735ad238f6b7b0e0f3a5f9" title=" " alt="" coords="268,56,527,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,168,220,195"/>
+<area shape="rect" id="node2" href="$classsystems_1_1player_1_1_player.html#a70e7f703e3b3c395e3538435a15c3e3e" title=" " alt="" coords="293,5,502,32"/>
+<area shape="rect" id="node3" href="$classsystems_1_1game_1_1_game.html#a6d165b08a47f46fe29cea84926cce40e" title=" " alt="" coords="295,80,499,107"/>
+<area shape="rect" id="node6" href="$classsystems_1_1inventory_1_1_inventory.html#a2a9b6ab4ab07aa361a79a34d94286f99" title=" " alt="" coords="278,131,517,157"/>
+<area shape="rect" id="node7" href="$classsystems_1_1player_1_1_player.html#a06d86c2b195ce17409ea2b1c6d38dcb0" title=" " alt="" coords="283,205,512,232"/>
+<area shape="rect" id="node8" href="$classsystems_1_1game_1_1_game.html#af81c50ef6681a4f03ee49b47c2997ea5" title=" " alt="" coords="285,280,509,307"/>
+<area shape="rect" id="node9" href="$classsystems_1_1inventory_1_1_inventory.html#a253e45a6b7735ad238f6b7b0e0f3a5f9" title=" " alt="" coords="268,331,527,357"/>
+<area shape="rect" id="node4" href="$classsystems_1_1game_1_1_game.html#acb1e8ccfd196c887f110ee3a8f12d2b9" title=" " alt="" coords="575,180,765,207"/>
+<area shape="rect" id="node5" href="$classsystems_1_1game_1_1_game.html#aa72bcad0b355393a8909707989bd6578" title=" " alt="" coords="813,173,1004,214"/>
 </map>

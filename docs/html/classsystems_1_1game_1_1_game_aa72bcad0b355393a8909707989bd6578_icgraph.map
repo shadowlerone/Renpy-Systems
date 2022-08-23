@@ -1,6 +1,9 @@
 <map id="systems.game.Game.update_quests" name="systems.game.Game.update_quests">
-<area shape="rect" id="node1" title=" " alt="" coords="475,51,665,92"/>
-<area shape="rect" id="node2" href="$classsystems_1_1game_1_1_game.html#acb1e8ccfd196c887f110ee3a8f12d2b9" title=" " alt="" coords="236,58,427,85"/>
-<area shape="rect" id="node3" href="$classsystems_1_1game_1_1_game.html#aea23c41a7da5bb1eafcf4fc46219e07e" title=" " alt="" coords="5,5,188,47"/>
-<area shape="rect" id="node4" href="$classsystems_1_1game_1_1_game.html#ae1914099705c785ad7b1d88a1481fd7e" title=" " alt="" coords="8,95,185,136"/>
+<area shape="rect" id="node1" title=" " alt="" coords="779,88,969,129"/>
+<area shape="rect" id="node2" href="$classsystems_1_1game_1_1_game.html#acb1e8ccfd196c887f110ee3a8f12d2b9" title=" " alt="" coords="540,95,731,122"/>
+<area shape="rect" id="node3" href="$classsystems_1_1game_1_1_game.html#a6d165b08a47f46fe29cea84926cce40e" title=" " alt="" coords="278,58,482,85"/>
+<area shape="rect" id="node4" href="$classsystems_1_1game_1_1_game.html#add0f2fab59333e3ac55472e401b9e58c" title=" " alt="" coords="25,58,201,85"/>
+<area shape="rect" id="node6" href="$classsystems_1_1game_1_1_game.html#af81c50ef6681a4f03ee49b47c2997ea5" title=" " alt="" coords="268,133,492,159"/>
+<area shape="rect" id="node7" href="$classsystems_1_1game_1_1_game.html#ae1914099705c785ad7b1d88a1481fd7e" title=" " alt="" coords="291,208,469,249"/>
+<area shape="rect" id="node5" href="$classsystems_1_1recipe_1_1_recipe_book.html#ad4ef877080872c1f5d388ea11db3cd6b" title=" " alt="" coords="5,121,220,147"/>
 </map>

@@ -105,7 +105,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab6e94a09686a079e880c760a95dc9fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
+<div class="textblock"><pre class="fragment">    An Inventory.
+
+    Organizes items. It's basically a glorified list.</pre> 
 <p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00004">4</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a05363be0b8b0a0836f2103bde3ec805f" name="a05363be0b8b0a0836f2103bde3ec805f"></a>
@@ -124,7 +126,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00005">5</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00010">10</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
 
 </div>
 </div>
@@ -154,8 +156,15 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00029">29</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
+<pre class="fragment">Checks if Item is in Inventory.
+        
+        Key can be:
+        str: returns True if str matches any ids in list of items
+        dict {'id': str, 'count': int}: if str is in list of items, returns True if count is greater than Item.count, else False
+        tuple (str, int): if str in list, returns int &gt;= item.count, else False
+        list [str, int]: same as tuple
+        list [[str, int]]: for every list, same as tuple. Returns whether all are True.</pre> 
+<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00044">44</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
 
 </div>
 </div>
@@ -185,7 +194,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00026">26</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00041">41</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
 
 </div>
 </div>
@@ -220,15 +229,20 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00009">9</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
+<pre class="fragment">        Adds item to the Inventory.
+        
+        Arguments:
+        item_id -- id or Item object of the Item to add
+        count -- Amount of the Item to add (default: 1)</pre> 
+<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00014">14</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsystems_1_1inventory_1_1_inventory_a2a9b6ab4ab07aa361a79a34d94286f99_icgraph.png" border="0" usemap="#aclasssystems_1_1inventory_1_1_inventory_a2a9b6ab4ab07aa361a79a34d94286f99_icgraph" alt=""/></div>
 <map name="aclasssystems_1_1inventory_1_1_inventory_a2a9b6ab4ab07aa361a79a34d94286f99_icgraph" id="aclasssystems_1_1inventory_1_1_inventory_a2a9b6ab4ab07aa361a79a34d94286f99_icgraph">
-<area shape="rect" title=" " alt="" coords="268,5,507,32"/>
-<area shape="rect" href="classsystems_1_1recipe_1_1_recipe_book.html#ad4ef877080872c1f5d388ea11db3cd6b" title=" " alt="" coords="5,5,220,32"/>
+<area shape="rect" title=" " alt="" coords="268,31,507,57"/>
+<area shape="rect" href="classsystems_1_1game_1_1_game.html#add0f2fab59333e3ac55472e401b9e58c" title=" " alt="" coords="25,5,201,32"/>
+<area shape="rect" href="classsystems_1_1recipe_1_1_recipe_book.html#ad4ef877080872c1f5d388ea11db3cd6b" title=" " alt="" coords="5,56,220,83"/>
 </map>
 </div>
 
@@ -250,7 +264,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00067">67</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00098">98</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
 
 </div>
 </div>
@@ -280,7 +294,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00059">59</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00090">90</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
 
 </div>
 </div>
@@ -303,7 +317,7 @@ Here is the caller graph for this function:</div>
 <p>To be rewritten. </p>
 <p >No tests written for these </p>
 
-<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00056">56</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00086">86</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
 
 </div>
 </div>
@@ -339,14 +353,15 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00022">22</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00037">37</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsystems_1_1inventory_1_1_inventory_a253e45a6b7735ad238f6b7b0e0f3a5f9_icgraph.png" border="0" usemap="#aclasssystems_1_1inventory_1_1_inventory_a253e45a6b7735ad238f6b7b0e0f3a5f9_icgraph" alt=""/></div>
 <map name="aclasssystems_1_1inventory_1_1_inventory_a253e45a6b7735ad238f6b7b0e0f3a5f9_icgraph" id="aclasssystems_1_1inventory_1_1_inventory_a253e45a6b7735ad238f6b7b0e0f3a5f9_icgraph">
-<area shape="rect" title=" " alt="" coords="268,5,527,32"/>
-<area shape="rect" href="classsystems_1_1recipe_1_1_recipe_book.html#ad4ef877080872c1f5d388ea11db3cd6b" title=" " alt="" coords="5,5,220,32"/>
+<area shape="rect" title=" " alt="" coords="268,31,527,57"/>
+<area shape="rect" href="classsystems_1_1game_1_1_game.html#add0f2fab59333e3ac55472e401b9e58c" title=" " alt="" coords="25,5,201,32"/>
+<area shape="rect" href="classsystems_1_1recipe_1_1_recipe_book.html#ad4ef877080872c1f5d388ea11db3cd6b" title=" " alt="" coords="5,56,220,83"/>
 </map>
 </div>
 
@@ -378,7 +393,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00064">64</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00095">95</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
 
 </div>
 </div>
@@ -395,7 +410,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00007">7</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00012">12</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
 
 </div>
 </div>
@@ -411,7 +426,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00006">6</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inventory_8py_source.html#l00011">11</a> of file <a class="el" href="inventory_8py_source.html">inventory.py</a>.</p>
 
 </div>
 </div>

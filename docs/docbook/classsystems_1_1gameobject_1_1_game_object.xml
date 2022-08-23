@@ -48,6 +48,9 @@ Collaboration diagram for systems.gameobject.GameObject:<para>
 </simplesect>
 <section>
 <title>Detailed Description</title>
+
+<para><literallayout><computeroutput>    Generic GameObject class.
+    Inherited by all obtainable &quot;things&quot; in the game.</computeroutput></literallayout> </para>
 <para>
 Definition at line <link linkend="_gameobject_8py_source_1l00001">1</link> of file <link linkend="_gameobject_8py_source">gameobject.py</link>.</para>
 </section>
@@ -60,9 +63,9 @@ Definition at line <link linkend="_gameobject_8py_source_1l00001">1</link> of fi
 <para><computeroutput>def systems.gameobject.GameObject.__init__ ( self,  id,  name = <computeroutput>&apos;&apos;</computeroutput>
 ,  description = <computeroutput>&apos;&apos;</computeroutput>
 )</computeroutput></para><para>
-Reimplemented in <link linkend="_classsystems_1_1item_1_1_placeholder_inventory_item_1a4a7fa46251a0da36222919d0268f1df5">systems.item.PlaceholderInventoryItem</link>, <link linkend="_classsystems_1_1person_1_1_person_1af26495ef72cea6fd98630417a36fac91">systems.person.Person</link>, <link linkend="_classsystems_1_1quests_1_1_quest_1a506e5d43ac95a74350033065673d1696">systems.quests.Quest</link>, <link linkend="_classsystems_1_1item_1_1_item_1a1bcb05d8e59d5d9c739cded13c3efbb3">systems.item.Item</link>, <link linkend="_classsystems_1_1item_1_1_inventory_item_1af4a4aa34dc034729346ce72e2d173cb6">systems.item.InventoryItem</link>, <link linkend="_classsystems_1_1quests_1_1_quest_stage_1a67a01eb10393b202f36d0562509866bb">systems.quests.QuestStage</link>, and <link linkend="_classsystems_1_1recipe_1_1_recipe_1a541ecdc8223971de7dbf802f86eae4f5">systems.recipe.Recipe</link>.</para>
+Reimplemented in <link linkend="_classsystems_1_1item_1_1_placeholder_inventory_item_1a4a7fa46251a0da36222919d0268f1df5">systems.item.PlaceholderInventoryItem</link>, <link linkend="_classsystems_1_1person_1_1_person_1af26495ef72cea6fd98630417a36fac91">systems.person.Person</link>, <link linkend="_classsystems_1_1quests_1_1_quest_1a506e5d43ac95a74350033065673d1696">systems.quests.Quest</link>, <link linkend="_classsystems_1_1item_1_1_inventory_item_1af4a4aa34dc034729346ce72e2d173cb6">systems.item.InventoryItem</link>, <link linkend="_classsystems_1_1item_1_1_item_1a5898ec2b1da75e499a064979ad6516d9">systems.item.Item</link>, <link linkend="_classsystems_1_1recipe_1_1_recipe_1ac31e379ff91906d33824e2b07a20b993">systems.recipe.Recipe</link>, and <link linkend="_classsystems_1_1quests_1_1_quest_stage_1a67a01eb10393b202f36d0562509866bb">systems.quests.QuestStage</link>.</para>
 <para>
-Definition at line <link linkend="_gameobject_8py_source_1l00002">2</link> of file <link linkend="_gameobject_8py_source">gameobject.py</link>.</para>
+Definition at line <link linkend="_gameobject_8py_source_1l00006">6</link> of file <link linkend="_gameobject_8py_source">gameobject.py</link>.</para>
 </section>
 </section>
 <section>
@@ -74,7 +77,7 @@ Definition at line <link linkend="_gameobject_8py_source_1l00002">2</link> of fi
 <para><computeroutput>def systems.gameobject.GameObject.__eq__ ( self,  other)</computeroutput></para><para>
 Reimplemented in <link linkend="_classsystems_1_1recipe_1_1_recipe_1a9d45031829568da1ada8b395f1e834c3">systems.recipe.Recipe</link>.</para>
 <para>
-Definition at line <link linkend="_gameobject_8py_source_1l00017">17</link> of file <link linkend="_gameobject_8py_source">gameobject.py</link>.</para>
+Definition at line <link linkend="_gameobject_8py_source_1l00021">21</link> of file <link linkend="_gameobject_8py_source">gameobject.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1gameobject_1_1_game_object_1a697bcc6324888923c8813d080df6b2c4"/><section>
     <title>__hash__()</title>
@@ -83,21 +86,21 @@ Definition at line <link linkend="_gameobject_8py_source_1l00017">17</link> of f
 <para><computeroutput>def systems.gameobject.GameObject.__hash__ ( self)</computeroutput></para><para>
 Reimplemented in <link linkend="_classsystems_1_1recipe_1_1_recipe_1a0d842c66e7765ba0f35f3bc26b13d697">systems.recipe.Recipe</link>.</para>
 <para>
-Definition at line <link linkend="_gameobject_8py_source_1l00014">14</link> of file <link linkend="_gameobject_8py_source">gameobject.py</link>.</para>
+Definition at line <link linkend="_gameobject_8py_source_1l00018">18</link> of file <link linkend="_gameobject_8py_source">gameobject.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1gameobject_1_1_game_object_1adbe7816fecea988d00ae58dc390bf20b"/><section>
     <title>__ne__()</title>
 <indexterm><primary>__ne__</primary><secondary>systems.gameobject.GameObject</secondary></indexterm>
 <indexterm><primary>systems.gameobject.GameObject</primary><secondary>__ne__</secondary></indexterm>
 <para><computeroutput>def systems.gameobject.GameObject.__ne__ ( self,  other)</computeroutput></para><para>
-Definition at line <link linkend="_gameobject_8py_source_1l00020">20</link> of file <link linkend="_gameobject_8py_source">gameobject.py</link>.</para>
+Definition at line <link linkend="_gameobject_8py_source_1l00024">24</link> of file <link linkend="_gameobject_8py_source">gameobject.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1gameobject_1_1_game_object_1a3afc6cf328d72af4198e604f0cd8fdca"/><section>
     <title>__repr__()</title>
 <indexterm><primary>__repr__</primary><secondary>systems.gameobject.GameObject</secondary></indexterm>
 <indexterm><primary>systems.gameobject.GameObject</primary><secondary>__repr__</secondary></indexterm>
 <para><computeroutput>def systems.gameobject.GameObject.__repr__ ( self)</computeroutput></para><para>
-Definition at line <link linkend="_gameobject_8py_source_1l00006">6</link> of file <link linkend="_gameobject_8py_source">gameobject.py</link>.</para>
+Definition at line <link linkend="_gameobject_8py_source_1l00010">10</link> of file <link linkend="_gameobject_8py_source">gameobject.py</link>.</para>
 </section>
 </section>
 <section>
@@ -107,21 +110,21 @@ Definition at line <link linkend="_gameobject_8py_source_1l00006">6</link> of fi
 <indexterm><primary>description</primary><secondary>systems.gameobject.GameObject</secondary></indexterm>
 <indexterm><primary>systems.gameobject.GameObject</primary><secondary>description</secondary></indexterm>
 <para><computeroutput>systems.gameobject.GameObject.description</computeroutput></para><para>
-Definition at line <link linkend="_gameobject_8py_source_1l00005">5</link> of file <link linkend="_gameobject_8py_source">gameobject.py</link>.</para>
+Definition at line <link linkend="_gameobject_8py_source_1l00009">9</link> of file <link linkend="_gameobject_8py_source">gameobject.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1gameobject_1_1_game_object_1aba5d7f2977d90fb287e79b092febe3cb"/><section>
     <title>id</title>
 <indexterm><primary>id</primary><secondary>systems.gameobject.GameObject</secondary></indexterm>
 <indexterm><primary>systems.gameobject.GameObject</primary><secondary>id</secondary></indexterm>
 <para><computeroutput>systems.gameobject.GameObject.id</computeroutput></para><para>
-Definition at line <link linkend="_gameobject_8py_source_1l00003">3</link> of file <link linkend="_gameobject_8py_source">gameobject.py</link>.</para>
+Definition at line <link linkend="_gameobject_8py_source_1l00007">7</link> of file <link linkend="_gameobject_8py_source">gameobject.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1gameobject_1_1_game_object_1a2a7d149c3e1a21ce18e83bf54db345b4"/><section>
     <title>name</title>
 <indexterm><primary>name</primary><secondary>systems.gameobject.GameObject</secondary></indexterm>
 <indexterm><primary>systems.gameobject.GameObject</primary><secondary>name</secondary></indexterm>
 <para><computeroutput>systems.gameobject.GameObject.name</computeroutput></para><para>
-Definition at line <link linkend="_gameobject_8py_source_1l00004">4</link> of file <link linkend="_gameobject_8py_source">gameobject.py</link>.</para>
+Definition at line <link linkend="_gameobject_8py_source_1l00008">8</link> of file <link linkend="_gameobject_8py_source">gameobject.py</link>.</para>
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>

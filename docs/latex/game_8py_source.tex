@@ -5,86 +5,200 @@
 \DoxyCodeLine{\Hypertarget{game_8py_source_l00001}\mbox{\hyperlink{namespacesystems_1_1game}{00001}} \textcolor{keyword}{from} .database \textcolor{keyword}{import} Database}
 \DoxyCodeLine{\Hypertarget{game_8py_source_l00002}00002 \textcolor{keyword}{from} .player \textcolor{keyword}{import} Player}
 \DoxyCodeLine{\Hypertarget{game_8py_source_l00003}00003 \textcolor{keyword}{from} .quests \textcolor{keyword}{import} Quest}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00004}\mbox{\hyperlink{classsystems_1_1game_1_1_game}{00004}} \textcolor{keyword}{class }\mbox{\hyperlink{classsystems_1_1game_1_1_game}{Game}}(object):}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00005}\mbox{\hyperlink{classsystems_1_1game_1_1_game_a0dad2af0de9d446b1c89ff17b6b3967c}{00005}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1game_1_1_game_a0dad2af0de9d446b1c89ff17b6b3967c}{\_\_init\_\_}}(self):}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00006}\mbox{\hyperlink{classsystems_1_1game_1_1_game_a8d2c7ed5a3b01cdfbc317e59fd0b9f40}{00006}}         self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_a8d2c7ed5a3b01cdfbc317e59fd0b9f40}{people}} = \{\}}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00007}\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab59fb836a7c2cb5a1a297f4383bdf374}{00007}}         self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab59fb836a7c2cb5a1a297f4383bdf374}{db}}  = \mbox{\hyperlink{classsystems_1_1database_1_1_database}{Database}}()}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00008}\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{00008}}         self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}} = \mbox{\hyperlink{classsystems_1_1player_1_1_player}{Player}}()}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00009}00009     \textcolor{comment}{\# characters = \{}}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00010}00010     \textcolor{comment}{\#   \# list of character and info}}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00011}00011     \textcolor{comment}{\# \}}}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00012}00012 }
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00013}\mbox{\hyperlink{classsystems_1_1game_1_1_game_aea23c41a7da5bb1eafcf4fc46219e07e}{00013}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1game_1_1_game_aea23c41a7da5bb1eafcf4fc46219e07e}{game\_event}}(func):}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00014}00014         \textcolor{keyword}{def }wrapper(*args, **kwargs):}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00015}00015             print(args)}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00016}00016             func(*args[1:])}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00017}00017             args[0].\mbox{\hyperlink{classsystems_1_1game_1_1_game_acb1e8ccfd196c887f110ee3a8f12d2b9}{update}}()}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00018}00018         \textcolor{keywordflow}{return} wrapper}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00019}00019 }
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00020}\mbox{\hyperlink{classsystems_1_1game_1_1_game_a1d2b00fb7920e4736c00e851670e1761}{00020}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1game_1_1_game_a1d2b00fb7920e4736c00e851670e1761}{setup}}(self,}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00021}00021         people = None,}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00022}00022         locations = None,}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00023}00023         from\_db = None,}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00024}00024         fps = False}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00025}00025     ):}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00026}00026         \textcolor{keywordflow}{if} from\_db:}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00027}00027             \textcolor{keywordflow}{return}}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00028}00028             self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab59fb836a7c2cb5a1a297f4383bdf374}{db}}.load\_items\_from\_file(fps[\textcolor{stringliteral}{'items'}])}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00029}00029             self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab59fb836a7c2cb5a1a297f4383bdf374}{db}}.load\_recipes\_from\_file(fps[\textcolor{stringliteral}{'recipes'}])}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00030}00030         \textcolor{keywordflow}{else}:}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00031}00031             \textcolor{keywordflow}{if} people:}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00032}00032                 self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_a8d2c7ed5a3b01cdfbc317e59fd0b9f40}{people}} = people}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00033}00033             \textcolor{keywordflow}{if} locations:}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00034}\mbox{\hyperlink{classsystems_1_1game_1_1_game_a8ff7162c9f84eb5bd70e3f5ac1c46716}{00034}}                 self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_a8ff7162c9f84eb5bd70e3f5ac1c46716}{location}} = locations}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00035}00035     \textcolor{comment}{\# @game\_event   }}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00036}\mbox{\hyperlink{classsystems_1_1game_1_1_game_ae1914099705c785ad7b1d88a1481fd7e}{00036}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1game_1_1_game_ae1914099705c785ad7b1d88a1481fd7e}{start\_quest}}(self, quest\_id= None, quest\_object = None):}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00037}00037         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} (isinstance(quest\_id, str) \textcolor{keywordflow}{or} type(quest\_id) != \textcolor{keywordtype}{None}):}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00038}00038             \textcolor{keywordflow}{raise} TypeError(\textcolor{stringliteral}{"{}quest\_id is not a <str>, is type \{\}"{}}.format(type(quest\_id)))}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00039}00039         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} (isinstance(quest\_object, Quest) \textcolor{keywordflow}{or} type(quest\_object) != \textcolor{keywordtype}{None}):}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00040}00040             \textcolor{keywordflow}{raise} TypeError(\textcolor{stringliteral}{"{}quest\_object is not a <Quest>"{}})}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00041}00041         \textcolor{keywordflow}{if} quest\_id \textcolor{keywordflow}{and} \textcolor{keywordflow}{not} quest\_object:}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00042}00042             self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}}.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ae1914099705c785ad7b1d88a1481fd7e}{start\_quest}}(quest\_id, self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab59fb836a7c2cb5a1a297f4383bdf374}{db}}.get\_quest(quest\_id))}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00043}00043         \textcolor{keywordflow}{elif} quest\_id \textcolor{keywordflow}{and} quest\_object:}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00044}00044             self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}}.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ae1914099705c785ad7b1d88a1481fd7e}{start\_quest}}(quest\_id, quest\_object)}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00045}00045         \textcolor{keywordflow}{elif} quest\_object:}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00046}00046             self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}}.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ae1914099705c785ad7b1d88a1481fd7e}{start\_quest}}(quest\_object.id, quest\_object)}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00047}00047         \textcolor{keywordflow}{else}:}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00048}00048             \textcolor{keywordflow}{raise} ValueError()}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00049}00049         self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_acb1e8ccfd196c887f110ee3a8f12d2b9}{update}}()}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00050}00050     }
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00051}\mbox{\hyperlink{classsystems_1_1game_1_1_game_acb1e8ccfd196c887f110ee3a8f12d2b9}{00051}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1game_1_1_game_acb1e8ccfd196c887f110ee3a8f12d2b9}{update}}(self):}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00052}00052         self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_aa72bcad0b355393a8909707989bd6578}{update\_quests}}()}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00053}00053         \textcolor{keywordflow}{pass}}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00054}00054 }
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00055}\mbox{\hyperlink{classsystems_1_1game_1_1_game_aa72bcad0b355393a8909707989bd6578}{00055}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1game_1_1_game_aa72bcad0b355393a8909707989bd6578}{update\_quests}}(self):}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00056}00056         \textcolor{keywordflow}{for} q \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}}.questlog.get\_active():}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00057}00057             complete = \textcolor{keyword}{True}}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00058}00058             \textcolor{comment}{\# substages}}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00059}00059             reqs = q.requirements}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00060}00060             \textcolor{keywordflow}{if} \textcolor{stringliteral}{"{}substage"{}} \textcolor{keywordflow}{in} reqs:}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00061}00061                 \textcolor{keywordflow}{if} reqs[\textcolor{stringliteral}{'substage'}] == \textcolor{stringliteral}{'all'}:}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00062}00062                     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} all([s.complete \textcolor{keywordflow}{for} s \textcolor{keywordflow}{in} q.substages]):}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00063}00063                         complete = \textcolor{keyword}{False} }
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00064}00064                 \textcolor{keywordflow}{if} reqs[\textcolor{stringliteral}{'substage'}] == \textcolor{stringliteral}{'any'}:}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00065}00065                     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} any([s.complete \textcolor{keywordflow}{for} s \textcolor{keywordflow}{in} q.substages]):}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00066}00066                         complete = \textcolor{keyword}{False}}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00067}00067             \textcolor{comment}{\# items}}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00068}00068             \textcolor{keywordflow}{if} \textcolor{stringliteral}{"{}item"{}} \textcolor{keywordflow}{in} reqs:}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00069}00069                 \textcolor{comment}{\# print(reqs['item'])}}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00070}00070                 items\_present = [(i \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}}.inventory) \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} reqs[\textcolor{stringliteral}{'item'}][\textcolor{stringliteral}{'ids'}]]}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00071}00071 }
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00072}00072                 \textcolor{keywordflow}{if} reqs[\textcolor{stringliteral}{'item'}][\textcolor{stringliteral}{'all'}]:}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00073}00073                     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} all(items\_present):}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00074}00074                         complete = \textcolor{keyword}{False}}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00075}00075                 \textcolor{keywordflow}{else}:}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00076}00076                     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} any(items\_present):}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00077}00077                         complete = \textcolor{keyword}{False}}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00078}00078             \textcolor{keywordflow}{if} complete:}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00079}00079                 q.complete()}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00080}00080             \textcolor{keywordflow}{pass}}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00081}00081         \textcolor{keywordflow}{pass}}
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00082}00082 }
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00083}00083 }
-\DoxyCodeLine{\Hypertarget{game_8py_source_l00084}00084     }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00004}00004 \textcolor{keyword}{from} .recipe \textcolor{keyword}{import} Recipe}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00005}\mbox{\hyperlink{classsystems_1_1game_1_1_game}{00005}} \textcolor{keyword}{class }\mbox{\hyperlink{classsystems_1_1game_1_1_game}{Game}}(object):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00006}\mbox{\hyperlink{classsystems_1_1game_1_1_game_a0dad2af0de9d446b1c89ff17b6b3967c}{00006}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1game_1_1_game_a0dad2af0de9d446b1c89ff17b6b3967c}{\_\_init\_\_}}(self):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00007}\mbox{\hyperlink{classsystems_1_1game_1_1_game_a8d2c7ed5a3b01cdfbc317e59fd0b9f40}{00007}}         self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_a8d2c7ed5a3b01cdfbc317e59fd0b9f40}{people}} = \{\}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00008}\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab59fb836a7c2cb5a1a297f4383bdf374}{00008}}         self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab59fb836a7c2cb5a1a297f4383bdf374}{db}}  = \mbox{\hyperlink{classsystems_1_1database_1_1_database}{Database}}()}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00009}\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{00009}}         self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}} = \mbox{\hyperlink{classsystems_1_1player_1_1_player}{Player}}()}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00010}00010     \textcolor{comment}{\# characters = \{}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00011}00011     \textcolor{comment}{\#   \# list of character and info}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00012}00012     \textcolor{comment}{\# \}}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00013}\mbox{\hyperlink{classsystems_1_1game_1_1_game_a97ee49e450667af7d6b5ad9a7365fa94}{00013}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1game_1_1_game_a97ee49e450667af7d6b5ad9a7365fa94}{setup}}(self,}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00014}00014         people = None,}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00015}00015         locations = None,}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00016}00016         from\_db = False,}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00017}00017         fps = \{\},}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00018}00018         items = [],}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00019}00019         recipes = [],}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00020}00020         quests = []}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00021}00021     ):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00022}00022         \textcolor{stringliteral}{"{}"{}"{}Setup the Game Object}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00023}00023 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00024}00024 \textcolor{stringliteral}{        Keyword Arguments:}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00025}00025 \textcolor{stringliteral}{        people -\/-\/ a list of people objects}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00026}00026 \textcolor{stringliteral}{        locations -\/-\/ a list of locations}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00027}00027 \textcolor{stringliteral}{        from\_db -\/-\/ Whether }\textcolor{keywordflow}{or} \textcolor{keywordflow}{not} to setup game \textcolor{keyword}{from} a Database -\/ Currently unimplemented}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00028}00028         fps -\/-\/ A dict of file-\/like objects used to initialize the Database}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00029}00029         items -\/-\/ a list of Item objects}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00030}00030         recipes -\/-\/ a list of Recipe objects}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00031}00031         quests -\/-\/ a list of Quest objects}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00032}00032         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00033}00033 \textcolor{stringliteral}{        }\textcolor{keywordflow}{if} from\_db:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00034}00034             \textcolor{comment}{\# Todo: make this actually work. Issue is, opening Files in RENPY is annoying.}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00035}00035             \textcolor{keywordflow}{return}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00036}00036             self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab59fb836a7c2cb5a1a297f4383bdf374}{db}}.load\_items\_from\_file(fps[\textcolor{stringliteral}{'items'}])}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00037}00037             self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab59fb836a7c2cb5a1a297f4383bdf374}{db}}.load\_recipes\_from\_file(fps[\textcolor{stringliteral}{'recipes'}])}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00038}00038         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00039}00039             \textcolor{keywordflow}{if} people:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00040}00040                 self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_a8d2c7ed5a3b01cdfbc317e59fd0b9f40}{people}} = people}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00041}00041             \textcolor{keywordflow}{if} locations:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00042}\mbox{\hyperlink{classsystems_1_1game_1_1_game_a8ff7162c9f84eb5bd70e3f5ac1c46716}{00042}}                 self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_a8ff7162c9f84eb5bd70e3f5ac1c46716}{location}} = locations}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00043}00043             \textcolor{keywordflow}{if} items:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00044}00044                 self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab59fb836a7c2cb5a1a297f4383bdf374}{db}}.set\_items(items)}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00045}00045             \textcolor{keywordflow}{if} recipes:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00046}00046                 \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} recipes:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00047}00047                     self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab59fb836a7c2cb5a1a297f4383bdf374}{db}}.recipes[i.id] = i}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00048}00048             \textcolor{keywordflow}{if} quests:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00049}00049                 \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} quests:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00050}00050                     self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab59fb836a7c2cb5a1a297f4383bdf374}{db}}.quests[i.id] = i}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00052}\mbox{\hyperlink{classsystems_1_1game_1_1_game_ae1914099705c785ad7b1d88a1481fd7e}{00052}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1game_1_1_game_ae1914099705c785ad7b1d88a1481fd7e}{start\_quest}}(self, quest\_id= None, quest\_object = None):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00053}00053         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00054}00054 \textcolor{stringliteral}{        Starts a Quest, the updates the game object's state.}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00055}00055 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00056}00056 \textcolor{stringliteral}{        Keyword Arguments}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00057}00057 \textcolor{stringliteral}{        quest\_id -\/-\/ the ID of the quest}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00058}00058 \textcolor{stringliteral}{        quest\_object -\/-\/ a quest object}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00059}00059 \textcolor{stringliteral}{        Only one }\textcolor{keywordflow}{is} required.}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00060}00060         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00061}00061 \textcolor{stringliteral}{        }\textcolor{keywordflow}{if} \textcolor{keywordflow}{not} (isinstance(quest\_id, str) \textcolor{keywordflow}{or} type(quest\_id) != \textcolor{keywordtype}{None}):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00062}00062             \textcolor{keywordflow}{raise} TypeError(\textcolor{stringliteral}{"{}quest\_id is not a <str>, is type \{\}"{}}.format(type(quest\_id)))}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00063}00063         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} (isinstance(quest\_object, Quest) \textcolor{keywordflow}{or} type(quest\_object) != \textcolor{keywordtype}{None}):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00064}00064             \textcolor{keywordflow}{raise} TypeError(\textcolor{stringliteral}{"{}quest\_object is not a <Quest>"{}})}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00065}00065         \textcolor{keywordflow}{if} quest\_id \textcolor{keywordflow}{and} \textcolor{keywordflow}{not} quest\_object:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00066}00066             self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}}.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ae1914099705c785ad7b1d88a1481fd7e}{start\_quest}}(quest\_id, self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab59fb836a7c2cb5a1a297f4383bdf374}{db}}.get\_quest(quest\_id))}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00067}00067         \textcolor{keywordflow}{elif} quest\_id \textcolor{keywordflow}{and} quest\_object:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00068}00068             self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}}.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ae1914099705c785ad7b1d88a1481fd7e}{start\_quest}}(quest\_id, quest\_object)}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00069}00069         \textcolor{keywordflow}{elif} quest\_object:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00070}00070             self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}}.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ae1914099705c785ad7b1d88a1481fd7e}{start\_quest}}(quest\_object.id, quest\_object)}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00071}00071         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00072}00072             \textcolor{keywordflow}{raise} ValueError()}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00073}00073         self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_acb1e8ccfd196c887f110ee3a8f12d2b9}{update}}()}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00074}00074     }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00075}00075     }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00078}\mbox{\hyperlink{classsystems_1_1game_1_1_game_acb1e8ccfd196c887f110ee3a8f12d2b9}{00078}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1game_1_1_game_acb1e8ccfd196c887f110ee3a8f12d2b9}{update}}(self):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00079}00079         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00080}00080 \textcolor{stringliteral}{        Updates the Game object's state}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00081}00081 \textcolor{stringliteral}{        "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00082}00082 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_aa72bcad0b355393a8909707989bd6578}{update\_quests}}()}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00083}00083 \textcolor{stringliteral}{        }\textcolor{keywordflow}{pass}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00084}00084 }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00085}\mbox{\hyperlink{classsystems_1_1game_1_1_game_aa72bcad0b355393a8909707989bd6578}{00085}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1game_1_1_game_aa72bcad0b355393a8909707989bd6578}{update\_quests}}(self):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00086}00086         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00087}00087 \textcolor{stringliteral}{        Updates all active quests.}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00088}00088 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00089}00089 \textcolor{stringliteral}{        More to be implemented soon.}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00090}00090 \textcolor{stringliteral}{        "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00091}00091 \textcolor{stringliteral}{        }\textcolor{keywordflow}{for} q \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}}.questlog.get\_active(): \textcolor{comment}{\# Get all active quests}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00092}00092             stage = q.get\_stage() \textcolor{comment}{\# Get all of q's stages}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00093}00093             stage\_complete = \textcolor{keyword}{True} \textcolor{comment}{\# intermediate variable}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00095}00095             \textcolor{comment}{\# TODO: implement stage check logic}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00096}00096             \textcolor{keywordflow}{for} substage \textcolor{keywordflow}{in} stage.substages:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00097}00097                 r = substage.requirements}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00098}00098                 complete = \textcolor{keyword}{True}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00099}00099                 \textcolor{keywordflow}{if} \textcolor{stringliteral}{"{}item"{}} \textcolor{keywordflow}{in} r:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00100}00100                     \textcolor{comment}{\# print(reqs['item'])}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00101}00101                     items\_present = [(i \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}}.inventory) \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} r[\textcolor{stringliteral}{'item'}][\textcolor{stringliteral}{'ids'}]]}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00102}00102                     \textcolor{keywordflow}{if} r[\textcolor{stringliteral}{'item'}][\textcolor{stringliteral}{'all'}]:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00103}00103                         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} all(items\_present):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00104}00104                             complete = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00105}00105                     \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00106}00106                         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} any(items\_present):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00107}00107                             complete = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00108}00108                 \textcolor{keywordflow}{if} complete:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00109}00109                     substage.complete = \textcolor{keyword}{True}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00110}00110 }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00111}00111             reqs = stage.requirements}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00112}00112             \textcolor{keywordflow}{if} \textcolor{stringliteral}{"{}substage"{}} \textcolor{keywordflow}{in} reqs:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00113}00113                 completed\_stages = [s.complete \textcolor{keywordflow}{for} s \textcolor{keywordflow}{in} stage.substages]}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00114}00114                 \textcolor{keywordflow}{if} reqs[\textcolor{stringliteral}{'substage'}] == \textcolor{stringliteral}{'all'}:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00115}00115                     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} all(completed\_stages):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00116}00116                         stage\_complete = \textcolor{keyword}{False} }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00117}00117                 \textcolor{keywordflow}{if} reqs[\textcolor{stringliteral}{'substage'}] == \textcolor{stringliteral}{'any'}:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00118}00118                     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} any(completed\_stages):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00119}00119                         stage\_complete = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00120}00120             \textcolor{keywordflow}{if} \textcolor{stringliteral}{"{}item"{}} \textcolor{keywordflow}{in} reqs:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00121}00121                 \textcolor{comment}{\# print(reqs['item'])}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00122}00122                 items\_present = [(i \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}}.inventory) \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} reqs[\textcolor{stringliteral}{'item'}][\textcolor{stringliteral}{'ids'}]]}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00123}00123                 \textcolor{keywordflow}{if} reqs[\textcolor{stringliteral}{'item'}][\textcolor{stringliteral}{'all'}]:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00124}00124                     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} all(items\_present):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00125}00125                         stage\_complete = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00126}00126                 \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00127}00127                     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} any(items\_present):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00128}00128                         stage\_complete = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00129}00129             \textcolor{keywordflow}{if} stage\_complete:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00130}00130                 stage.complete = \textcolor{keyword}{True}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00131}00131                 q.next\_stage()}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00132}00132 }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00133}\mbox{\hyperlink{classsystems_1_1game_1_1_game_a754f6b7421c5f8a1cb28862aa4ec64a5}{00133}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1game_1_1_game_a754f6b7421c5f8a1cb28862aa4ec64a5}{set\_selected\_quest}}(self, quest\_id):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00134}00134         \textcolor{stringliteral}{"{}"{}"{}Returns Quest with given ID"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00135}00135         self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}}.questlog.set\_selected\_quest(quest\_id)}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00136}00136 }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00137}\mbox{\hyperlink{classsystems_1_1game_1_1_game_a224faddfdd1c9e37591656faa9daddac}{00137}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1game_1_1_game_a224faddfdd1c9e37591656faa9daddac}{get\_selected\_quest}}(self):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00138}00138         \textcolor{stringliteral}{"{}"{}"{}Returns the currently selected Quest"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00139}00139         \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}}.questlog.selected\_quest}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00140}00140 }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00141}\mbox{\hyperlink{classsystems_1_1game_1_1_game_a6d165b08a47f46fe29cea84926cce40e}{00141}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1game_1_1_game_a6d165b08a47f46fe29cea84926cce40e}{add\_item}}(self, item, count= 1):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00142}00142         \textcolor{stringliteral}{"{}"{}"{}Adds an item to the Player's inventory.}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00143}00143 \textcolor{stringliteral}{        }}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00144}00144 \textcolor{stringliteral}{        Keyword Arguments:}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00145}00145 \textcolor{stringliteral}{        item -\/-\/ id }\textcolor{keywordflow}{or} Item object to add}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00146}00146         count -\/-\/ amount of the item to add (default: 1)}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00147}00147         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00148}00148 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}}.\mbox{\hyperlink{classsystems_1_1game_1_1_game_a6d165b08a47f46fe29cea84926cce40e}{add\_item}}(item, count)}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00149}00149 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_acb1e8ccfd196c887f110ee3a8f12d2b9}{update}}()}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00150}\mbox{\hyperlink{classsystems_1_1game_1_1_game_af81c50ef6681a4f03ee49b47c2997ea5}{00150}} \textcolor{stringliteral}{    }\textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1game_1_1_game_af81c50ef6681a4f03ee49b47c2997ea5}{remove\_item}}(self, item, count= 1):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00151}00151         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00152}00152 \textcolor{stringliteral}{        Removes an Item }\textcolor{keyword}{from} the Player\textcolor{stringliteral}{'s Inventory.}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00153}00153 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00154}00154 \textcolor{stringliteral}{        Keyword arguments:}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00155}00155 \textcolor{stringliteral}{        Keyword Arguments:}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00156}00156 \textcolor{stringliteral}{        item -\/-\/ id }\textcolor{keywordflow}{or} Item object to remove}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00157}00157         count -\/-\/ amount of the item to add (default: 1)}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00158}00158         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00159}00159 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}}.\mbox{\hyperlink{classsystems_1_1game_1_1_game_af81c50ef6681a4f03ee49b47c2997ea5}{remove\_item}}(item, count)}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00160}00160 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_acb1e8ccfd196c887f110ee3a8f12d2b9}{update}}()}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00161}00161 \textcolor{stringliteral}{    }}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00162}\mbox{\hyperlink{classsystems_1_1game_1_1_game_add0f2fab59333e3ac55472e401b9e58c}{00162}} \textcolor{stringliteral}{    }\textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1game_1_1_game_add0f2fab59333e3ac55472e401b9e58c}{craft}}(self, recipe):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00163}00163         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00164}00164 \textcolor{stringliteral}{        Crafts Recipe.}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00165}00165 \textcolor{stringliteral}{        }}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00166}00166 \textcolor{stringliteral}{        Checks player's inventory for required Item(s), removes them from the player'}s inventory, adds the crafted Item(s), then updates the Game object.}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00167}00167 }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00168}00168         Arguments:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00169}00169         recipe -\/-\/ id \textcolor{keywordflow}{or} Recipe object to craft}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00170}00170         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00171}00171 \textcolor{stringliteral}{        }\textcolor{keywordflow}{if} isinstance(recipe, str):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00172}00172             \textcolor{keywordflow}{if} recipe \textcolor{keywordflow}{in} [r.id \textcolor{keywordflow}{for} r \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_a0573c02b980933786722a627c642361d}{get\_craftable}}()]: \textcolor{comment}{\# Check if ID is in craftable recipe list}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00173}00173                 \textcolor{keywordflow}{for} req \textcolor{keywordflow}{in} recipe.requirements:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00174}00174                     self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_af81c50ef6681a4f03ee49b47c2997ea5}{remove\_item}}(req[0], req[1])}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00175}00175                 \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} recipe.items:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00176}00176                     self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_a6d165b08a47f46fe29cea84926cce40e}{add\_item}}(self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab59fb836a7c2cb5a1a297f4383bdf374}{db}}[i[0]], i[1])}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00177}00177         \textcolor{keywordflow}{elif} isinstance(recipe, Recipe):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00178}00178             \textcolor{keywordflow}{if} recipe \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_a0573c02b980933786722a627c642361d}{get\_craftable}}(): \textcolor{comment}{\# Check if Recipe is in the craftable recipe list}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00179}00179                 \textcolor{keywordflow}{for} req \textcolor{keywordflow}{in} recipe.requirements:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00180}00180                     self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_af81c50ef6681a4f03ee49b47c2997ea5}{remove\_item}}(req[0], req[1])}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00181}00181                 \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} recipe.items:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00182}00182                     self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_a6d165b08a47f46fe29cea84926cce40e}{add\_item}}(self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab59fb836a7c2cb5a1a297f4383bdf374}{db}}[i[0]], i[1])}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00183}00183 }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00184}00184         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00185}00185             \textcolor{keywordflow}{raise} TypeError(\textcolor{stringliteral}{"{}Must be of type <str> or <Recipe>, not \{\}"{}}.format(type(recipe)))}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00186}00186         self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_acb1e8ccfd196c887f110ee3a8f12d2b9}{update}}()}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00187}00187 }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00188}00188 }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00189}\mbox{\hyperlink{classsystems_1_1game_1_1_game_a0573c02b980933786722a627c642361d}{00189}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1game_1_1_game_a0573c02b980933786722a627c642361d}{get\_craftable}}(self):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00190}00190         \textcolor{stringliteral}{"{}"{}"{}Returns a list of craftable recipes."{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00191}00191         \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}}.\mbox{\hyperlink{classsystems_1_1game_1_1_game_a0573c02b980933786722a627c642361d}{get\_craftable}}()}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00192}00192     }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00193}\mbox{\hyperlink{classsystems_1_1game_1_1_game_a2dc59b2bb8b6be0e2692f0e4b40d8e6e}{00193}}     \textcolor{keyword}{def }\mbox{\hyperlink{classsystems_1_1game_1_1_game_a2dc59b2bb8b6be0e2692f0e4b40d8e6e}{get\_uncraftable}}(self):}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00194}00194         \textcolor{stringliteral}{"{}"{}"{}Returns a list of uncraftable recipes."{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00195}00195         \textcolor{keywordflow}{return} self.\mbox{\hyperlink{classsystems_1_1game_1_1_game_ab7e5f01f31ac2c8d44fccad531402534}{player}}.\mbox{\hyperlink{classsystems_1_1game_1_1_game_a2dc59b2bb8b6be0e2692f0e4b40d8e6e}{get\_uncraftable}}()}
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00196}00196 }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00197}00197 }
+\DoxyCodeLine{\Hypertarget{game_8py_source_l00198}00198     }
 
 \end{DoxyCode}

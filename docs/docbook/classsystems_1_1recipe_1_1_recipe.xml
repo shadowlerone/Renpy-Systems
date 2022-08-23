@@ -23,7 +23,7 @@ Collaboration diagram for systems.recipe.Recipe:<para>
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para>def <link linkend="_classsystems_1_1recipe_1_1_recipe_1a541ecdc8223971de7dbf802f86eae4f5">__init__</link> (self, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1a2a7d149c3e1a21ce18e83bf54db345b4">name</link>, <link linkend="_classsystems_1_1recipe_1_1_recipe_1a6b2d849221fb9cfb822a6cc0f5039b30">requirements</link>, <link linkend="_classsystems_1_1recipe_1_1_recipe_1acf9ca4a77d896269e0e310c09886183d">item</link>, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1acedafdd78e44e6e95d155caf0a4b8cdd">description</link>=&apos;&apos;)</para>
+            <listitem><para>def <link linkend="_classsystems_1_1recipe_1_1_recipe_1ac31e379ff91906d33824e2b07a20b993">__init__</link> (self, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1aba5d7f2977d90fb287e79b092febe3cb">id</link>, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1a2a7d149c3e1a21ce18e83bf54db345b4">name</link>, <link linkend="_classsystems_1_1recipe_1_1_recipe_1a6b2d849221fb9cfb822a6cc0f5039b30">requirements</link>, <link linkend="_classsystems_1_1recipe_1_1_recipe_1a140e5a3c4c93f796c4fb45ffd8afba49">items</link>, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1acedafdd78e44e6e95d155caf0a4b8cdd">description</link>=&apos;&apos;)</para>
 </listitem>
             <listitem><para>def <link linkend="_classsystems_1_1recipe_1_1_recipe_1a0551534f48e6e31296ba24b2faf448ab">is_craftable</link> (self, item_list)</para>
 </listitem>
@@ -45,7 +45,7 @@ Collaboration diagram for systems.recipe.Recipe:<para>
         <itemizedlist>
             <listitem><para><link linkend="_classsystems_1_1recipe_1_1_recipe_1a6b2d849221fb9cfb822a6cc0f5039b30">requirements</link></para>
 </listitem>
-            <listitem><para><link linkend="_classsystems_1_1recipe_1_1_recipe_1acf9ca4a77d896269e0e310c09886183d">item</link></para>
+            <listitem><para><link linkend="_classsystems_1_1recipe_1_1_recipe_1a140e5a3c4c93f796c4fb45ffd8afba49">items</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -56,11 +56,11 @@ Definition at line <link linkend="_recipe_8py_source_1l00003">3</link> of file <
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_1a541ecdc8223971de7dbf802f86eae4f5"/><section>
+<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_1ac31e379ff91906d33824e2b07a20b993"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>systems.recipe.Recipe</secondary></indexterm>
 <indexterm><primary>systems.recipe.Recipe</primary><secondary>__init__</secondary></indexterm>
-<para><computeroutput>def systems.recipe.Recipe.__init__ ( self,  name,  requirements,  item,  description = <computeroutput>&apos;&apos;</computeroutput>
+<para><computeroutput>def systems.recipe.Recipe.__init__ ( self,  id,  name,  requirements,  items,  description = <computeroutput>&apos;&apos;</computeroutput>
 )</computeroutput></para><para>
 Reimplemented from <link linkend="_classsystems_1_1gameobject_1_1_game_object_1ae183a723dc362cdfbb392c062b64ebe0">systems.gameobject.GameObject</link>.</para>
 <para>
@@ -69,7 +69,7 @@ Here is the call graph for this function:<para>
     <informalfigure>
         <mediaobject>
             <imageobject>
-                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1recipe_1_1_recipe_a541ecdc8223971de7dbf802f86eae4f5_cgraph.png"></imagedata>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1recipe_1_1_recipe_ac31e379ff91906d33824e2b07a20b993_cgraph.png"></imagedata>
             </imageobject>
         </mediaobject>
     </informalfigure>
@@ -78,7 +78,7 @@ Here is the caller graph for this function:<para>
     <informalfigure>
         <mediaobject>
             <imageobject>
-                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1recipe_1_1_recipe_a541ecdc8223971de7dbf802f86eae4f5_icgraph.png"></imagedata>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1recipe_1_1_recipe_ac31e379ff91906d33824e2b07a20b993_icgraph.png"></imagedata>
             </imageobject>
         </mediaobject>
     </informalfigure>
@@ -122,11 +122,11 @@ Definition at line <link linkend="_recipe_8py_source_1l00008">8</link> of file <
 </section>
 <section>
 <title>Member Data Documentation</title>
-<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_1acf9ca4a77d896269e0e310c09886183d"/><section>
-    <title>item</title>
-<indexterm><primary>item</primary><secondary>systems.recipe.Recipe</secondary></indexterm>
-<indexterm><primary>systems.recipe.Recipe</primary><secondary>item</secondary></indexterm>
-<para><computeroutput>systems.recipe.Recipe.item</computeroutput></para><para>
+<anchor xml:id="_classsystems_1_1recipe_1_1_recipe_1a140e5a3c4c93f796c4fb45ffd8afba49"/><section>
+    <title>items</title>
+<indexterm><primary>items</primary><secondary>systems.recipe.Recipe</secondary></indexterm>
+<indexterm><primary>systems.recipe.Recipe</primary><secondary>items</secondary></indexterm>
+<para><computeroutput>systems.recipe.Recipe.items</computeroutput></para><para>
 Definition at line <link linkend="_recipe_8py_source_1l00007">7</link> of file <link linkend="_recipe_8py_source">recipe.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1recipe_1_1_recipe_1a6b2d849221fb9cfb822a6cc0f5039b30"/><section>

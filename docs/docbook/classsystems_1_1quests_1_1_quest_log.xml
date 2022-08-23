@@ -25,6 +25,8 @@ Collaboration diagram for systems.quests.QuestLog:<para>
         <itemizedlist>
             <listitem><para>def <link linkend="_classsystems_1_1quests_1_1_quest_log_1a4c93b5ac927e2fb7a6f107d65dab768f">__init__</link> (self)</para>
 </listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1quests_1_1_quest_log_1adaac2f8c0c6b558ee6ad4ae5f2d1c83f">set_selected_quest</link> (self, id)</para>
+</listitem>
             <listitem><para>def <link linkend="_classsystems_1_1quests_1_1_quest_log_1aeefec1f7d521214a229a28ceb480819f">get_quest</link> (self, id)</para>
 </listitem>
             <listitem><para>def <link linkend="_classsystems_1_1quests_1_1_quest_log_1a45f6cf5bd71ca27aa99ec77059acd004">add_quest</link> (self, id, quest)</para>
@@ -40,12 +42,14 @@ Collaboration diagram for systems.quests.QuestLog:<para>
         <itemizedlist>
             <listitem><para><link linkend="_classsystems_1_1quests_1_1_quest_log_1adef94754405eaa2f2a6d927d87c1b7d1">quests</link></para>
 </listitem>
+            <listitem><para><link linkend="_classsystems_1_1quests_1_1_quest_log_1a9245f7d4e27aab12e468973c45a9a0d6">selected_quest</link></para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <section>
 <title>Detailed Description</title>
 <para>
-Definition at line <link linkend="_quests_8py_source_1l00080">80</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+Definition at line <link linkend="_quests_8py_source_1l00098">98</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
@@ -54,7 +58,7 @@ Definition at line <link linkend="_quests_8py_source_1l00080">80</link> of file 
 <indexterm><primary>__init__</primary><secondary>systems.quests.QuestLog</secondary></indexterm>
 <indexterm><primary>systems.quests.QuestLog</primary><secondary>__init__</secondary></indexterm>
 <para><computeroutput>def systems.quests.QuestLog.__init__ ( self)</computeroutput></para><para>
-Definition at line <link linkend="_quests_8py_source_1l00081">81</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+Definition at line <link linkend="_quests_8py_source_1l00099">99</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
 </section>
 </section>
 <section>
@@ -64,28 +68,53 @@ Definition at line <link linkend="_quests_8py_source_1l00081">81</link> of file 
 <indexterm><primary>__getitem__</primary><secondary>systems.quests.QuestLog</secondary></indexterm>
 <indexterm><primary>systems.quests.QuestLog</primary><secondary>__getitem__</secondary></indexterm>
 <para><computeroutput>def systems.quests.QuestLog.__getitem__ ( self,  key)</computeroutput></para><para>
-Definition at line <link linkend="_quests_8py_source_1l00097">97</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+Definition at line <link linkend="_quests_8py_source_1l00125">125</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1quests_1_1_quest_log_1a45f6cf5bd71ca27aa99ec77059acd004"/><section>
     <title>add_quest()</title>
 <indexterm><primary>add_quest</primary><secondary>systems.quests.QuestLog</secondary></indexterm>
 <indexterm><primary>systems.quests.QuestLog</primary><secondary>add_quest</secondary></indexterm>
 <para><computeroutput>def systems.quests.QuestLog.add_quest ( self,  id,  quest)</computeroutput></para><para>
-Definition at line <link linkend="_quests_8py_source_1l00087">87</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+Definition at line <link linkend="_quests_8py_source_1l00110">110</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1quests_1_1_quest_log_1a0be65bc410203e8982352398f23cc80b"/><section>
     <title>get_active()</title>
 <indexterm><primary>get_active</primary><secondary>systems.quests.QuestLog</secondary></indexterm>
 <indexterm><primary>systems.quests.QuestLog</primary><secondary>get_active</secondary></indexterm>
 <para><computeroutput>def systems.quests.QuestLog.get_active ( self)</computeroutput></para><para>
-Definition at line <link linkend="_quests_8py_source_1l00091">91</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+Definition at line <link linkend="_quests_8py_source_1l00117">117</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1quests_1_1_quest_log_1aeefec1f7d521214a229a28ceb480819f"/><section>
     <title>get_quest()</title>
 <indexterm><primary>get_quest</primary><secondary>systems.quests.QuestLog</secondary></indexterm>
 <indexterm><primary>systems.quests.QuestLog</primary><secondary>get_quest</secondary></indexterm>
 <para><computeroutput>def systems.quests.QuestLog.get_quest ( self,  id)</computeroutput></para><para>
-Definition at line <link linkend="_quests_8py_source_1l00084">84</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+Definition at line <link linkend="_quests_8py_source_1l00107">107</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1quests_1_1_quest_log_aeefec1f7d521214a229a28ceb480819f_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classsystems_1_1quests_1_1_quest_log_1adaac2f8c0c6b558ee6ad4ae5f2d1c83f"/><section>
+    <title>set_selected_quest()</title>
+<indexterm><primary>set_selected_quest</primary><secondary>systems.quests.QuestLog</secondary></indexterm>
+<indexterm><primary>systems.quests.QuestLog</primary><secondary>set_selected_quest</secondary></indexterm>
+<para><computeroutput>def systems.quests.QuestLog.set_selected_quest ( self,  id)</computeroutput></para><para>
+Definition at line <link linkend="_quests_8py_source_1l00103">103</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1quests_1_1_quest_log_adaac2f8c0c6b558ee6ad4ae5f2d1c83f_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 </section>
 </section>
 <section>
@@ -95,7 +124,14 @@ Definition at line <link linkend="_quests_8py_source_1l00084">84</link> of file 
 <indexterm><primary>quests</primary><secondary>systems.quests.QuestLog</secondary></indexterm>
 <indexterm><primary>systems.quests.QuestLog</primary><secondary>quests</secondary></indexterm>
 <para><computeroutput>systems.quests.QuestLog.quests</computeroutput></para><para>
-Definition at line <link linkend="_quests_8py_source_1l00082">82</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+Definition at line <link linkend="_quests_8py_source_1l00100">100</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1quests_1_1_quest_log_1a9245f7d4e27aab12e468973c45a9a0d6"/><section>
+    <title>selected_quest</title>
+<indexterm><primary>selected_quest</primary><secondary>systems.quests.QuestLog</secondary></indexterm>
+<indexterm><primary>systems.quests.QuestLog</primary><secondary>selected_quest</secondary></indexterm>
+<para><computeroutput>systems.quests.QuestLog.selected_quest</computeroutput></para><para>
+Definition at line <link linkend="_quests_8py_source_1l00101">101</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>

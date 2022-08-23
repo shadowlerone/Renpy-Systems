@@ -23,7 +23,7 @@ Collaboration diagram for systems.quests.QuestStage:<para>
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para>def <link linkend="_classsystems_1_1quests_1_1_quest_stage_1a67a01eb10393b202f36d0562509866bb">__init__</link> (self, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1aba5d7f2977d90fb287e79b092febe3cb">id</link>, parent_quest_id, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1a2a7d149c3e1a21ce18e83bf54db345b4">name</link>=&apos;&apos;, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1acedafdd78e44e6e95d155caf0a4b8cdd">description</link>=&apos;&apos;, next_stage=0, <link linkend="_classsystems_1_1quests_1_1_quest_stage_1a37f60c2ab9dee0457916e20acb20adde">substages</link>=[], <link linkend="_classsystems_1_1quests_1_1_quest_stage_1aac9db10d0c6153e8c2b649d5e850fb53">requirements</link>={})</para>
+            <listitem><para>def <link linkend="_classsystems_1_1quests_1_1_quest_stage_1a67a01eb10393b202f36d0562509866bb">__init__</link> (self, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1aba5d7f2977d90fb287e79b092febe3cb">id</link>, parent_quest_id, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1a2a7d149c3e1a21ce18e83bf54db345b4">name</link>=&apos;&apos;, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1acedafdd78e44e6e95d155caf0a4b8cdd">description</link>=&apos;&apos;, <link linkend="_classsystems_1_1quests_1_1_quest_stage_1a8586a1842704bf37927b78c63be6a07b">next_stage</link>=0, <link linkend="_classsystems_1_1quests_1_1_quest_stage_1a37f60c2ab9dee0457916e20acb20adde">substages</link>=[], <link linkend="_classsystems_1_1quests_1_1_quest_stage_1aac9db10d0c6153e8c2b649d5e850fb53">requirements</link>={})</para>
 </listitem>
             <listitem><para>def <link linkend="_classsystems_1_1quests_1_1_quest_stage_1af69eb4aece6270693fe65dc02d2c21d4">__str__</link> (self)</para>
 </listitem>
@@ -45,12 +45,14 @@ Collaboration diagram for systems.quests.QuestStage:<para>
 </listitem>
             <listitem><para><link linkend="_classsystems_1_1quests_1_1_quest_stage_1aac9db10d0c6153e8c2b649d5e850fb53">requirements</link></para>
 </listitem>
+            <listitem><para><link linkend="_classsystems_1_1quests_1_1_quest_stage_1a8586a1842704bf37927b78c63be6a07b">next_stage</link></para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <section>
 <title>Detailed Description</title>
 <para>
-Definition at line <link linkend="_quests_8py_source_1l00054">54</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+Definition at line <link linkend="_quests_8py_source_1l00071">71</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
@@ -66,7 +68,7 @@ Definition at line <link linkend="_quests_8py_source_1l00054">54</link> of file 
 )</computeroutput></para><para>
 Reimplemented from <link linkend="_classsystems_1_1gameobject_1_1_game_object_1ae183a723dc362cdfbb392c062b64ebe0">systems.gameobject.GameObject</link>.</para>
 <para>
-Definition at line <link linkend="_quests_8py_source_1l00055">55</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+Definition at line <link linkend="_quests_8py_source_1l00072">72</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
 Here is the call graph for this function:<para>
     <informalfigure>
         <mediaobject>
@@ -94,14 +96,14 @@ Here is the caller graph for this function:<para>
 <indexterm><primary>__str__</primary><secondary>systems.quests.QuestStage</secondary></indexterm>
 <indexterm><primary>systems.quests.QuestStage</primary><secondary>__str__</secondary></indexterm>
 <para><computeroutput>def systems.quests.QuestStage.__str__ ( self)</computeroutput></para><para>
-Definition at line <link linkend="_quests_8py_source_1l00072">72</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+Definition at line <link linkend="_quests_8py_source_1l00090">90</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1quests_1_1_quest_stage_1a959ece306a4e5ce9abc180021594a0f0"/><section>
     <title>from_dict()</title>
 <indexterm><primary>from_dict</primary><secondary>systems.quests.QuestStage</secondary></indexterm>
 <indexterm><primary>systems.quests.QuestStage</primary><secondary>from_dict</secondary></indexterm>
 <para><computeroutput>def systems.quests.QuestStage.from_dict ( d)<computeroutput>[static]</computeroutput></computeroutput></para><para>
-Definition at line <link linkend="_quests_8py_source_1l00077">77</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+Definition at line <link linkend="_quests_8py_source_1l00095">95</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
 </section>
 </section>
 <section>
@@ -111,21 +113,28 @@ Definition at line <link linkend="_quests_8py_source_1l00077">77</link> of file 
 <indexterm><primary>complete</primary><secondary>systems.quests.QuestStage</secondary></indexterm>
 <indexterm><primary>systems.quests.QuestStage</primary><secondary>complete</secondary></indexterm>
 <para><computeroutput>systems.quests.QuestStage.complete</computeroutput></para><para>
-Definition at line <link linkend="_quests_8py_source_1l00066">66</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+Definition at line <link linkend="_quests_8py_source_1l00083">83</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1quests_1_1_quest_stage_1a8586a1842704bf37927b78c63be6a07b"/><section>
+    <title>next_stage</title>
+<indexterm><primary>next_stage</primary><secondary>systems.quests.QuestStage</secondary></indexterm>
+<indexterm><primary>systems.quests.QuestStage</primary><secondary>next_stage</secondary></indexterm>
+<para><computeroutput>systems.quests.QuestStage.next_stage</computeroutput></para><para>
+Definition at line <link linkend="_quests_8py_source_1l00088">88</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1quests_1_1_quest_stage_1aac9db10d0c6153e8c2b649d5e850fb53"/><section>
     <title>requirements</title>
 <indexterm><primary>requirements</primary><secondary>systems.quests.QuestStage</secondary></indexterm>
 <indexterm><primary>systems.quests.QuestStage</primary><secondary>requirements</secondary></indexterm>
 <para><computeroutput>systems.quests.QuestStage.requirements</computeroutput></para><para>
-Definition at line <link linkend="_quests_8py_source_1l00070">70</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+Definition at line <link linkend="_quests_8py_source_1l00087">87</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1quests_1_1_quest_stage_1a37f60c2ab9dee0457916e20acb20adde"/><section>
     <title>substages</title>
 <indexterm><primary>substages</primary><secondary>systems.quests.QuestStage</secondary></indexterm>
 <indexterm><primary>systems.quests.QuestStage</primary><secondary>substages</secondary></indexterm>
 <para><computeroutput>systems.quests.QuestStage.substages</computeroutput></para><para>
-Definition at line <link linkend="_quests_8py_source_1l00069">69</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
+Definition at line <link linkend="_quests_8py_source_1l00086">86</link> of file <link linkend="_quests_8py_source">quests.py</link>.</para>
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>

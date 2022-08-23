@@ -31,7 +31,21 @@ Collaboration diagram for systems.player.Player:<para>
 </listitem>
             <listitem><para>def <link linkend="_classsystems_1_1player_1_1_player_1ae1a17a36e040ee120ac7221a3fc4e6cf">craft</link> (self, recipe)</para>
 </listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1player_1_1_player_1a70e7f703e3b3c395e3538435a15c3e3e">add_item</link> (self, item, count)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1player_1_1_player_1a06d86c2b195ce17409ea2b1c6d38dcb0">remove_item</link> (self, item, count)</para>
+</listitem>
             <listitem><para>def <link linkend="_classsystems_1_1player_1_1_player_1a8d3c8a24a7b74cb4648486b2eeda35f0">start_quest</link> (self, quest_id, quest_object)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1player_1_1_player_1a56a34cfac6d496af87969103fa806adf">add_recipe</link> (self, recipe)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1player_1_1_player_1a5ed45e7945c69cae74b8131c7f9ea5fe">get_quest</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1player_1_1_player_1a361b2d71ddff782c9a5d9fc367695b9e">set_selected_quest</link> (self, quest_id)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1player_1_1_player_1a661c2f345fc349a2e334e1bf0f1d37a7">get_selected_quest</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1player_1_1_player_1af1bfa5bf2bad314acbc1580cf550e961">get_items</link> (self)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -63,6 +77,47 @@ Definition at line <link linkend="_player_8py_source_1l00008">8</link> of file <
 </section>
 <section>
 <title>Member Function Documentation</title>
+<anchor xml:id="_classsystems_1_1player_1_1_player_1a70e7f703e3b3c395e3538435a15c3e3e"/><section>
+    <title>add_item()</title>
+<indexterm><primary>add_item</primary><secondary>systems.player.Player</secondary></indexterm>
+<indexterm><primary>systems.player.Player</primary><secondary>add_item</secondary></indexterm>
+<para><computeroutput>def systems.player.Player.add_item ( self,  item,  count)</computeroutput></para><para>
+Definition at line <link linkend="_player_8py_source_1l00022">22</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1player_1_1_player_a70e7f703e3b3c395e3538435a15c3e3e_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classsystems_1_1player_1_1_player_1a56a34cfac6d496af87969103fa806adf"/><section>
+    <title>add_recipe()</title>
+<indexterm><primary>add_recipe</primary><secondary>systems.player.Player</secondary></indexterm>
+<indexterm><primary>systems.player.Player</primary><secondary>add_recipe</secondary></indexterm>
+<para><computeroutput>def systems.player.Player.add_recipe ( self,  recipe)</computeroutput></para><para>
+Definition at line <link linkend="_player_8py_source_1l00030">30</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1player_1_1_player_a56a34cfac6d496af87969103fa806adf_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1player_1_1_player_a56a34cfac6d496af87969103fa806adf_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
 <anchor xml:id="_classsystems_1_1player_1_1_player_1ae1a17a36e040ee120ac7221a3fc4e6cf"/><section>
     <title>craft()</title>
 <indexterm><primary>craft</primary><secondary>systems.player.Player</secondary></indexterm>
@@ -76,6 +131,45 @@ Definition at line <link linkend="_player_8py_source_1l00019">19</link> of file 
 <indexterm><primary>systems.player.Player</primary><secondary>get_craftable</secondary></indexterm>
 <para><computeroutput>def systems.player.Player.get_craftable ( self)</computeroutput></para><para>
 Definition at line <link linkend="_player_8py_source_1l00013">13</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1player_1_1_player_abde6a9dfa5d5349c8e34e635c245d510_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classsystems_1_1player_1_1_player_1af1bfa5bf2bad314acbc1580cf550e961"/><section>
+    <title>get_items()</title>
+<indexterm><primary>get_items</primary><secondary>systems.player.Player</secondary></indexterm>
+<indexterm><primary>systems.player.Player</primary><secondary>get_items</secondary></indexterm>
+<para><computeroutput>def systems.player.Player.get_items ( self)</computeroutput></para><para>
+Definition at line <link linkend="_player_8py_source_1l00042">42</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1player_1_1_player_1a5ed45e7945c69cae74b8131c7f9ea5fe"/><section>
+    <title>get_quest()</title>
+<indexterm><primary>get_quest</primary><secondary>systems.player.Player</secondary></indexterm>
+<indexterm><primary>systems.player.Player</primary><secondary>get_quest</secondary></indexterm>
+<para><computeroutput>def systems.player.Player.get_quest ( self)</computeroutput></para><para>
+Definition at line <link linkend="_player_8py_source_1l00033">33</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1player_1_1_player_a5ed45e7945c69cae74b8131c7f9ea5fe_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classsystems_1_1player_1_1_player_1a661c2f345fc349a2e334e1bf0f1d37a7"/><section>
+    <title>get_selected_quest()</title>
+<indexterm><primary>get_selected_quest</primary><secondary>systems.player.Player</secondary></indexterm>
+<indexterm><primary>systems.player.Player</primary><secondary>get_selected_quest</secondary></indexterm>
+<para><computeroutput>def systems.player.Player.get_selected_quest ( self)</computeroutput></para><para>
+Definition at line <link linkend="_player_8py_source_1l00039">39</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1player_1_1_player_1a91e675776ff9c491d5d5ef1cd9fb081d"/><section>
     <title>get_uncraftable()</title>
@@ -84,12 +178,44 @@ Definition at line <link linkend="_player_8py_source_1l00013">13</link> of file 
 <para><computeroutput>def systems.player.Player.get_uncraftable ( self)</computeroutput></para><para>
 Definition at line <link linkend="_player_8py_source_1l00016">16</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
 </section>
+<anchor xml:id="_classsystems_1_1player_1_1_player_1a06d86c2b195ce17409ea2b1c6d38dcb0"/><section>
+    <title>remove_item()</title>
+<indexterm><primary>remove_item</primary><secondary>systems.player.Player</secondary></indexterm>
+<indexterm><primary>systems.player.Player</primary><secondary>remove_item</secondary></indexterm>
+<para><computeroutput>def systems.player.Player.remove_item ( self,  item,  count)</computeroutput></para><para>
+Definition at line <link linkend="_player_8py_source_1l00024">24</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1player_1_1_player_a06d86c2b195ce17409ea2b1c6d38dcb0_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1player_1_1_player_a06d86c2b195ce17409ea2b1c6d38dcb0_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classsystems_1_1player_1_1_player_1a361b2d71ddff782c9a5d9fc367695b9e"/><section>
+    <title>set_selected_quest()</title>
+<indexterm><primary>set_selected_quest</primary><secondary>systems.player.Player</secondary></indexterm>
+<indexterm><primary>systems.player.Player</primary><secondary>set_selected_quest</secondary></indexterm>
+<para><computeroutput>def systems.player.Player.set_selected_quest ( self,  quest_id)</computeroutput></para><para>
+Definition at line <link linkend="_player_8py_source_1l00036">36</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
+</section>
 <anchor xml:id="_classsystems_1_1player_1_1_player_1a8d3c8a24a7b74cb4648486b2eeda35f0"/><section>
     <title>start_quest()</title>
 <indexterm><primary>start_quest</primary><secondary>systems.player.Player</secondary></indexterm>
 <indexterm><primary>systems.player.Player</primary><secondary>start_quest</secondary></indexterm>
 <para><computeroutput>def systems.player.Player.start_quest ( self,  quest_id,  quest_object)</computeroutput></para><para>
-Definition at line <link linkend="_player_8py_source_1l00022">22</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
+Definition at line <link linkend="_player_8py_source_1l00026">26</link> of file <link linkend="_player_8py_source">player.py</link>.</para>
 </section>
 </section>
 <section>

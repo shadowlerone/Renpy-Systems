@@ -23,7 +23,7 @@ Collaboration diagram for systems.item.Item:<para>
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para>def <link linkend="_classsystems_1_1item_1_1_item_1a1bcb05d8e59d5d9c739cded13c3efbb3">__init__</link> (self, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1aba5d7f2977d90fb287e79b092febe3cb">id</link>, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1a2a7d149c3e1a21ce18e83bf54db345b4">name</link>, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1acedafdd78e44e6e95d155caf0a4b8cdd">description</link>=&apos;&apos;, <link linkend="_classsystems_1_1item_1_1_item_1ab5e4a58b0326404787d6f79e37ec0f0f">image_path</link>=&apos;&apos;)</para>
+            <listitem><para>def <link linkend="_classsystems_1_1item_1_1_item_1a5898ec2b1da75e499a064979ad6516d9">__init__</link> (self, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1aba5d7f2977d90fb287e79b092febe3cb">id</link>, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1a2a7d149c3e1a21ce18e83bf54db345b4">name</link>, <link linkend="_classsystems_1_1gameobject_1_1_game_object_1acedafdd78e44e6e95d155caf0a4b8cdd">description</link>=&apos;&apos;, <link linkend="_classsystems_1_1item_1_1_item_1ab5e4a58b0326404787d6f79e37ec0f0f">image_path</link>=&apos;&apos;, <link linkend="_classsystems_1_1item_1_1_item_1aad776fd9d30a6fcb65a379917b19499a">icon_path</link>=&quot;&quot;)</para>
 </listitem>
             <listitem><para>def <link linkend="_classsystems_1_1item_1_1_item_1ad1a0f13cc4cc184ac870f9d721c60977">__str__</link> (self)</para>
 </listitem>
@@ -41,6 +41,8 @@ Collaboration diagram for systems.item.Item:<para>
         <itemizedlist>
             <listitem><para><link linkend="_classsystems_1_1item_1_1_item_1ab5e4a58b0326404787d6f79e37ec0f0f">image_path</link></para>
 </listitem>
+            <listitem><para><link linkend="_classsystems_1_1item_1_1_item_1aad776fd9d30a6fcb65a379917b19499a">icon_path</link></para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <section>
@@ -50,12 +52,13 @@ Definition at line <link linkend="_item_8py_source_1l00003">3</link> of file <li
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_classsystems_1_1item_1_1_item_1a1bcb05d8e59d5d9c739cded13c3efbb3"/><section>
+<anchor xml:id="_classsystems_1_1item_1_1_item_1a5898ec2b1da75e499a064979ad6516d9"/><section>
     <title>__init__()</title>
 <indexterm><primary>__init__</primary><secondary>systems.item.Item</secondary></indexterm>
 <indexterm><primary>systems.item.Item</primary><secondary>__init__</secondary></indexterm>
 <para><computeroutput>def systems.item.Item.__init__ ( self,  id,  name,  description = <computeroutput>&apos;&apos;</computeroutput>
 ,  image_path = <computeroutput>&apos;&apos;</computeroutput>
+,  icon_path = <computeroutput>&quot;&quot;</computeroutput>
 )</computeroutput></para><para>
 Reimplemented from <link linkend="_classsystems_1_1gameobject_1_1_game_object_1ae183a723dc362cdfbb392c062b64ebe0">systems.gameobject.GameObject</link>.</para>
 <para>
@@ -66,7 +69,7 @@ Here is the call graph for this function:<para>
     <informalfigure>
         <mediaobject>
             <imageobject>
-                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1item_1_1_item_a1bcb05d8e59d5d9c739cded13c3efbb3_cgraph.png"></imagedata>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1item_1_1_item_a5898ec2b1da75e499a064979ad6516d9_cgraph.png"></imagedata>
             </imageobject>
         </mediaobject>
     </informalfigure>
@@ -75,7 +78,7 @@ Here is the caller graph for this function:<para>
     <informalfigure>
         <mediaobject>
             <imageobject>
-                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1item_1_1_item_a1bcb05d8e59d5d9c739cded13c3efbb3_icgraph.png"></imagedata>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1item_1_1_item_a5898ec2b1da75e499a064979ad6516d9_icgraph.png"></imagedata>
             </imageobject>
         </mediaobject>
     </informalfigure>
@@ -89,7 +92,7 @@ Here is the caller graph for this function:<para>
 <indexterm><primary>__str__</primary><secondary>systems.item.Item</secondary></indexterm>
 <indexterm><primary>systems.item.Item</primary><secondary>__str__</secondary></indexterm>
 <para><computeroutput>def systems.item.Item.__str__ ( self)</computeroutput></para><para>
-Definition at line <link linkend="_item_8py_source_1l00007">7</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
+Definition at line <link linkend="_item_8py_source_1l00008">8</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1item_1_1_item_1a4144aa239cf0dd626351d680d2189d43"/><section>
     <title>from_dict()</title>
@@ -98,11 +101,18 @@ Definition at line <link linkend="_item_8py_source_1l00007">7</link> of file <li
 <para><computeroutput>def systems.item.Item.from_dict ( d)<computeroutput>[static]</computeroutput></computeroutput></para><para>
 Reimplemented in <link linkend="_classsystems_1_1item_1_1_inventory_item_1ae95b386159a56fcc79ab76bcb1d9d3b6">systems.item.InventoryItem</link>.</para>
 <para>
-Definition at line <link linkend="_item_8py_source_1l00010">10</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
+Definition at line <link linkend="_item_8py_source_1l00011">11</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
 </section>
 </section>
 <section>
 <title>Member Data Documentation</title>
+<anchor xml:id="_classsystems_1_1item_1_1_item_1aad776fd9d30a6fcb65a379917b19499a"/><section>
+    <title>icon_path</title>
+<indexterm><primary>icon_path</primary><secondary>systems.item.Item</secondary></indexterm>
+<indexterm><primary>systems.item.Item</primary><secondary>icon_path</secondary></indexterm>
+<para><computeroutput>systems.item.Item.icon_path</computeroutput></para><para>
+Definition at line <link linkend="_item_8py_source_1l00007">7</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
+</section>
 <anchor xml:id="_classsystems_1_1item_1_1_item_1ab5e4a58b0326404787d6f79e37ec0f0f"/><section>
     <title>image_path</title>
 <indexterm><primary>image_path</primary><secondary>systems.item.Item</secondary></indexterm>

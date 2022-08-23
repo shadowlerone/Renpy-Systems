@@ -52,7 +52,7 @@ Collaboration diagram for systems.item.InventoryItem:<para>
 <section>
 <title>Detailed Description</title>
 <para>
-Definition at line <link linkend="_item_8py_source_1l00022">22</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
+Definition at line <link linkend="_item_8py_source_1l00023">23</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
@@ -64,11 +64,11 @@ Definition at line <link linkend="_item_8py_source_1l00022">22</link> of file <l
 ,  image_path = <computeroutput>&apos;&apos;</computeroutput>
 ,  count = <computeroutput>0</computeroutput>
 )</computeroutput></para><para>
-Reimplemented from <link linkend="_classsystems_1_1item_1_1_item_1a1bcb05d8e59d5d9c739cded13c3efbb3">systems.item.Item</link>.</para>
+Reimplemented from <link linkend="_classsystems_1_1item_1_1_item_1a5898ec2b1da75e499a064979ad6516d9">systems.item.Item</link>.</para>
 <para>
 Reimplemented in <link linkend="_classsystems_1_1item_1_1_placeholder_inventory_item_1a4a7fa46251a0da36222919d0268f1df5">systems.item.PlaceholderInventoryItem</link>.</para>
 <para>
-Definition at line <link linkend="_item_8py_source_1l00023">23</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
+Definition at line <link linkend="_item_8py_source_1l00024">24</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
 Here is the call graph for this function:<para>
     <informalfigure>
         <mediaobject>
@@ -96,14 +96,14 @@ Here is the caller graph for this function:<para>
 <indexterm><primary>__iadd__</primary><secondary>systems.item.InventoryItem</secondary></indexterm>
 <indexterm><primary>systems.item.InventoryItem</primary><secondary>__iadd__</secondary></indexterm>
 <para><computeroutput>def systems.item.InventoryItem.__iadd__ ( self,  other)</computeroutput></para><para>
-Definition at line <link linkend="_item_8py_source_1l00036">36</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
+Definition at line <link linkend="_item_8py_source_1l00037">37</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1item_1_1_inventory_item_1ab3880e1b0fbb8a4fe38e2f65d942803b"/><section>
     <title>__isub__()</title>
 <indexterm><primary>__isub__</primary><secondary>systems.item.InventoryItem</secondary></indexterm>
 <indexterm><primary>systems.item.InventoryItem</primary><secondary>__isub__</secondary></indexterm>
 <para><computeroutput>def systems.item.InventoryItem.__isub__ ( self,  other)</computeroutput></para><para>
-Definition at line <link linkend="_item_8py_source_1l00046">46</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
+Definition at line <link linkend="_item_8py_source_1l00047">47</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1item_1_1_inventory_item_1ae95b386159a56fcc79ab76bcb1d9d3b6"/><section>
     <title>from_dict()</title>
@@ -112,7 +112,7 @@ Definition at line <link linkend="_item_8py_source_1l00046">46</link> of file <l
 <para><computeroutput>def systems.item.InventoryItem.from_dict ( d)<computeroutput>[static]</computeroutput></computeroutput></para><para>
 Reimplemented from <link linkend="_classsystems_1_1item_1_1_item_1a4144aa239cf0dd626351d680d2189d43">systems.item.Item</link>.</para>
 <para>
-Definition at line <link linkend="_item_8py_source_1l00066">66</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
+Definition at line <link linkend="_item_8py_source_1l00067">67</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
 Here is the call graph for this function:<para>
     <informalfigure>
         <mediaobject>
@@ -138,14 +138,14 @@ Here is the caller graph for this function:<para>
 <indexterm><primary>systems.item.InventoryItem</primary><secondary>from_item</secondary></indexterm>
 <para><computeroutput>def systems.item.InventoryItem.from_item ( item,  count = <computeroutput>0</computeroutput>
 )<computeroutput>[static]</computeroutput></computeroutput></para><para>
-Definition at line <link linkend="_item_8py_source_1l00059">59</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
+Definition at line <link linkend="_item_8py_source_1l00060">60</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1item_1_1_inventory_item_1aa6e8f55565dcb952c9046b4aa196f236"/><section>
     <title>set_count()</title>
 <indexterm><primary>set_count</primary><secondary>systems.item.InventoryItem</secondary></indexterm>
 <indexterm><primary>systems.item.InventoryItem</primary><secondary>set_count</secondary></indexterm>
 <para><computeroutput>def systems.item.InventoryItem.set_count ( self,  count)</computeroutput></para><para>
-Definition at line <link linkend="_item_8py_source_1l00029">29</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
+Definition at line <link linkend="_item_8py_source_1l00030">30</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
 </section>
 </section>
 <section>
@@ -155,7 +155,7 @@ Definition at line <link linkend="_item_8py_source_1l00029">29</link> of file <l
 <indexterm><primary>count</primary><secondary>systems.item.InventoryItem</secondary></indexterm>
 <indexterm><primary>systems.item.InventoryItem</primary><secondary>count</secondary></indexterm>
 <para><computeroutput>systems.item.InventoryItem.count</computeroutput></para><para>
-Definition at line <link linkend="_item_8py_source_1l00027">27</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
+Definition at line <link linkend="_item_8py_source_1l00028">28</link> of file <link linkend="_item_8py_source">item.py</link>.</para>
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>

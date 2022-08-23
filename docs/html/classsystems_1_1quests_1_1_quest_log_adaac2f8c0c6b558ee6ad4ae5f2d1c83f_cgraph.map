@@ -1,0 +1,6 @@
+<map id="systems.quests.QuestLog.set_selected_quest" name="systems.quests.QuestLog.set_selected_quest">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,203,112"/>
+<area shape="rect" id="node2" href="$classsystems_1_1player_1_1_player.html#a5ed45e7945c69cae74b8131c7f9ea5fe" title=" " alt="" coords="269,5,443,47"/>
+<area shape="rect" id="node3" href="$classsystems_1_1quests_1_1_quest_log.html#aeefec1f7d521214a229a28ceb480819f" title=" " alt="" coords="257,71,455,112"/>
+<area shape="rect" id="node4" href="$classsystems_1_1database_1_1_database.html#af7366d1383a0b983b90ced39843d98b7" title=" " alt="" coords="251,136,461,177"/>
+</map>

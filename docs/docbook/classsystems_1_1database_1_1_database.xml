@@ -25,6 +25,8 @@ Collaboration diagram for systems.database.Database:<para>
         <itemizedlist>
             <listitem><para>def <link linkend="_classsystems_1_1database_1_1_database_1ae88b2cf4bfd42a0f97126c3888b08093">__init__</link> (self, directory=&apos;data&apos;, item_fp=&apos;items.json&apos;, recipe_fp=&apos;recipes.json&apos;)</para>
 </listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1database_1_1_database_1a2524a54db20049100293d4e8acf11b34">verify</link> (self)</para>
+</listitem>
             <listitem><para>def <link linkend="_classsystems_1_1database_1_1_database_1ae9390d3807a6a781fb7914480fc65186">load_items_from_file</link> (self, file)</para>
 </listitem>
             <listitem><para>def <link linkend="_classsystems_1_1database_1_1_database_1ad12b50fec2c22d2df20651cb48844311">load_recipes_from_file</link> (self, file)</para>
@@ -34,6 +36,10 @@ Collaboration diagram for systems.database.Database:<para>
             <listitem><para>def <link linkend="_classsystems_1_1database_1_1_database_1aac860297aa534950d9754facfdda4848">get_recipe</link> (self, recipe_id=&apos;&apos;)</para>
 </listitem>
             <listitem><para>def <link linkend="_classsystems_1_1database_1_1_database_1af7366d1383a0b983b90ced39843d98b7">get_quest</link> (self, quest_id)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1database_1_1_database_1a525c46731d55ffe552df5970d5f4228b">set_items</link> (self, <link linkend="_classsystems_1_1database_1_1_database_1a4479a0266adc641b4dd623e598e02930">items</link>)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classsystems_1_1database_1_1_database_1abb44337d35c276932cade20c324f115d">__getitem__</link> (self, key)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -45,6 +51,12 @@ Collaboration diagram for systems.database.Database:<para>
             <listitem><para><link linkend="_classsystems_1_1database_1_1_database_1a4479a0266adc641b4dd623e598e02930">items</link></para>
 </listitem>
             <listitem><para><link linkend="_classsystems_1_1database_1_1_database_1a313a714187f831c4189f9fd1a0172b85">recipes</link></para>
+</listitem>
+            <listitem><para><link linkend="_classsystems_1_1database_1_1_database_1ab3eabc6aaa2da62eff414212c02f863a">quests</link></para>
+</listitem>
+            <listitem><para><link linkend="_classsystems_1_1database_1_1_database_1a861fb193432574ae949fc41f5c4b6061">people</link></para>
+</listitem>
+            <listitem><para><link linkend="_classsystems_1_1database_1_1_database_1a556438deefc016bfc1d19a58ba2abb5b">locations</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -68,20 +80,36 @@ Definition at line <link linkend="_database_8py_source_1l00006">6</link> of file
 </section>
 <section>
 <title>Member Function Documentation</title>
+<anchor xml:id="_classsystems_1_1database_1_1_database_1abb44337d35c276932cade20c324f115d"/><section>
+    <title>__getitem__()</title>
+<indexterm><primary>__getitem__</primary><secondary>systems.database.Database</secondary></indexterm>
+<indexterm><primary>systems.database.Database</primary><secondary>__getitem__</secondary></indexterm>
+<para><computeroutput>def systems.database.Database.__getitem__ ( self,  key)</computeroutput></para><para>
+Definition at line <link linkend="_database_8py_source_1l00057">57</link> of file <link linkend="_database_8py_source">database.py</link>.</para>
+</section>
 <anchor xml:id="_classsystems_1_1database_1_1_database_1a62ca49b164a863f5f9e6538f25b3274c"/><section>
     <title>get_item()</title>
 <indexterm><primary>get_item</primary><secondary>systems.database.Database</secondary></indexterm>
 <indexterm><primary>systems.database.Database</primary><secondary>get_item</secondary></indexterm>
 <para><computeroutput>def systems.database.Database.get_item ( self,  item_id = <computeroutput>&apos;&apos;</computeroutput>
 )</computeroutput></para><para>
-Definition at line <link linkend="_database_8py_source_1l00032">32</link> of file <link linkend="_database_8py_source">database.py</link>.</para>
+Definition at line <link linkend="_database_8py_source_1l00043">43</link> of file <link linkend="_database_8py_source">database.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1database_1_1_database_1af7366d1383a0b983b90ced39843d98b7"/><section>
     <title>get_quest()</title>
 <indexterm><primary>get_quest</primary><secondary>systems.database.Database</secondary></indexterm>
 <indexterm><primary>systems.database.Database</primary><secondary>get_quest</secondary></indexterm>
 <para><computeroutput>def systems.database.Database.get_quest ( self,  quest_id)</computeroutput></para><para>
-Definition at line <link linkend="_database_8py_source_1l00038">38</link> of file <link linkend="_database_8py_source">database.py</link>.</para>
+Definition at line <link linkend="_database_8py_source_1l00049">49</link> of file <link linkend="_database_8py_source">database.py</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classsystems_1_1database_1_1_database_af7366d1383a0b983b90ced39843d98b7_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 </section>
 <anchor xml:id="_classsystems_1_1database_1_1_database_1aac860297aa534950d9754facfdda4848"/><section>
     <title>get_recipe()</title>
@@ -89,21 +117,35 @@ Definition at line <link linkend="_database_8py_source_1l00038">38</link> of fil
 <indexterm><primary>systems.database.Database</primary><secondary>get_recipe</secondary></indexterm>
 <para><computeroutput>def systems.database.Database.get_recipe ( self,  recipe_id = <computeroutput>&apos;&apos;</computeroutput>
 )</computeroutput></para><para>
-Definition at line <link linkend="_database_8py_source_1l00035">35</link> of file <link linkend="_database_8py_source">database.py</link>.</para>
+Definition at line <link linkend="_database_8py_source_1l00046">46</link> of file <link linkend="_database_8py_source">database.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1database_1_1_database_1ae9390d3807a6a781fb7914480fc65186"/><section>
     <title>load_items_from_file()</title>
 <indexterm><primary>load_items_from_file</primary><secondary>systems.database.Database</secondary></indexterm>
 <indexterm><primary>systems.database.Database</primary><secondary>load_items_from_file</secondary></indexterm>
 <para><computeroutput>def systems.database.Database.load_items_from_file ( self,  file)</computeroutput></para><para>
-Definition at line <link linkend="_database_8py_source_1l00018">18</link> of file <link linkend="_database_8py_source">database.py</link>.</para>
+Definition at line <link linkend="_database_8py_source_1l00029">29</link> of file <link linkend="_database_8py_source">database.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1database_1_1_database_1ad12b50fec2c22d2df20651cb48844311"/><section>
     <title>load_recipes_from_file()</title>
 <indexterm><primary>load_recipes_from_file</primary><secondary>systems.database.Database</secondary></indexterm>
 <indexterm><primary>systems.database.Database</primary><secondary>load_recipes_from_file</secondary></indexterm>
 <para><computeroutput>def systems.database.Database.load_recipes_from_file ( self,  file)</computeroutput></para><para>
-Definition at line <link linkend="_database_8py_source_1l00025">25</link> of file <link linkend="_database_8py_source">database.py</link>.</para>
+Definition at line <link linkend="_database_8py_source_1l00036">36</link> of file <link linkend="_database_8py_source">database.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1database_1_1_database_1a525c46731d55ffe552df5970d5f4228b"/><section>
+    <title>set_items()</title>
+<indexterm><primary>set_items</primary><secondary>systems.database.Database</secondary></indexterm>
+<indexterm><primary>systems.database.Database</primary><secondary>set_items</secondary></indexterm>
+<para><computeroutput>def systems.database.Database.set_items ( self,  items)</computeroutput></para><para>
+Definition at line <link linkend="_database_8py_source_1l00053">53</link> of file <link linkend="_database_8py_source">database.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1database_1_1_database_1a2524a54db20049100293d4e8acf11b34"/><section>
+    <title>verify()</title>
+<indexterm><primary>verify</primary><secondary>systems.database.Database</secondary></indexterm>
+<indexterm><primary>systems.database.Database</primary><secondary>verify</secondary></indexterm>
+<para><computeroutput>def systems.database.Database.verify ( self)</computeroutput></para><para>
+Definition at line <link linkend="_database_8py_source_1l00022">22</link> of file <link linkend="_database_8py_source">database.py</link>.</para>
 </section>
 </section>
 <section>
@@ -114,6 +156,27 @@ Definition at line <link linkend="_database_8py_source_1l00025">25</link> of fil
 <indexterm><primary>systems.database.Database</primary><secondary>items</secondary></indexterm>
 <para><computeroutput>systems.database.Database.items</computeroutput></para><para>
 Definition at line <link linkend="_database_8py_source_1l00014">14</link> of file <link linkend="_database_8py_source">database.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1database_1_1_database_1a556438deefc016bfc1d19a58ba2abb5b"/><section>
+    <title>locations</title>
+<indexterm><primary>locations</primary><secondary>systems.database.Database</secondary></indexterm>
+<indexterm><primary>systems.database.Database</primary><secondary>locations</secondary></indexterm>
+<para><computeroutput>systems.database.Database.locations</computeroutput></para><para>
+Definition at line <link linkend="_database_8py_source_1l00018">18</link> of file <link linkend="_database_8py_source">database.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1database_1_1_database_1a861fb193432574ae949fc41f5c4b6061"/><section>
+    <title>people</title>
+<indexterm><primary>people</primary><secondary>systems.database.Database</secondary></indexterm>
+<indexterm><primary>systems.database.Database</primary><secondary>people</secondary></indexterm>
+<para><computeroutput>systems.database.Database.people</computeroutput></para><para>
+Definition at line <link linkend="_database_8py_source_1l00017">17</link> of file <link linkend="_database_8py_source">database.py</link>.</para>
+</section>
+<anchor xml:id="_classsystems_1_1database_1_1_database_1ab3eabc6aaa2da62eff414212c02f863a"/><section>
+    <title>quests</title>
+<indexterm><primary>quests</primary><secondary>systems.database.Database</secondary></indexterm>
+<indexterm><primary>systems.database.Database</primary><secondary>quests</secondary></indexterm>
+<para><computeroutput>systems.database.Database.quests</computeroutput></para><para>
+Definition at line <link linkend="_database_8py_source_1l00016">16</link> of file <link linkend="_database_8py_source">database.py</link>.</para>
 </section>
 <anchor xml:id="_classsystems_1_1database_1_1_database_1a313a714187f831c4189f9fd1a0172b85"/><section>
     <title>recipes</title>
